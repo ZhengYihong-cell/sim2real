@@ -1,0 +1,114 @@
+{
+  "format": "v4_12p4u6_ik_path_plan",
+  "segments": {
+    "start_to_home": {
+      "name": "start_to_home",
+      "success": true,
+      "method": "direct",
+      "path_length": 2.6270522434850814,
+      "direct_info": {
+        "reason": "ok",
+        "alpha": 1.0,
+        "min_distance": 0.15833872667720644,
+        "pair": [
+          "p4t2_middle_distal_seg_welded_proxy_01",
+          "grasp_can_geom_0"
+        ]
+      },
+      "num_waypoints": 2,
+      "path_dicts": [
+        {
+          "fr3_joint1": 0.0,
+          "fr3_joint2": 0.0,
+          "fr3_joint3": 0.0,
+          "fr3_joint4": -0.1518,
+          "fr3_joint5": 0.0,
+          "fr3_joint6": 0.5445,
+          "fr3_joint7": 0.0
+        },
+        {
+          "fr3_joint1": 0.0,
+          "fr3_joint2": -0.7,
+          "fr3_joint3": 0.0,
+          "fr3_joint4": -2.2,
+          "fr3_joint5": 0.0,
+          "fr3_joint6": 1.8,
+          "fr3_joint7": 0.8
+        }
+      ]
+    },
+    "home_to_pre": {
+      "name": "home_to_pre",
+      "success": true,
+      "method": "direct",
+      "path_length": 1.7755505829295992,
+      "direct_info": {
+        "reason": "ok",
+        "alpha": 1.0,
+        "min_distance": 0.05466494234043818,
+        "pair": [
+          "p4t2_thumb_distal_seg_welded_proxy_01",
+          "grasp_can_geom_0"
+        ]
+      },
+      "num_waypoints": 2,
+      "path_dicts": [
+        {
+          "fr3_joint1": 0.0,
+          "fr3_joint2": -0.7,
+          "fr3_joint3": 0.0,
+          "fr3_joint4": -2.2,
+          "fr3_joint5": 0.0,
+          "fr3_joint6": 1.8,
+          "fr3_joint7": 0.8
+        },
+        {
+          "fr3_joint1": -0.2037773840304669,
+          "fr3_joint2": -0.06586491632489716,
+          "fr3_joint3": 0.0511772068332176,
+          "fr3_joint4": -1.8562287367755,
+          "fr3_joint5": -0.013887325666606479,
+          "fr3_joint6": 1.3151012175724381,
+          "fr3_joint7": 2.3338871767570093
+        }
+      ]
+    },
+    "pre_to_grasp": {
+      "name": "pre_to_grasp",
+      "success": true,
+      "method": "direct",
+      "path_length": 0.3251434643167021,
+      "direct_info": {
+        "reason": "ok",
+        "alpha": 1.0,
+        "min_distance": 0.004601618376193081,
+        "pair": [
+          "p4t2_thumb_distal_seg_welded_proxy_00",
+          "grasp_can_geom_0"
+        ]
+      },
+      "num_waypoints": 2,
+      "path_dicts": [
+        {
+          "fr3_joint1": -0.2037773840304669,
+          "fr3_joint2": -0.06586491632489716,
+          "fr3_joint3": 0.0511772068332176,
+          "fr3_joint4": -1.8562287367755,
+          "fr3_joint5": -0.013887325666606479,
+          "fr3_joint6": 1.3151012175724381,
+          "fr3_joint7": 2.3338871767570093
+        },
+        {
+          "fr3_joint1": -0.31762548572894905,
+          "fr3_joint2": -0.036495403406386934,
+          "fr3_joint3": 0.16417522273149832,
+          "fr3_joint4": -2.0392318024580383,
+          "fr3_joint5": -0.012281581423920197,
+          "fr3_joint6": 1.5287182710239213,
+          "fr3_joint7": 2.334790643649461
+        }
+      ]
+    }
+  },
+  "checker_total_checks": 146
+}

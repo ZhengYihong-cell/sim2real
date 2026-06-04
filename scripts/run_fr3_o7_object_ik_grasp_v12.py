@@ -1,0 +1,1 @@
+/home/zyh/Projects/o7_mujoco_sim/scripts/05_execution_runner/run_fr3_o7_object_ik_grasp_v12.py

@@ -1,0 +1,148 @@
+
+========== V4.12P4U1 READY-GATED SNAP CLOSE ==========
+model              : /home/zyh/Projects/o7_mujoco_sim/legacy_final_demos/final_can52_p4u1_ready_gated_snap_demo/diagnostics/current_v412/v4_12p4t2_scene_can52_contact_stable_old_ellipsoid_proxy.xml
+candidate          : /home/zyh/Projects/o7_mujoco_sim/legacy_final_demos/final_can52_p4u1_ready_gated_snap_demo/diagnostics/current_v412/v4_12p4h2_can52_contact_sequence_proxy_debug/best_candidate.json
+p3_json            : /home/zyh/Projects/o7_mujoco_sim/legacy_final_demos/final_can52_p4u1_ready_gated_snap_demo/diagnostics/current_v412/v4_12p4h2_can52_contact_sequence_proxy_debug/best_p3.json
+best_config        : /home/zyh/Projects/o7_mujoco_sim/legacy_final_demos/final_can52_p4u1_ready_gated_snap_demo/diagnostics/current_v412/v4_12p4h2_can52_contact_sequence_proxy_debug/best_contact_sequence_config_ctrlsplit_debug.json
+object_body        : grasp_can
+target_body        : fr3_link7
+arm_source         : {'q_grasp': 'p3.best_pass.q_grasp', 'q_pre': 'p3.best_pass.q_pre'}
+hand_source        : best.best_record.hand_config.ctrl
+side_open_ctrl     : {'thumb_cmc_roll': 0.4932203769683838, 'thumb_cmc_yaw': 0.8166652500629424, 'thumb_cmc_pitch': 0.22, 'index_mcp_pitch': 0.0, 'middle_mcp_pitch': 0.0, 'ring_mcp_pitch': 0.0, 'pinky_mcp_pitch': 0.0}
+close_target       : {'thumb_cmc_roll': 0.4932203769683838, 'thumb_cmc_yaw': 0.8166652500629424, 'index_mcp_pitch': 0.4225559062957764, 'middle_mcp_pitch': 0.4582318838834763, 'ring_mcp_pitch': 0.4565560380220413, 'pinky_mcp_pitch': 0.4326809443235397, 'thumb_cmc_pitch': 0.32620148635149004}
+enable_lift        : True
+lift_mode          : world_z
+lift_z             : 0.06
+lift_ik_info       : {'success': True, 'target_body': 'fr3_link7', 'requested_lift_z': 0.06, 'actual_target_body_rise': 0.059683843932538894, 'final_err': 0.0003175547328598161, 'start_pos': array([0.62453453, 0.20740647, 0.27062104]), 'target_pos': array([0.62453453, 0.20740647, 0.33062104]), 'final_pos': array([0.62451256, 0.20738638, 0.33030489])}
+grip_ready_steps   : 8
+micro_squeeze_frac : 0.08
+max_grip_disp      : 0.006
+IMPORTANT          : lift only if grip_ready=True. Otherwise NO_LIFT.
+=======================================================
+
+
+[PHASE] settle_side_open_at_grasp, steps=160
+[settle_side_open_at_grasp]     0 alpha=0.000 disp=0.00000 rise=0.00000 groups={} opp=None ready=False stable=0/8
+[settle_side_open_at_grasp]    30 alpha=0.188 disp=0.00098 rise=-0.00096 groups={} opp=None ready=False stable=0/8
+[settle_side_open_at_grasp]    60 alpha=0.375 disp=0.00100 rise=-0.00100 groups={} opp=None ready=False stable=0/8
+[settle_side_open_at_grasp]    90 alpha=0.562 disp=0.00099 rise=-0.00099 groups={} opp=None ready=False stable=0/8
+[settle_side_open_at_grasp]   120 alpha=0.750 disp=0.00099 rise=-0.00099 groups={} opp=None ready=False stable=0/8
+[settle_side_open_at_grasp]   150 alpha=0.938 disp=0.00100 rise=-0.00100 groups={} opp=None ready=False stable=0/8
+
+[PHASE] snap_close_to_target, steps=450
+[snap_close_to_target]     0 alpha=0.000 disp=0.00100 rise=-0.00100 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]    30 alpha=0.067 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]    60 alpha=0.133 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]    90 alpha=0.200 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   120 alpha=0.267 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   150 alpha=0.333 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   180 alpha=0.400 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   210 alpha=0.467 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   240 alpha=0.533 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   270 alpha=0.600 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   300 alpha=0.667 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   330 alpha=0.733 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   360 alpha=0.800 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   390 alpha=0.867 disp=0.00101 rise=-0.00101 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   420 alpha=0.933 disp=0.00102 rise=-0.00083 groups={} opp=None ready=False stable=0/8
+[snap_close_to_target]   450 alpha=1.000 disp=0.00144 rise=-0.00064 groups={'thumb': 1, 'index': 1} opp=-0.7976430764367192 ready=True stable=5/8
+
+[PHASE] grip_settle_at_close_target, steps=250
+[grip_settle_at_close_target]     0 alpha=0.000 disp=0.00145 rise=-0.00064 groups={'thumb': 1, 'index': 1} opp=-0.7975746865879119 ready=True stable=6/8
+[grip_settle_at_close_target]    30 alpha=0.120 disp=0.00183 rise=-0.00054 groups={'thumb': 1, 'index': 1} opp=-0.79852276150554 ready=True stable=1/8
+[grip_settle_at_close_target]    60 alpha=0.240 disp=0.00213 rise=-0.00049 groups={'thumb': 1, 'index': 1} opp=-0.7991574418692509 ready=True stable=9/8
+[grip_settle_at_close_target]    90 alpha=0.360 disp=0.00234 rise=-0.00045 groups={'thumb': 2, 'index': 1} opp=-0.9982213790263234 ready=True stable=39/8
+[grip_settle_at_close_target]   120 alpha=0.480 disp=0.00244 rise=-0.00042 groups={'thumb': 2, 'index': 1} opp=-0.9968499177489405 ready=True stable=69/8
+[grip_settle_at_close_target]   150 alpha=0.600 disp=0.00254 rise=-0.00039 groups={'thumb': 1, 'index': 1} opp=-0.9968296124265916 ready=True stable=99/8
+[grip_settle_at_close_target]   180 alpha=0.720 disp=0.00262 rise=-0.00036 groups={'thumb': 1, 'index': 1} opp=-0.9968159752135427 ready=True stable=129/8
+[grip_settle_at_close_target]   210 alpha=0.840 disp=0.00269 rise=-0.00034 groups={'thumb': 1, 'index': 1} opp=-0.9968100614732723 ready=True stable=159/8
+[grip_settle_at_close_target]   240 alpha=0.960 disp=0.00275 rise=-0.00031 groups={'thumb': 1, 'index': 1} opp=-0.9966822011319937 ready=True stable=189/8
+
+[PHASE] gated_micro_squeeze, steps=349
+[gated_micro_squeeze]     0 alpha=0.000 disp=0.00274 rise=-0.00031 groups={'thumb': 1, 'index': 1} opp=-0.9960339517828517 ready=True stable=2/8
+[GRIP READY] stable opposition reached. Stop squeezing.
+
+[GRIP_READY] lift is allowed. Hand ctrl will stay constant during lift.
+
+[PHASE] lift_world_z_with_fixed_grip_ctrl, steps=2000
+[lift_world_z_with_fixed_grip_ctrl]     0 alpha=0.000 disp=0.00276 rise=-0.00030 groups={'thumb': 1, 'index': 1} opp=-0.9960217065894548 ready=True stable=9/8
+[lift_world_z_with_fixed_grip_ctrl]    30 alpha=0.015 disp=0.00281 rise=-0.00028 groups={'thumb': 1, 'index': 1} opp=-0.9959998547526036 ready=True stable=2/8
+[lift_world_z_with_fixed_grip_ctrl]    60 alpha=0.030 disp=0.00288 rise=-0.00025 groups={'thumb': 1, 'index': 1} opp=-0.9959658167891502 ready=True stable=32/8
+[lift_world_z_with_fixed_grip_ctrl]    90 alpha=0.045 disp=0.00291 rise=-0.00022 groups={'thumb': 1, 'index': 1} opp=-0.9939817492812316 ready=True stable=29/8
+[lift_world_z_with_fixed_grip_ctrl]   120 alpha=0.060 disp=0.00292 rise=-0.00019 groups={'thumb': 1, 'index': 1} opp=-0.9939535102511141 ready=True stable=1/8
+[lift_world_z_with_fixed_grip_ctrl]   150 alpha=0.075 disp=0.00293 rise=-0.00017 groups={'thumb': 1, 'index': 1} opp=-0.9939206159931856 ready=True stable=4/8
+[lift_world_z_with_fixed_grip_ctrl]   180 alpha=0.090 disp=0.00298 rise=-0.00014 groups={'thumb': 1, 'index': 1} opp=-0.9938903185640741 ready=True stable=34/8
+[lift_world_z_with_fixed_grip_ctrl]   210 alpha=0.105 disp=0.00298 rise=-0.00011 groups={'thumb': 1, 'index': 1} opp=-0.9938605903696571 ready=True stable=64/8
+[lift_world_z_with_fixed_grip_ctrl]   240 alpha=0.120 disp=0.00295 rise=-0.00005 groups={'thumb': 1, 'index': 1} opp=-0.9951416405539468 ready=True stable=94/8
+[lift_world_z_with_fixed_grip_ctrl]   270 alpha=0.135 disp=0.00290 rise=0.00001 groups={'thumb': 1, 'index': 1} opp=-0.9920751750951616 ready=True stable=124/8
+[lift_world_z_with_fixed_grip_ctrl]   300 alpha=0.150 disp=0.00283 rise=0.00006 groups={'thumb': 1, 'index': 1} opp=-0.9920747052508632 ready=True stable=154/8
+[lift_world_z_with_fixed_grip_ctrl]   330 alpha=0.165 disp=0.00275 rise=0.00018 groups={'thumb': 1, 'index': 1} opp=-0.9920743335014344 ready=True stable=184/8
+[lift_world_z_with_fixed_grip_ctrl]   360 alpha=0.180 disp=0.00268 rise=0.00032 groups={'thumb': 1, 'index': 1} opp=-0.9920742018272071 ready=True stable=214/8
+[lift_world_z_with_fixed_grip_ctrl]   390 alpha=0.195 disp=0.00260 rise=0.00052 groups={'thumb': 1, 'index': 1} opp=-0.9920740384148043 ready=True stable=244/8
+[lift_world_z_with_fixed_grip_ctrl]   420 alpha=0.210 disp=0.00256 rise=0.00075 groups={'thumb': 1, 'index': 1} opp=-0.9920734146181445 ready=True stable=274/8
+[lift_world_z_with_fixed_grip_ctrl]   450 alpha=0.225 disp=0.00257 rise=0.00101 groups={'thumb': 1, 'index': 1} opp=-0.9920733025103126 ready=True stable=304/8
+[lift_world_z_with_fixed_grip_ctrl]   480 alpha=0.240 disp=0.00262 rise=0.00130 groups={'thumb': 1, 'index': 1} opp=-0.9920731643142258 ready=True stable=334/8
+[lift_world_z_with_fixed_grip_ctrl]   510 alpha=0.255 disp=0.00273 rise=0.00161 groups={'thumb': 1, 'index': 1} opp=-0.9920730610565431 ready=True stable=364/8
+[lift_world_z_with_fixed_grip_ctrl]   540 alpha=0.270 disp=0.00289 rise=0.00194 groups={'thumb': 1, 'index': 1} opp=-0.9920729514655298 ready=True stable=394/8
+[lift_world_z_with_fixed_grip_ctrl]   570 alpha=0.285 disp=0.00311 rise=0.00229 groups={'thumb': 1, 'index': 1} opp=-0.9920728416265117 ready=True stable=424/8
+[lift_world_z_with_fixed_grip_ctrl]   600 alpha=0.300 disp=0.00336 rise=0.00265 groups={'thumb': 1, 'index': 1} opp=-0.9920727203406776 ready=True stable=454/8
+[lift_world_z_with_fixed_grip_ctrl]   630 alpha=0.315 disp=0.00366 rise=0.00302 groups={'thumb': 1, 'index': 1} opp=-0.9920726238358039 ready=True stable=484/8
+[lift_world_z_with_fixed_grip_ctrl]   660 alpha=0.330 disp=0.00399 rise=0.00340 groups={'thumb': 1, 'index': 1} opp=-0.9920725030293717 ready=True stable=514/8
+[lift_world_z_with_fixed_grip_ctrl]   690 alpha=0.345 disp=0.00436 rise=0.00377 groups={'thumb': 1, 'index': 1} opp=-0.9920724000612927 ready=True stable=544/8
+[lift_world_z_with_fixed_grip_ctrl]   720 alpha=0.360 disp=0.00475 rise=0.00415 groups={'thumb': 1, 'index': 1} opp=-0.992072291310856 ready=True stable=574/8
+[lift_world_z_with_fixed_grip_ctrl]   750 alpha=0.375 disp=0.00519 rise=0.00453 groups={'thumb': 1, 'index': 1} opp=-0.9920721816219957 ready=True stable=604/8
+[lift_world_z_with_fixed_grip_ctrl]   780 alpha=0.390 disp=0.00569 rise=0.00496 groups={'thumb': 1, 'index': 1} opp=-0.992075692328019 ready=True stable=634/8
+[lift_world_z_with_fixed_grip_ctrl]   810 alpha=0.405 disp=0.00623 rise=0.00544 groups={'thumb': 1, 'index': 1} opp=-0.9920756619682719 ready=True stable=664/8
+[lift_world_z_with_fixed_grip_ctrl]   840 alpha=0.420 disp=0.00679 rise=0.00595 groups={'thumb': 1, 'index': 1} opp=-0.9920756324882349 ready=True stable=694/8
+[lift_world_z_with_fixed_grip_ctrl]   870 alpha=0.435 disp=0.00735 rise=0.00649 groups={'thumb': 1, 'index': 1} opp=-0.9920756038121539 ready=True stable=724/8
+[lift_world_z_with_fixed_grip_ctrl]   900 alpha=0.450 disp=0.00792 rise=0.00705 groups={'thumb': 1, 'index': 1} opp=-0.9920755760903808 ready=True stable=754/8
+[lift_world_z_with_fixed_grip_ctrl]   930 alpha=0.465 disp=0.00849 rise=0.00763 groups={'thumb': 1, 'index': 1} opp=-0.992075454017068 ready=True stable=784/8
+[lift_world_z_with_fixed_grip_ctrl]   960 alpha=0.480 disp=0.00906 rise=0.00821 groups={'thumb': 1, 'index': 1} opp=-0.992075266315314 ready=True stable=814/8
+[lift_world_z_with_fixed_grip_ctrl]   990 alpha=0.495 disp=0.00963 rise=0.00881 groups={'thumb': 1, 'index': 1} opp=-0.9920750736312184 ready=True stable=844/8
+[lift_world_z_with_fixed_grip_ctrl]  1020 alpha=0.510 disp=0.01020 rise=0.00940 groups={'thumb': 1, 'index': 1} opp=-0.9920748760616018 ready=True stable=874/8
+[lift_world_z_with_fixed_grip_ctrl]  1050 alpha=0.525 disp=0.01078 rise=0.01001 groups={'thumb': 1, 'index': 1} opp=-0.9920746736932053 ready=True stable=904/8
+[lift_world_z_with_fixed_grip_ctrl]  1080 alpha=0.540 disp=0.01136 rise=0.01061 groups={'thumb': 1, 'index': 1} opp=-0.992074466610527 ready=True stable=934/8
+[lift_world_z_with_fixed_grip_ctrl]  1110 alpha=0.555 disp=0.01194 rise=0.01122 groups={'thumb': 1, 'index': 1} opp=-0.9920742549006855 ready=True stable=964/8
+[lift_world_z_with_fixed_grip_ctrl]  1140 alpha=0.570 disp=0.01253 rise=0.01182 groups={'thumb': 1, 'index': 1} opp=-0.9920740386534774 ready=True stable=994/8
+[lift_world_z_with_fixed_grip_ctrl]  1170 alpha=0.585 disp=0.01312 rise=0.01243 groups={'thumb': 1, 'index': 1} opp=-0.9920738179651143 ready=True stable=1024/8
+[lift_world_z_with_fixed_grip_ctrl]  1200 alpha=0.600 disp=0.01371 rise=0.01304 groups={'thumb': 1, 'index': 1} opp=-0.9920735929380438 ready=True stable=1054/8
+[lift_world_z_with_fixed_grip_ctrl]  1230 alpha=0.615 disp=0.01431 rise=0.01365 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920734475623608 ready=True stable=1084/8
+[lift_world_z_with_fixed_grip_ctrl]  1260 alpha=0.630 disp=0.01491 rise=0.01427 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920733868092219 ready=True stable=1114/8
+[lift_world_z_with_fixed_grip_ctrl]  1290 alpha=0.645 disp=0.01551 rise=0.01488 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920733284203077 ready=True stable=1144/8
+[lift_world_z_with_fixed_grip_ctrl]  1320 alpha=0.660 disp=0.01612 rise=0.01550 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920732706986005 ready=True stable=1174/8
+[lift_world_z_with_fixed_grip_ctrl]  1350 alpha=0.675 disp=0.01672 rise=0.01611 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920732136716288 ready=True stable=1204/8
+[lift_world_z_with_fixed_grip_ctrl]  1380 alpha=0.690 disp=0.01732 rise=0.01672 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920731572734373 ready=True stable=1234/8
+[lift_world_z_with_fixed_grip_ctrl]  1410 alpha=0.705 disp=0.01793 rise=0.01734 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920731014525268 ready=True stable=1264/8
+[lift_world_z_with_fixed_grip_ctrl]  1440 alpha=0.720 disp=0.01853 rise=0.01795 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.992073046168169 ready=True stable=1294/8
+[lift_world_z_with_fixed_grip_ctrl]  1470 alpha=0.735 disp=0.01914 rise=0.01857 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920729913483897 ready=True stable=1324/8
+[lift_world_z_with_fixed_grip_ctrl]  1500 alpha=0.750 disp=0.01975 rise=0.01918 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920729369670216 ready=True stable=1354/8
+[lift_world_z_with_fixed_grip_ctrl]  1530 alpha=0.765 disp=0.02035 rise=0.01979 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920667288924276 ready=True stable=1384/8
+[lift_world_z_with_fixed_grip_ctrl]  1560 alpha=0.780 disp=0.02096 rise=0.02041 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920666485454188 ready=True stable=1414/8
+[lift_world_z_with_fixed_grip_ctrl]  1590 alpha=0.795 disp=0.02157 rise=0.02102 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920665689737762 ready=True stable=1444/8
+[lift_world_z_with_fixed_grip_ctrl]  1620 alpha=0.810 disp=0.02217 rise=0.02164 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.992066490225717 ready=True stable=1474/8
+[lift_world_z_with_fixed_grip_ctrl]  1650 alpha=0.825 disp=0.02278 rise=0.02225 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920664122716347 ready=True stable=1504/8
+[lift_world_z_with_fixed_grip_ctrl]  1680 alpha=0.840 disp=0.02339 rise=0.02286 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920663350780061 ready=True stable=1534/8
+[lift_world_z_with_fixed_grip_ctrl]  1710 alpha=0.855 disp=0.02400 rise=0.02347 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920662586134326 ready=True stable=1564/8
+[lift_world_z_with_fixed_grip_ctrl]  1740 alpha=0.870 disp=0.02461 rise=0.02409 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920661828471304 ready=True stable=1594/8
+[lift_world_z_with_fixed_grip_ctrl]  1770 alpha=0.885 disp=0.02521 rise=0.02470 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920661077501657 ready=True stable=1624/8
+[lift_world_z_with_fixed_grip_ctrl]  1800 alpha=0.900 disp=0.02582 rise=0.02531 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920660332951573 ready=True stable=1654/8
+[lift_world_z_with_fixed_grip_ctrl]  1830 alpha=0.915 disp=0.02643 rise=0.02593 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920659594558728 ready=True stable=1684/8
+[lift_world_z_with_fixed_grip_ctrl]  1860 alpha=0.930 disp=0.02704 rise=0.02654 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920658862079533 ready=True stable=1714/8
+[lift_world_z_with_fixed_grip_ctrl]  1890 alpha=0.945 disp=0.02765 rise=0.02715 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920658135267674 ready=True stable=1744/8
+[lift_world_z_with_fixed_grip_ctrl]  1920 alpha=0.960 disp=0.02825 rise=0.02776 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920642382730812 ready=True stable=1774/8
+[lift_world_z_with_fixed_grip_ctrl]  1950 alpha=0.975 disp=0.02886 rise=0.02838 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920641674032779 ready=True stable=1804/8
+[lift_world_z_with_fixed_grip_ctrl]  1980 alpha=0.990 disp=0.02947 rise=0.02899 groups={'thumb': 1, 'index': 1, 'middle': 1} opp=-0.9920640973596249 ready=True stable=1834/8
+
+========== P4U1 READY-GATED RESULT ==========
+out                 : /home/zyh/Projects/o7_mujoco_sim/legacy_final_demos/final_can52_p4u1_ready_gated_snap_demo/outputs/can52_p4u1_ready_gated_snap_micro_squeeze_lift_viewer.json
+grip_ready          : True
+stop_reason         : ready_during_gated_micro_squeeze
+max_stable_count    : 1854
+final_object_disp   : 0.029876636885086322
+final_object_rise   : 0.029397643411355923
+final_groups        : {'thumb': 1, 'index': 1, 'middle': 1}
+final_opposition_cos: -0.9920640510912057
+grip_hold_ctrl      : {'thumb_cmc_roll': 0.4932203769683838, 'thumb_cmc_yaw': 0.8166652500629424, 'thumb_cmc_pitch': 0.326347551433005, 'index_mcp_pitch': 0.4231370720121717, 'middle_mcp_pitch': 0.45886211684698364, 'ring_mcp_pitch': 0.45718396609725787, 'pinky_mcp_pitch': 0.4332760355936695}
+=============================================
+
+[VIEWER] keep open. Close viewer window or Ctrl+C in terminal to exit.

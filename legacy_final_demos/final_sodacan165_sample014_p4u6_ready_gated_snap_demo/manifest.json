@@ -1,0 +1,30 @@
+{
+  "format": "final_demo_manifest_v1",
+  "name": "final_sodacan165_sample014_p4u6_ready_gated_snap_demo",
+  "object": "sem-SodaCan-16526d147e837c386829bf9ee210f5e7",
+  "sample_index": 14,
+  "success_metrics": {
+    "grip_ready": true,
+    "stop_reason": "ready_after_close_target_hold",
+    "final_object_disp": 0.07716096999764172,
+    "final_object_rise": 0.06563263412783882,
+    "final_groups": {
+      "thumb": 1,
+      "middle": 1,
+      "pinky": 1
+    },
+    "final_opposition_cos": -0.7554765942683901,
+    "max_stable_count": 2917
+  },
+  "key_params": {
+    "finger_close_scale": 1.12,
+    "micro_squeeze_fraction": 0.0,
+    "max_grip_disp": 0.018,
+    "lift_z": 0.09,
+    "lift_duration": 3.0
+  },
+  "run_commands": {
+    "viewer": "./legacy_final_demos/final_sodacan165_sample014_p4u6_ready_gated_snap_demo/run_demo_viewer.sh",
+    "headless": "./legacy_final_demos/final_sodacan165_sample014_p4u6_ready_gated_snap_demo/run_demo_headless.sh"
+  }
+}

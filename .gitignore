@@ -1,0 +1,68 @@
+# ============================================================
+# sim2real / O7 MuJoCo project
+# 只忽略不该上传的大文件目录、环境目录、缓存和日志。
+# 正常代码、scripts、models、records、docs、legacy_final_demos 默认上传。
+# ============================================================
+
+# 大型资源/数据/诊断输出，不上传 GitHub
+assets/
+assests/
+dataset/
+dateset/
+diagnostics/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Python / MuJoCo 本地环境
+.venv/
+venv/
+mujoco_env/
+env/
+ENV/
+
+# 运行日志
+MUJOCO_LOG.TXT
+*.log
+
+# 本地环境变量/密钥
+.env
+.env.*
+*.secret
+*.token
+
+# 视频和录屏
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# 常见大数组/模型权重
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+*.h5
+*.hdf5
+
+# 临时/备份文件
+*.tmp
+*~
+*.bak
+*.bak_*
+*.bak-before*
+*.bak_before*
+*.backup
+*.old
+*.orig
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,236 @@
+{
+  "format": "sodacan165_sample014_close_sweep_summary_debug_v1",
+  "rows_sorted": [
+    {
+      "run": "run_01_fs0.96_mf0.00_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.0173696224402171,
+      "final_object_rise": -0.003497861390721224,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 1,
+        "middle": 1,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.9083714491353341,
+      "max_stable_count": 2502,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_02_fs0.96_mf0.04_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.0173696224402171,
+      "final_object_rise": -0.003497861390721224,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 1,
+        "middle": 1,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.9083714491353341,
+      "max_stable_count": 2502,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_03_fs0.96_mf0.08_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.0173696224402171,
+      "final_object_rise": -0.003497861390721224,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 1,
+        "middle": 1,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.9083714491353341,
+      "max_stable_count": 2502,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_10_fs1.12_mf0.00_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.01475883447693675,
+      "final_object_rise": -0.0011331600033664957,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 2,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.9121966557766762,
+      "max_stable_count": 2633,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_11_fs1.12_mf0.04_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.01475883447693675,
+      "final_object_rise": -0.0011331600033664957,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 2,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.9121966557766762,
+      "max_stable_count": 2633,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_12_fs1.12_mf0.08_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.01475883447693675,
+      "final_object_rise": -0.0011331600033664957,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 2,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.9121966557766762,
+      "max_stable_count": 2633,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_07_fs1.06_mf0.00_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.015606292139221366,
+      "final_object_rise": -0.00250251638733634,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 1,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.7282158573062729,
+      "max_stable_count": 2605,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_08_fs1.06_mf0.04_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.015606292139221366,
+      "final_object_rise": -0.00250251638733634,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 1,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.7282158573062729,
+      "max_stable_count": 2605,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_09_fs1.06_mf0.08_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.015606292139221366,
+      "final_object_rise": -0.00250251638733634,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 1,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.7282158573062729,
+      "max_stable_count": 2605,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_04_fs1.00_mf0.00_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.01682332979308665,
+      "final_object_rise": -0.002704946177964296,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 1,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.7093942990652509,
+      "max_stable_count": 2559,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_05_fs1.00_mf0.04_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.01682332979308665,
+      "final_object_rise": -0.002704946177964296,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 1,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.7093942990652509,
+      "max_stable_count": 2559,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    },
+    {
+      "run": "run_06_fs1.00_mf0.08_md0.018",
+      "success": null,
+      "stop_reason": "ready_after_close_target_hold",
+      "grip_ready": true,
+      "final_object_disp": 0.01682332979308665,
+      "final_object_rise": -0.002704946177964296,
+      "max_object_rise": null,
+      "final_groups": {
+        "thumb": 1,
+        "pinky": 1
+      },
+      "final_opposition_cos": -0.7093942990652509,
+      "max_stable_count": 2559,
+      "final_counts": null,
+      "max_hand_object": null,
+      "max_hand_object_lift": null,
+      "grip_ready_text": true
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="fr3_o7">
+  <compiler angle="radian" />
+  <asset>
+    <mesh name="meshes_robot_arms_fr3_visual_link0" content_type="model/obj" file="/home/zyh/Projects/o7_mujoco_sim/models/fr3_o7/converted_meshes_obj/meshes_robot_arms_fr3_visual_link0.obj" />
+    <mesh name="link0" content_type="model/stl" file="/opt/ros/humble/share/franka_description/meshes/robot_arms/fr3/collision/link0.stl" />
+    <mesh name="meshes_robot_arms_fr3_visual_link1" content_type="model/obj" file="/home/zyh/Projects/o7_mujoco_sim/models/fr3_o7/converted_meshes_obj/meshes_robot_arms_fr3_visual_link1.obj" />
+    <mesh name="link1" content_type="model/stl" file="/opt/ros/humble/share/franka_description/meshes/robot_arms/fr3/collision/link1.stl" />
+    <mesh name="meshes_robot_arms_fr3_visual_link2" content_type="model/obj" file="/home/zyh/Projects/o7_mujoco_sim/models/fr3_o7/converted_meshes_obj/meshes_robot_arms_fr3_visual_link2.obj" />
+    <mesh name="link2" content_type="model/stl" file="/opt/ros/humble/share/franka_description/meshes/robot_arms/fr3/collision/link2.stl" />
+    <mesh name="meshes_robot_arms_fr3_visual_link3" content_type="model/obj" file="/home/zyh/Projects/o7_mujoco_sim/models/fr3_o7/converted_meshes_obj/meshes_robot_arms_fr3_visual_link3.obj" />
+    <mesh name="link3" content_type="model/stl" file="/opt/ros/humble/share/franka_description/meshes/robot_arms/fr3/collision/link3.stl" />
+    <mesh name="meshes_robot_arms_fr3_visual_link4" content_type="model/obj" file="/home/zyh/Projects/o7_mujoco_sim/models/fr3_o7/converted_meshes_obj/meshes_robot_arms_fr3_visual_link4.obj" />
+    <mesh name="link4" content_type="model/stl" file="/opt/ros/humble/share/franka_description/meshes/robot_arms/fr3/collision/link4.stl" />
+    <mesh name="meshes_robot_arms_fr3_visual_link5" content_type="model/obj" file="/home/zyh/Projects/o7_mujoco_sim/models/fr3_o7/converted_meshes_obj/meshes_robot_arms_fr3_visual_link5.obj" />
+    <mesh name="link5" content_type="model/stl" file="/opt/ros/humble/share/franka_description/meshes/robot_arms/fr3/collision/link5.stl" />
+    <mesh name="meshes_robot_arms_fr3_visual_link6" content_type="model/obj" file="/home/zyh/Projects/o7_mujoco_sim/models/fr3_o7/converted_meshes_obj/meshes_robot_arms_fr3_visual_link6.obj" />
+    <mesh name="link6" content_type="model/stl" file="/opt/ros/humble/share/franka_description/meshes/robot_arms/fr3/collision/link6.stl" />
+    <mesh name="meshes_robot_arms_fr3_visual_link7" content_type="model/obj" file="/home/zyh/Projects/o7_mujoco_sim/models/fr3_o7/converted_meshes_obj/meshes_robot_arms_fr3_visual_link7.obj" />
+    <mesh name="link7" content_type="model/stl" file="/opt/ros/humble/share/franka_description/meshes/robot_arms/fr3/collision/link7.stl" />
+    <mesh name="hand_base_link" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/hand_base_link.STL" />
+    <mesh name="thumb_metacarpals_base1" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/thumb_metacarpals_base1.STL" />
+    <mesh name="thumb_metacarpals_base2" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/thumb_metacarpals_base2.STL" />
+    <mesh name="thumb_metacarpals" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/thumb_metacarpals.STL" />
+    <mesh name="thumb_proximal" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/thumb_proximal.STL" />
+    <mesh name="thumb_distal" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/thumb_distal.STL" />
+    <mesh name="index_proximal" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/index_proximal.STL" />
+    <mesh name="index_middle" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/index_middle.STL" />
+    <mesh name="index_distal" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/index_distal.STL" />
+    <mesh name="middle_proximal" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/middle_proximal.STL" />
+    <mesh name="middle_middle" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/middle_middle.STL" />
+    <mesh name="middle_distal" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/middle_distal.STL" />
+    <mesh name="ring_proximal" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/ring_proximal.STL" />
+    <mesh name="ring_middle" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/ring_middle.STL" />
+    <mesh name="ring_distal" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/ring_distal.STL" />
+    <mesh name="pinky_proximal" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/pinky_proximal.STL" />
+    <mesh name="pinky_middle" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/pinky_middle.STL" />
+    <mesh name="pinky_distal" content_type="model/stl" file="/home/zyh/Projects/o7_minimal_sim/ros2_ws/install/o7_description/share/o7_description/meshes/pinky_distal.STL" />
+    <material name="o7_clear" rgba="0.82 0.96 1.00 0.78" specular="0.4" shininess="0.7" />
+    <material name="fr3_body" rgba="0.58 0.58 0.56 1" specular="0.35" shininess="0.55" />
+    <material name="fr3_hidden_visual" rgba="1.0 0.0 0.0 0.05" />
+    <material name="o7_visual" rgba="0.82 0.96 1.00 0.78" specular="0.35" shininess="0.6" />
+    <material name="o7_collision_debug" rgba="1.0 0.05 0.05 0.18" specular="0.1" shininess="0.1" />
+    <material name="box_orange" rgba="1.0 0.55 0.0 1" specular="0.25" shininess="0.4" />
+    <material name="table_dark" rgba="0.24 0.28 0.32 1" specular="0.15" shininess="0.2" />
+    <material name="pedestal_blue" rgba="0.20 0.34 0.48 1" specular="0.2" shininess="0.3" />
+    <material name="bottle_orange" rgba="0.95 0.45 0.10 1" specular="0.25" shininess="0.4" />
+    <mesh name="bottle_piece_0" file="/home/zyh/Projects/o7_mujoco_sim/dataset/meshdata/core-bottle-3b0e35ff08f09a85f0d11ae402ef940e/coacd/coacd_convex_piece_0.obj" scale="0.03999999910593033 0.03999999910593033 0.03999999910593033" />
+    <mesh name="bottle_piece_1" file="/home/zyh/Projects/o7_mujoco_sim/dataset/meshdata/core-bottle-3b0e35ff08f09a85f0d11ae402ef940e/coacd/coacd_convex_piece_1.obj" scale="0.03999999910593033 0.03999999910593033 0.03999999910593033" />
+  </asset>
+  <worldbody>
+    <geom name="fr3_link0_visual" type="mesh" contype="0" conaffinity="0" group="3" density="0" mesh="meshes_robot_arms_fr3_visual_link0" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="fr3_hidden_visual" />
+    <geom name="fr3_link0_collision" type="mesh" mesh="link0" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="fr3_body" contype="1" conaffinity="1" />
+    <body name="fr3_link1" pos="0 0 0.333">
+      <inertial pos="4.128e-07 -0.0181251 -0.0386036" quat="0.998098 -0.0605364 0.00380499 0.0110109" mass="2.92747" diaginertia="0.0239286 0.0227246 0.00610634" />
+      <joint name="fr3_joint1" pos="0 0 0" axis="0 0 1" range="-2.7437 2.7437" actuatorfrcrange="-87 87" damping="2.0" frictionloss="0.02" armature="0.01" />
+      <geom name="fr3_link1_visual" type="mesh" contype="0" conaffinity="0" group="3" density="0" mesh="meshes_robot_arms_fr3_visual_link1" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="fr3_hidden_visual" />
+      <geom name="fr3_link1_collision" type="mesh" mesh="link1" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="fr3_body" contype="1" conaffinity="1" />
+      <body name="fr3_link2" quat="0.707107 -0.707107 0 0">
+        <inertial pos="0.00318289 -0.0743222 0.00881461" quat="0.502599 0.584437 -0.465998 0.434366" mass="2.93554" diaginertia="0.0629567 0.0411924 0.0246371" />
+        <joint name="fr3_joint2" pos="0 0 0" axis="0 0 1" range="-1.7837 1.7837" actuatorfrcrange="-87 87" damping="2.0" frictionloss="0.02" armature="0.01" />
+        <geom name="fr3_link2_visual" type="mesh" contype="0" conaffinity="0" group="3" density="0" mesh="meshes_robot_arms_fr3_visual_link2" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="fr3_hidden_visual" />
+        <geom name="fr3_link2_collision" type="mesh" mesh="link2" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="fr3_body" contype="1" conaffinity="1" />
+        <body name="fr3_link3" pos="0 -0.316 0" quat="0.707107 0.707107 0 0">
+          <inertial pos="0.0407016 -0.00482006 -0.0289731" quat="0.921025 -0.244161 0.155272 0.260745" mass="2.2449" diaginertia="0.0267409 0.0189869 0.0171587" />
+          <joint name="fr3_joint3" pos="0 0 0" axis="0 0 1" range="-2.9007 2.9007" actuatorfrcrange="-87 87" damping="2.0" frictionloss="0.02" armature="0.01" />
+          <geom name="fr3_link3_visual" type="mesh" contype="0" conaffinity="0" group="3" density="0" mesh="meshes_robot_arms_fr3_visual_link3" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="fr3_hidden_visual" />
+          <geom name="fr3_link3_collision" type="mesh" mesh="link3" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="fr3_body" contype="1" conaffinity="1" />
+          <body name="fr3_link4" pos="0.0825 0 0" quat="0.707107 0.707107 0 0">
+            <inertial pos="-0.0459101 0.0630493 -0.00851879" quat="0.438018 0.803311 0.00937812 0.403414" mass="2.6156" diaginertia="0.05139 0.0372717 0.0160047" />
+            <joint name="fr3_joint4" pos="0 0 0" axis="0 0 1" range="-3.0421 -0.1518" actuatorfrcrange="-87 87" damping="2.0" frictionloss="0.02" armature="0.01" />
+            <geom name="fr3_link4_visual" type="mesh" contype="0" conaffinity="0" group="3" density="0" mesh="meshes_robot_arms_fr3_visual_link4" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="fr3_hidden_visual" />
+            <geom name="fr3_link4_collision" type="mesh" mesh="link4" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="fr3_body" contype="1" conaffinity="1" />
+            <body name="fr3_link5" pos="-0.0825 0.384 0" quat="0.707107 -0.707107 0 0">
+              <inertial pos="-0.00160396 0.0292536 -0.0972966" quat="0.919031 0.125604 0.0751531 -0.366003" mass="2.32712" diaginertia="0.0579335 0.0449144 0.0130634" />
+              <joint name="fr3_joint5" pos="0 0 0" axis="0 0 1" range="-2.8065 2.8065" actuatorfrcrange="-12 12" damping="2.0" frictionloss="0.02" armature="0.01" />
+              <geom name="fr3_link5_visual" type="mesh" contype="0" conaffinity="0" group="3" density="0" mesh="meshes_robot_arms_fr3_visual_link5" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="fr3_hidden_visual" />
+              <geom name="fr3_link5_collision" type="mesh" mesh="link5" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="fr3_body" contype="1" conaffinity="1" />
+              <body name="fr3_link6" quat="0.707107 0.707107 0 0">
+                <inertial pos="0.0597131 -0.0410295 -0.0101693" quat="0.621301 0.552665 0.510011 0.220081" mass="1.81704" diaginertia="0.0175039 0.0161123 0.00193529" />
+                <joint name="fr3_joint6" pos="0 0 0" axis="0 0 1" range="0.5445 4.5169" actuatorfrcrange="-12 12" damping="2.0" frictionloss="0.02" armature="0.01" />
+                <geom name="fr3_link6_visual" type="mesh" contype="0" conaffinity="0" group="3" density="0" mesh="meshes_robot_arms_fr3_visual_link6" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="fr3_hidden_visual" />
+                <geom name="fr3_link6_collision" type="mesh" mesh="link6" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="fr3_body" contype="1" conaffinity="1" />
+                <body name="fr3_link7" pos="0.088 0 0" quat="0.707107 0.707107 0 0">
+                  <inertial pos="0.00430852 0.00810856 0.0155462" quat="0.989565 0.0192747 -0.00573812 -0.142676" mass="0.742676" diaginertia="0.00437709 0.00429682 0.000104123" />
+                  <joint name="fr3_joint7" pos="0 0 0" axis="0 0 1" range="-3.0159 3.0159" actuatorfrcrange="-12 12" damping="2.0" frictionloss="0.02" armature="0.01" />
+                  <geom name="fr3_link7_visual" type="mesh" contype="0" conaffinity="0" group="3" density="0" mesh="meshes_robot_arms_fr3_visual_link7" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="fr3_hidden_visual" />
+                  <geom name="fr3_link7_collision" type="mesh" mesh="link7" rgba="0.45 0.45 0.45 1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="fr3_body" contype="1" conaffinity="1" />
+                  <geom pos="0 0 0.107" quat="-3.67321e-06 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.85 0.95 1.0 0.75" mesh="hand_base_link" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_clear" />
+                  <geom pos="0 0 0.107" quat="-3.67321e-06 0 0 1" type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="hand_base_link" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_clear" contype="0" conaffinity="0" />
+                  <site name="dataset_hand_base_debug" pos="0 0 0.107" quat="-3.67321e-06 0 0 1" size="0.012" rgba="0 1 0 1" group="0" />
+                  <body name="thumb_metacarpals_base1" pos="0.0116001 -0.0181739 0.168651" quat="-3.67321e-06 0 0 1">
+                    <inertial pos="0.024358 -0.00531339 -0.00133529" quat="0.586428 0.809284 0.0339621 -0.00294671" mass="0.0140457" diaginertia="4.04477e-06 3.01199e-06 1.35997e-06" />
+                    <joint name="thumb_cmc_roll" pos="0 0 0" axis="1 0 0" range="0 1.1339" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                    <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="thumb_metacarpals_base1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="thumb_metacarpals_base1_auto_geom_00" />
+                    <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="thumb_metacarpals_base1" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="thumb_metacarpals_base1_auto_geom_01" />
+                    <body name="thumb_metacarpals_base2" pos="0.0358 -0.00065771 0.0001518" quat="0.993575 -0.113172 0 0">
+                      <inertial pos="0.00213681 0.00710763 -0.000263313" quat="0.987642 0.0582484 -0.00857824 -0.145249" mass="0.00582711" diaginertia="3.20027e-07 2.71838e-07 1.75578e-07" />
+                      <joint name="thumb_cmc_yaw" pos="0 0 0" axis="0 0 -1" range="0 1.9189" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                      <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="thumb_metacarpals_base2" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="thumb_metacarpals_base2_auto_geom_00" />
+                      <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="thumb_metacarpals_base2" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="thumb_metacarpals_base2_auto_geom_01" />
+                      <body name="thumb_metacarpals" pos="0.00456 0.015168 -0.0019302" quat="0.535174 -0.354918 -0.263919 -0.719701">
+                        <inertial pos="0.0018366 -2.80954e-06 0.0269905" quat="0.706337 -0.0337223 -0.0338403 0.706262" mass="0.0152012" diaginertia="3.84772e-06 2.96887e-06 1.30492e-06" />
+                        <joint name="thumb_cmc_pitch" pos="0 0 0" axis="0 1 0" range="0 0.5146" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                        <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="thumb_metacarpals" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="thumb_metacarpals_auto_geom_00" />
+                        <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="thumb_metacarpals" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="thumb_metacarpals_auto_geom_01" />
+                        <body name="thumb_proximal" pos="0.0061722 0 0.047968">
+                          <inertial pos="0.00159271 -4.43144e-06 0.0151573" quat="0.999254 2.80581e-05 -0.0386229 -5.11146e-06" mass="0.0066223" diaginertia="1.01869e-06 9.10432e-07 4.44039e-07" />
+                          <joint name="thumb_mcp" pos="0 0 0" axis="0 1 0" range="0 0.7152" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                          <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="thumb_proximal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="thumb_proximal_auto_geom_00" />
+                          <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="thumb_proximal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="thumb_proximal_auto_geom_01" />
+                          <body name="thumb_distal" pos="-0.00017064 0 0.038665">
+                            <inertial pos="-0.00138916 1.66357e-06 0.011579" quat="0.955527 0.00103469 -0.294896 -0.00188517" mass="0.0051293" diaginertia="4.02419e-07 3.23804e-07 1.77453e-07" />
+                            <joint name="thumb_ip" pos="0 0 0" axis="0 1 0" range="0 0.7763" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                            <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="thumb_distal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="thumb_distal_auto_geom_00" />
+                            <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="thumb_distal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="thumb_distal_auto_geom_01" />
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                  <body name="index_proximal" pos="-0.0022095 -0.027177 0.23385" quat="-3.67321e-06 0 0 1">
+                    <inertial pos="-0.000134757 1.1715e-06 0.0104816" quat="0.706057 -0.0324404 -0.0322031 0.706679" mass="0.00654983" diaginertia="4.58698e-07 4.46166e-07 1.71942e-07" />
+                    <joint name="index_mcp_pitch" pos="0 0 0" axis="0 1 0" range="0 1.3607" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                    <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="index_proximal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="index_proximal_auto_geom_00" />
+                    <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="index_proximal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="index_proximal_auto_geom_01" />
+                    <body name="index_middle" pos="-0.0010861 0 0.035634">
+                      <inertial pos="-0.00252079 -2.09523e-06 0.0110357" quat="0.990903 -0.000267549 -0.134575 0.000581535" mass="0.00283044" diaginertia="2.7204e-07 2.33078e-07 1.15541e-07" />
+                      <joint name="index_pip" pos="0 0 0" axis="0 1 0" range="0 1.8317" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                      <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="index_middle" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="index_middle_auto_geom_00" />
+                      <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="index_middle" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="index_middle_auto_geom_01" />
+                      <body name="index_distal" pos="-0.0052857 0 0.025703">
+                        <inertial pos="-0.000622483 5.23442e-06 0.0121505" quat="0.973964 -0.00106731 -0.226696 -0.00127459" mass="0.00314459" diaginertia="1.85051e-07 1.48366e-07 7.68285e-08" />
+                        <joint name="index_dip" pos="0 0 0" axis="0 1 0" range="0 0.638" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                        <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="index_distal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="index_distal_auto_geom_00" />
+                        <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="index_distal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="index_distal_auto_geom_01" />
+                      </body>
+                    </body>
+                  </body>
+                  <body name="middle_proximal" pos="-0.00220964 -0.00817712 0.23885" quat="-3.67321e-06 0 0 1">
+                    <inertial pos="-0.00013476 1.17052e-06 0.0104816" quat="0.706056 -0.0324404 -0.032203 0.70668" mass="0.00654983" diaginertia="4.58698e-07 4.46166e-07 1.71942e-07" />
+                    <joint name="middle_mcp_pitch" pos="0 0 0" axis="0 1 0" range="0 1.3607" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                    <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="middle_proximal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="middle_proximal_auto_geom_00" />
+                    <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="middle_proximal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="middle_proximal_auto_geom_01" />
+                    <body name="middle_middle" pos="-0.0010861 0 0.035634">
+                      <inertial pos="-0.00252079 -2.09523e-06 0.0110357" quat="0.990903 -0.000267549 -0.134575 0.000581535" mass="0.00283044" diaginertia="2.7204e-07 2.33078e-07 1.15541e-07" />
+                      <joint name="middle_pip" pos="0 0 0" axis="0 1 0" range="0 1.8317" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                      <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="middle_middle" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="middle_middle_auto_geom_00" />
+                      <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="middle_middle" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="middle_middle_auto_geom_01" />
+                      <body name="middle_distal" pos="-0.0052857 0 0.025703">
+                        <inertial pos="-0.000622483 5.23446e-06 0.0121505" quat="0.973964 -0.00106732 -0.226696 -0.00127459" mass="0.00314459" diaginertia="1.85051e-07 1.48366e-07 7.68285e-08" />
+                        <joint name="middle_dip" pos="0 0 0" axis="0 1 0" range="0 0.628" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                        <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="middle_distal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="middle_distal_auto_geom_00" />
+                        <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="middle_distal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="middle_distal_auto_geom_01" />
+                      </body>
+                    </body>
+                  </body>
+                  <body name="ring_proximal" pos="-0.00220978 0.010823 0.23385" quat="-3.67321e-06 0 0 1">
+                    <inertial pos="-0.000134757 1.1715e-06 0.0104816" quat="0.706057 -0.0324404 -0.0322031 0.706679" mass="0.00654983" diaginertia="4.58698e-07 4.46166e-07 1.71942e-07" />
+                    <joint name="ring_mcp_pitch" pos="0 0 0" axis="0 1 0" range="0 1.3607" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                    <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="ring_proximal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="ring_proximal_auto_geom_00" />
+                    <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="ring_proximal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="ring_proximal_auto_geom_01" />
+                    <body name="ring_middle" pos="-0.0010861 0 0.035634">
+                      <inertial pos="-0.00252079 -2.09523e-06 0.0110357" quat="0.990903 -0.000267549 -0.134575 0.000581535" mass="0.00283044" diaginertia="2.7204e-07 2.33078e-07 1.15541e-07" />
+                      <joint name="ring_pip" pos="0 0 0" axis="0 1 0" range="0 1.8317" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                      <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="ring_middle" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="ring_middle_auto_geom_00" />
+                      <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="ring_middle" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="ring_middle_auto_geom_01" />
+                      <body name="ring_distal" pos="-0.0052857 0 0.025703">
+                        <inertial pos="-0.000622483 5.23453e-06 0.0121505" quat="0.973964 -0.00106733 -0.226696 -0.0012746" mass="0.00314459" diaginertia="1.85051e-07 1.48366e-07 7.68285e-08" />
+                        <joint name="ring_dip" pos="0 0 0" axis="0 1 0" range="0 0.628" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                        <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="ring_distal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="ring_distal_auto_geom_00" />
+                        <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="ring_distal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="ring_distal_auto_geom_01" />
+                      </body>
+                    </body>
+                  </body>
+                  <body name="pinky_proximal" pos="-0.00220992 0.029823 0.22885" quat="-3.67321e-06 0 0 1">
+                    <inertial pos="-0.000134757 1.1715e-06 0.0104816" quat="0.706057 -0.0324404 -0.0322031 0.706679" mass="0.00654983" diaginertia="4.58698e-07 4.46166e-07 1.71942e-07" />
+                    <joint name="pinky_mcp_pitch" pos="0 0 0" axis="0 1 0" range="0 1.3607" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                    <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="pinky_proximal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="pinky_proximal_auto_geom_00" />
+                    <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="pinky_proximal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="pinky_proximal_auto_geom_01" />
+                    <body name="pinky_middle" pos="-0.0010861 0 0.035634">
+                      <inertial pos="-0.00252079 -2.09523e-06 0.0110357" quat="0.990903 -0.000267549 -0.134575 0.000581535" mass="0.00283044" diaginertia="2.7204e-07 2.33078e-07 1.15541e-07" />
+                      <joint name="pinky_pip" pos="0 0 0" axis="0 1 0" range="0 1.8317" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                      <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="pinky_middle" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="pinky_middle_auto_geom_00" />
+                      <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="pinky_middle" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="pinky_middle_auto_geom_01" />
+                      <body name="pinky_distal" pos="-0.0052857 0 0.025703">
+                        <inertial pos="-0.000622483 5.23444e-06 0.0121505" quat="0.973964 -0.00106731 -0.226696 -0.0012746" mass="0.00314459" diaginertia="1.85051e-07 1.48366e-07 7.68285e-08" />
+                        <joint name="pinky_dip" pos="0 0 0" axis="0 1 0" range="0 0.628" actuatorfrcrange="-100 100" damping="0.18" armature="0.002" frictionloss="0.005" />
+                        <geom type="mesh" contype="1" conaffinity="1" group="4" density="0" rgba="0.85 0.95 1.0 0.75" mesh="pinky_distal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" material="o7_collision_debug" name="pinky_distal_auto_geom_00" />
+                        <geom type="mesh" rgba="0.85 0.95 1.0 0.75" mesh="pinky_distal" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" group="1" material="o7_visual" contype="0" conaffinity="0" name="pinky_distal_auto_geom_01" />
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <light name="main_light" pos="0 -1 2" dir="0 1 -1" diffuse="0.8 0.8 0.8" specular="0.2 0.2 0.2" />
+    <geom name="table" type="plane" pos="0 0 0" size="1.2 1.2 0.02" rgba="0.25 0.28 0.32 1" friction="1.2 0.005 0.0001" condim="3" group="0" material="table_dark" margin="0" gap="0" contype="1" conaffinity="1" />
+    <body name="grasp_bottle" pos="0.55 0.0 0.17973055958133938">
+      <freejoint name="grasp_box_freejoint" />
+      <geom name="grasp_bottle_geom_0" type="mesh" mesh="bottle_piece_0" material="bottle_orange" friction="1.2 0.005 0.0001" condim="3" margin="0" gap="0" contype="2" conaffinity="5" density="300" />
+      <geom name="grasp_bottle_geom_1" type="mesh" mesh="bottle_piece_1" material="bottle_orange" friction="1.2 0.005 0.0001" condim="3" margin="0" gap="0" contype="2" conaffinity="5" density="300" />
+    </body>
+    <geom name="object_pedestal" type="box" pos="0.55 0.0 0.08" size="0.09 0.09 0.08" material="pedestal_blue" group="0" condim="3" friction="1.2 0.005 0.0001" margin="0" gap="0" contype="1" conaffinity="1" />
+  </worldbody>
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" solver="Newton" iterations="120" tolerance="1e-8" cone="elliptic" impratio="1" />
+  <visual>
+    <headlight diffuse="0.75 0.75 0.75" ambient="0.35 0.35 0.35" specular="0.25 0.25 0.25" />
+    <rgba haze="0.15 0.18 0.22 1" />
+  </visual>
+  <actuator>
+    <position name="fr3_joint1_pos" joint="fr3_joint1" kp="650" kv="70" ctrlrange="-3.2 3.2" ctrllimited="true" forcerange="-250 250" forcelimited="true" />
+    <position name="fr3_joint2_pos" joint="fr3_joint2" kp="650" kv="70" ctrlrange="-3.2 3.2" ctrllimited="true" forcerange="-250 250" forcelimited="true" />
+    <position name="fr3_joint3_pos" joint="fr3_joint3" kp="650" kv="70" ctrlrange="-3.2 3.2" ctrllimited="true" forcerange="-250 250" forcelimited="true" />
+    <position name="fr3_joint4_pos" joint="fr3_joint4" kp="650" kv="70" ctrlrange="-3.2 3.2" ctrllimited="true" forcerange="-250 250" forcelimited="true" />
+    <position name="fr3_joint5_pos" joint="fr3_joint5" kp="650" kv="70" ctrlrange="-3.2 3.2" ctrllimited="true" forcerange="-250 250" forcelimited="true" />
+    <position name="fr3_joint6_pos" joint="fr3_joint6" kp="650" kv="70" ctrlrange="-3.2 3.2" ctrllimited="true" forcerange="-250 250" forcelimited="true" />
+    <position name="fr3_joint7_pos" joint="fr3_joint7" kp="650" kv="70" ctrlrange="-3.2 3.2" ctrllimited="true" forcerange="-250 250" forcelimited="true" />
+    <position name="thumb_cmc_roll_pos" joint="thumb_cmc_roll" kp="35" kv="3.0" ctrlrange="0 2.0" ctrllimited="true" forcerange="-20 20" forcelimited="true" />
+    <position name="thumb_cmc_yaw_pos" joint="thumb_cmc_yaw" kp="35" kv="3.0" ctrlrange="0 2.0" ctrllimited="true" forcerange="-20 20" forcelimited="true" />
+    <position name="thumb_cmc_pitch_pos" joint="thumb_cmc_pitch" kp="35" kv="3.0" ctrlrange="0 2.0" ctrllimited="true" forcerange="-20 20" forcelimited="true" />
+    <position name="index_mcp_pitch_pos" joint="index_mcp_pitch" kp="35" kv="3.0" ctrlrange="0 2.0" ctrllimited="true" forcerange="-20 20" forcelimited="true" />
+    <position name="middle_mcp_pitch_pos" joint="middle_mcp_pitch" kp="35" kv="3.0" ctrlrange="0 2.0" ctrllimited="true" forcerange="-20 20" forcelimited="true" />
+    <position name="ring_mcp_pitch_pos" joint="ring_mcp_pitch" kp="35" kv="3.0" ctrlrange="0 2.0" ctrllimited="true" forcerange="-20 20" forcelimited="true" />
+    <position name="pinky_mcp_pitch_pos" joint="pinky_mcp_pitch" kp="35" kv="3.0" ctrlrange="0 2.0" ctrllimited="true" forcerange="-20 20" forcelimited="true" />
+  </actuator>
+  <equality>
+    <joint name="eq_thumb_mcp" joint1="thumb_mcp" joint2="thumb_cmc_pitch" polycoef="0.0 1.3898 0 0 0" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <joint name="eq_thumb_ip" joint1="thumb_ip" joint2="thumb_cmc_pitch" polycoef="0.0 1.5085 0 0 0" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <joint name="eq_index_pip" joint1="index_pip" joint2="index_mcp_pitch" polycoef="0.0 1.3462 0 0 0" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <joint name="eq_index_dip" joint1="index_dip" joint2="index_mcp_pitch" polycoef="0.0 0.4615 0 0 0" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <joint name="eq_middle_pip" joint1="middle_pip" joint2="middle_mcp_pitch" polycoef="0.0 1.3462 0 0 0" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <joint name="eq_middle_dip" joint1="middle_dip" joint2="middle_mcp_pitch" polycoef="0.0 0.4615 0 0 0" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <joint name="eq_ring_pip" joint1="ring_pip" joint2="ring_mcp_pitch" polycoef="0.0 1.3462 0 0 0" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <joint name="eq_ring_dip" joint1="ring_dip" joint2="ring_mcp_pitch" polycoef="0.0 0.4615 0 0 0" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <joint name="eq_pinky_pip" joint1="pinky_pip" joint2="pinky_mcp_pitch" polycoef="0.0 1.3462 0 0 0" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <joint name="eq_pinky_dip" joint1="pinky_dip" joint2="pinky_mcp_pitch" polycoef="0.0 0.4615 0 0 0" solref="0.004 1" solimp="0.95 0.99 0.001" />
+  </equality>
+</mujoco>

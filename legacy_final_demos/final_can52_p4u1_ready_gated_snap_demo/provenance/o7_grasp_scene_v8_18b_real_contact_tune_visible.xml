@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="linkerhand_O7_right.urdf">
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" iterations="100" tolerance="1e-8" solver="Newton" cone="elliptic" impratio="1" />
+  <default>
+    <joint damping="0.25" armature="0.002" />
+  </default>
+  <visual>
+    <headlight ambient="0.55 0.55 0.55" diffuse="0.85 0.85 0.85" specular="0.10 0.10 0.10" />
+  <rgba haze="0.00 0.00 0.00 1" /></visual>
+  <default>
+    <default class="robot">
+      <default class="motor">
+        <joint />
+        <motor />
+      </default>
+      <default class="visual">
+        <geom contype="0" conaffinity="0" group="2" />
+      </default>
+      <default class="collision">
+        <geom condim="3" contype="0" conaffinity="1" priority="1" group="1" solref="0.02 1" solimp="0.8 0.95 0.001" friction="4.0 0.10 0.010" />
+      </default>
+    </default>
+  </default>
+  <compiler angle="radian" />
+  <asset>
+    <material name="auto_mat" rgba="0 0.6 1 1" />
+    <material name="default_material" rgba="0.7 0.7 0.7 1" />
+    <material name="collision_material" rgba="1.0 0.28 0.1 0.9" />
+    <mesh name="hand_base_link.STL" file="../assets/o7_right/meshes/hand_base_link.STL" />
+    <mesh name="thumb_metacarpals_base1.STL" file="../assets/o7_right/meshes/thumb_metacarpals_base1.STL" />
+    <mesh name="thumb_metacarpals_base2.STL" file="../assets/o7_right/meshes/thumb_metacarpals_base2.STL" />
+    <mesh name="thumb_metacarpals.STL" file="../assets/o7_right/meshes/thumb_metacarpals.STL" />
+    <mesh name="thumb_proximal.STL" file="../assets/o7_right/meshes/thumb_proximal.STL" />
+    <mesh name="thumb_distal.STL" file="../assets/o7_right/meshes/thumb_distal.STL" />
+    <mesh name="index_proximal.STL" file="../assets/o7_right/meshes/index_proximal.STL" />
+    <mesh name="index_middle.STL" file="../assets/o7_right/meshes/index_middle.STL" />
+    <mesh name="index_distal.STL" file="../assets/o7_right/meshes/index_distal.STL" />
+    <mesh name="middle_proximal.STL" file="../assets/o7_right/meshes/middle_proximal.STL" />
+    <mesh name="middle_middle.STL" file="../assets/o7_right/meshes/middle_middle.STL" />
+    <mesh name="middle_distal.STL" file="../assets/o7_right/meshes/middle_distal.STL" />
+    <mesh name="ring_proximal.STL" file="../assets/o7_right/meshes/ring_proximal.STL" />
+    <mesh name="ring_middle.STL" file="../assets/o7_right/meshes/ring_middle.STL" />
+    <mesh name="ring_distal.STL" file="../assets/o7_right/meshes/ring_distal.STL" />
+    <mesh name="pinky_proximal.STL" file="../assets/o7_right/meshes/pinky_proximal.STL" />
+    <mesh name="pinky_middle.STL" file="../assets/o7_right/meshes/pinky_middle.STL" />
+    <mesh name="pinky_distal.STL" file="../assets/o7_right/meshes/pinky_distal.STL" />
+    <mesh name="hand_base_link_coacd_mesh_000" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_000.obj" />
+    <mesh name="hand_base_link_coacd_mesh_001" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_001.obj" />
+    <mesh name="hand_base_link_coacd_mesh_002" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_002.obj" />
+    <mesh name="hand_base_link_coacd_mesh_003" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_003.obj" />
+    <mesh name="hand_base_link_coacd_mesh_004" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_004.obj" />
+    <mesh name="hand_base_link_coacd_mesh_005" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_005.obj" />
+    <mesh name="hand_base_link_coacd_mesh_006" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_006.obj" />
+    <mesh name="hand_base_link_coacd_mesh_007" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_007.obj" />
+    <mesh name="hand_base_link_coacd_mesh_008" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_008.obj" />
+    <mesh name="hand_base_link_coacd_mesh_009" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_009.obj" />
+    <mesh name="hand_base_link_coacd_mesh_010" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_010.obj" />
+    <mesh name="hand_base_link_coacd_mesh_011" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_011.obj" />
+    <mesh name="hand_base_link_coacd_mesh_012" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_012.obj" />
+    <mesh name="hand_base_link_coacd_mesh_013" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_013.obj" />
+    <mesh name="hand_base_link_coacd_mesh_014" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_014.obj" />
+    <mesh name="hand_base_link_coacd_mesh_015" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_015.obj" />
+    <mesh name="hand_base_link_coacd_mesh_016" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_016.obj" />
+    <mesh name="hand_base_link_coacd_mesh_017" file="../assets/o7_right/collision_coacd/hand_base_link_coacd_017.obj" />
+    <mesh name="index_distal_coacd_mesh_000" file="../assets/o7_right/collision_coacd/index_distal_coacd_000.obj" />
+    <mesh name="index_distal_coacd_mesh_001" file="../assets/o7_right/collision_coacd/index_distal_coacd_001.obj" />
+    <mesh name="index_distal_coacd_mesh_002" file="../assets/o7_right/collision_coacd/index_distal_coacd_002.obj" />
+    <mesh name="index_distal_coacd_mesh_003" file="../assets/o7_right/collision_coacd/index_distal_coacd_003.obj" />
+    <mesh name="index_distal_coacd_mesh_004" file="../assets/o7_right/collision_coacd/index_distal_coacd_004.obj" />
+    <mesh name="index_distal_coacd_mesh_005" file="../assets/o7_right/collision_coacd/index_distal_coacd_005.obj" />
+    <mesh name="index_middle_coacd_mesh_000" file="../assets/o7_right/collision_coacd/index_middle_coacd_000.obj" />
+    <mesh name="index_middle_coacd_mesh_001" file="../assets/o7_right/collision_coacd/index_middle_coacd_001.obj" />
+    <mesh name="index_middle_coacd_mesh_002" file="../assets/o7_right/collision_coacd/index_middle_coacd_002.obj" />
+    <mesh name="index_middle_coacd_mesh_003" file="../assets/o7_right/collision_coacd/index_middle_coacd_003.obj" />
+    <mesh name="index_middle_coacd_mesh_004" file="../assets/o7_right/collision_coacd/index_middle_coacd_004.obj" />
+    <mesh name="index_middle_coacd_mesh_005" file="../assets/o7_right/collision_coacd/index_middle_coacd_005.obj" />
+    <mesh name="index_proximal_coacd_mesh_000" file="../assets/o7_right/collision_coacd/index_proximal_coacd_000.obj" />
+    <mesh name="index_proximal_coacd_mesh_001" file="../assets/o7_right/collision_coacd/index_proximal_coacd_001.obj" />
+    <mesh name="index_proximal_coacd_mesh_002" file="../assets/o7_right/collision_coacd/index_proximal_coacd_002.obj" />
+    <mesh name="index_proximal_coacd_mesh_003" file="../assets/o7_right/collision_coacd/index_proximal_coacd_003.obj" />
+    <mesh name="index_proximal_coacd_mesh_004" file="../assets/o7_right/collision_coacd/index_proximal_coacd_004.obj" />
+    <mesh name="index_proximal_coacd_mesh_005" file="../assets/o7_right/collision_coacd/index_proximal_coacd_005.obj" />
+    <mesh name="middle_distal_coacd_mesh_000" file="../assets/o7_right/collision_coacd/middle_distal_coacd_000.obj" />
+    <mesh name="middle_distal_coacd_mesh_001" file="../assets/o7_right/collision_coacd/middle_distal_coacd_001.obj" />
+    <mesh name="middle_distal_coacd_mesh_002" file="../assets/o7_right/collision_coacd/middle_distal_coacd_002.obj" />
+    <mesh name="middle_distal_coacd_mesh_003" file="../assets/o7_right/collision_coacd/middle_distal_coacd_003.obj" />
+    <mesh name="middle_distal_coacd_mesh_004" file="../assets/o7_right/collision_coacd/middle_distal_coacd_004.obj" />
+    <mesh name="middle_distal_coacd_mesh_005" file="../assets/o7_right/collision_coacd/middle_distal_coacd_005.obj" />
+    <mesh name="middle_middle_coacd_mesh_000" file="../assets/o7_right/collision_coacd/middle_middle_coacd_000.obj" />
+    <mesh name="middle_middle_coacd_mesh_001" file="../assets/o7_right/collision_coacd/middle_middle_coacd_001.obj" />
+    <mesh name="middle_middle_coacd_mesh_002" file="../assets/o7_right/collision_coacd/middle_middle_coacd_002.obj" />
+    <mesh name="middle_middle_coacd_mesh_003" file="../assets/o7_right/collision_coacd/middle_middle_coacd_003.obj" />
+    <mesh name="middle_middle_coacd_mesh_004" file="../assets/o7_right/collision_coacd/middle_middle_coacd_004.obj" />
+    <mesh name="middle_middle_coacd_mesh_005" file="../assets/o7_right/collision_coacd/middle_middle_coacd_005.obj" />
+    <mesh name="middle_proximal_coacd_mesh_000" file="../assets/o7_right/collision_coacd/middle_proximal_coacd_000.obj" />
+    <mesh name="middle_proximal_coacd_mesh_001" file="../assets/o7_right/collision_coacd/middle_proximal_coacd_001.obj" />
+    <mesh name="middle_proximal_coacd_mesh_002" file="../assets/o7_right/collision_coacd/middle_proximal_coacd_002.obj" />
+    <mesh name="middle_proximal_coacd_mesh_003" file="../assets/o7_right/collision_coacd/middle_proximal_coacd_003.obj" />
+    <mesh name="middle_proximal_coacd_mesh_004" file="../assets/o7_right/collision_coacd/middle_proximal_coacd_004.obj" />
+    <mesh name="middle_proximal_coacd_mesh_005" file="../assets/o7_right/collision_coacd/middle_proximal_coacd_005.obj" />
+    <mesh name="pinky_distal_coacd_mesh_000" file="../assets/o7_right/collision_coacd/pinky_distal_coacd_000.obj" />
+    <mesh name="pinky_distal_coacd_mesh_001" file="../assets/o7_right/collision_coacd/pinky_distal_coacd_001.obj" />
+    <mesh name="pinky_distal_coacd_mesh_002" file="../assets/o7_right/collision_coacd/pinky_distal_coacd_002.obj" />
+    <mesh name="pinky_distal_coacd_mesh_003" file="../assets/o7_right/collision_coacd/pinky_distal_coacd_003.obj" />
+    <mesh name="pinky_distal_coacd_mesh_004" file="../assets/o7_right/collision_coacd/pinky_distal_coacd_004.obj" />
+    <mesh name="pinky_distal_coacd_mesh_005" file="../assets/o7_right/collision_coacd/pinky_distal_coacd_005.obj" />
+    <mesh name="pinky_middle_coacd_mesh_000" file="../assets/o7_right/collision_coacd/pinky_middle_coacd_000.obj" />
+    <mesh name="pinky_middle_coacd_mesh_001" file="../assets/o7_right/collision_coacd/pinky_middle_coacd_001.obj" />
+    <mesh name="pinky_middle_coacd_mesh_002" file="../assets/o7_right/collision_coacd/pinky_middle_coacd_002.obj" />
+    <mesh name="pinky_middle_coacd_mesh_003" file="../assets/o7_right/collision_coacd/pinky_middle_coacd_003.obj" />
+    <mesh name="pinky_middle_coacd_mesh_004" file="../assets/o7_right/collision_coacd/pinky_middle_coacd_004.obj" />
+    <mesh name="pinky_middle_coacd_mesh_005" file="../assets/o7_right/collision_coacd/pinky_middle_coacd_005.obj" />
+    <mesh name="pinky_proximal_coacd_mesh_000" file="../assets/o7_right/collision_coacd/pinky_proximal_coacd_000.obj" />
+    <mesh name="pinky_proximal_coacd_mesh_001" file="../assets/o7_right/collision_coacd/pinky_proximal_coacd_001.obj" />
+    <mesh name="pinky_proximal_coacd_mesh_002" file="../assets/o7_right/collision_coacd/pinky_proximal_coacd_002.obj" />
+    <mesh name="pinky_proximal_coacd_mesh_003" file="../assets/o7_right/collision_coacd/pinky_proximal_coacd_003.obj" />
+    <mesh name="pinky_proximal_coacd_mesh_004" file="../assets/o7_right/collision_coacd/pinky_proximal_coacd_004.obj" />
+    <mesh name="pinky_proximal_coacd_mesh_005" file="../assets/o7_right/collision_coacd/pinky_proximal_coacd_005.obj" />
+    <mesh name="ring_distal_coacd_mesh_000" file="../assets/o7_right/collision_coacd/ring_distal_coacd_000.obj" />
+    <mesh name="ring_distal_coacd_mesh_001" file="../assets/o7_right/collision_coacd/ring_distal_coacd_001.obj" />
+    <mesh name="ring_distal_coacd_mesh_002" file="../assets/o7_right/collision_coacd/ring_distal_coacd_002.obj" />
+    <mesh name="ring_distal_coacd_mesh_003" file="../assets/o7_right/collision_coacd/ring_distal_coacd_003.obj" />
+    <mesh name="ring_distal_coacd_mesh_004" file="../assets/o7_right/collision_coacd/ring_distal_coacd_004.obj" />
+    <mesh name="ring_distal_coacd_mesh_005" file="../assets/o7_right/collision_coacd/ring_distal_coacd_005.obj" />
+    <mesh name="ring_middle_coacd_mesh_000" file="../assets/o7_right/collision_coacd/ring_middle_coacd_000.obj" />
+    <mesh name="ring_middle_coacd_mesh_001" file="../assets/o7_right/collision_coacd/ring_middle_coacd_001.obj" />
+    <mesh name="ring_middle_coacd_mesh_002" file="../assets/o7_right/collision_coacd/ring_middle_coacd_002.obj" />
+    <mesh name="ring_middle_coacd_mesh_003" file="../assets/o7_right/collision_coacd/ring_middle_coacd_003.obj" />
+    <mesh name="ring_middle_coacd_mesh_004" file="../assets/o7_right/collision_coacd/ring_middle_coacd_004.obj" />
+    <mesh name="ring_middle_coacd_mesh_005" file="../assets/o7_right/collision_coacd/ring_middle_coacd_005.obj" />
+    <mesh name="ring_proximal_coacd_mesh_000" file="../assets/o7_right/collision_coacd/ring_proximal_coacd_000.obj" />
+    <mesh name="ring_proximal_coacd_mesh_001" file="../assets/o7_right/collision_coacd/ring_proximal_coacd_001.obj" />
+    <mesh name="ring_proximal_coacd_mesh_002" file="../assets/o7_right/collision_coacd/ring_proximal_coacd_002.obj" />
+    <mesh name="ring_proximal_coacd_mesh_003" file="../assets/o7_right/collision_coacd/ring_proximal_coacd_003.obj" />
+    <mesh name="ring_proximal_coacd_mesh_004" file="../assets/o7_right/collision_coacd/ring_proximal_coacd_004.obj" />
+    <mesh name="ring_proximal_coacd_mesh_005" file="../assets/o7_right/collision_coacd/ring_proximal_coacd_005.obj" />
+    <mesh name="thumb_distal_coacd_mesh_000" file="../assets/o7_right/collision_coacd/thumb_distal_coacd_000.obj" />
+    <mesh name="thumb_distal_coacd_mesh_001" file="../assets/o7_right/collision_coacd/thumb_distal_coacd_001.obj" />
+    <mesh name="thumb_distal_coacd_mesh_002" file="../assets/o7_right/collision_coacd/thumb_distal_coacd_002.obj" />
+    <mesh name="thumb_distal_coacd_mesh_003" file="../assets/o7_right/collision_coacd/thumb_distal_coacd_003.obj" />
+    <mesh name="thumb_distal_coacd_mesh_004" file="../assets/o7_right/collision_coacd/thumb_distal_coacd_004.obj" />
+    <mesh name="thumb_distal_coacd_mesh_005" file="../assets/o7_right/collision_coacd/thumb_distal_coacd_005.obj" />
+    <mesh name="thumb_distal_coacd_mesh_006" file="../assets/o7_right/collision_coacd/thumb_distal_coacd_006.obj" />
+    <mesh name="thumb_distal_coacd_mesh_007" file="../assets/o7_right/collision_coacd/thumb_distal_coacd_007.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_000" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_000.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_001" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_001.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_002" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_002.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_003" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_003.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_004" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_004.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_005" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_005.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_006" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_006.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_007" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_007.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_008" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_008.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_009" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_009.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_010" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_010.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_011" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_011.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_012" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_012.obj" />
+    <mesh name="thumb_metacarpals_coacd_mesh_013" file="../assets/o7_right/collision_coacd/thumb_metacarpals_coacd_013.obj" />
+    <mesh name="thumb_metacarpals_base1_coacd_mesh_000" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base1_coacd_000.obj" />
+    <mesh name="thumb_metacarpals_base1_coacd_mesh_001" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base1_coacd_001.obj" />
+    <mesh name="thumb_metacarpals_base1_coacd_mesh_002" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base1_coacd_002.obj" />
+    <mesh name="thumb_metacarpals_base1_coacd_mesh_003" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base1_coacd_003.obj" />
+    <mesh name="thumb_metacarpals_base1_coacd_mesh_004" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base1_coacd_004.obj" />
+    <mesh name="thumb_metacarpals_base1_coacd_mesh_005" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base1_coacd_005.obj" />
+    <mesh name="thumb_metacarpals_base2_coacd_mesh_000" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base2_coacd_000.obj" />
+    <mesh name="thumb_metacarpals_base2_coacd_mesh_001" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base2_coacd_001.obj" />
+    <mesh name="thumb_metacarpals_base2_coacd_mesh_002" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base2_coacd_002.obj" />
+    <mesh name="thumb_metacarpals_base2_coacd_mesh_003" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base2_coacd_003.obj" />
+    <mesh name="thumb_metacarpals_base2_coacd_mesh_004" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base2_coacd_004.obj" />
+    <mesh name="thumb_metacarpals_base2_coacd_mesh_005" file="../assets/o7_right/collision_coacd/thumb_metacarpals_base2_coacd_005.obj" />
+    <mesh name="thumb_proximal_coacd_mesh_000" file="../assets/o7_right/collision_coacd/thumb_proximal_coacd_000.obj" />
+    <mesh name="thumb_proximal_coacd_mesh_001" file="../assets/o7_right/collision_coacd/thumb_proximal_coacd_001.obj" />
+    <mesh name="thumb_proximal_coacd_mesh_002" file="../assets/o7_right/collision_coacd/thumb_proximal_coacd_002.obj" />
+    <mesh name="thumb_proximal_coacd_mesh_003" file="../assets/o7_right/collision_coacd/thumb_proximal_coacd_003.obj" />
+    <mesh name="thumb_proximal_coacd_mesh_004" file="../assets/o7_right/collision_coacd/thumb_proximal_coacd_004.obj" />
+    <mesh name="thumb_proximal_coacd_mesh_005" file="../assets/o7_right/collision_coacd/thumb_proximal_coacd_005.obj" />
+    <mesh name="thumb_proximal_coacd_mesh_006" file="../assets/o7_right/collision_coacd/thumb_proximal_coacd_006.obj" />
+    <mesh name="thumb_proximal_coacd_mesh_007" file="../assets/o7_right/collision_coacd/thumb_proximal_coacd_007.obj" />
+  <texture name="v8_18b_black_sky" type="skybox" builtin="flat" rgb1="0.00 0.00 0.00" rgb2="0.00 0.00 0.00" width="512" height="512" /><texture name="v8_18b_table_checker" type="2d" builtin="checker" rgb1="0.12 0.15 0.20" rgb2="0.42 0.48 0.58" width="512" height="512" /><material name="v8_18b_table_mat" texture="v8_18b_table_checker" texrepeat="12 12" texuniform="true" rgba="1 1 1 1" /></asset>
+  <worldbody>
+    <light name="sun" pos="0 0 3" dir="0 0 -1" directional="true" diffuse="1 1 1" specular="0.1 0.1 0.1" />
+    <geom name="ground" type="plane" pos="0 0 0" size="6 6 0.1" rgba="0.18 0.22 0.30 1" contype="4" conaffinity="2" condim="3" friction="1.2 0.005 0.0001" group="0" margin="0" gap="0" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" priority="1" material="v8_18b_table_mat" />
+    <body name="o7_mocap" mocap="true" pos="0.25 0 0.35" quat="0 1 0 0">
+      <geom name="o7_mocap_marker" type="sphere" size="0.01" rgba="0 1 1 0.35" contype="0" conaffinity="0" />
+    </body>
+    <geom name="table" type="box" pos="0.45 0 -0.010" size="0.35 0.25 0.010" rgba="0.18 0.22 0.30 1" friction="1.2 0.005 0.0001" contype="4" conaffinity="2" condim="3" group="0" margin="0" gap="0" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" priority="1" material="v8_18b_table_mat" />
+    <body name="grasp_box" pos="0.45 0 0.030">
+      <freejoint name="grasp_box_free" />
+      <geom name="grasp_box_geom" type="box" size="0.030 0.030 0.030" mass="0.06" rgba="1.00 0.45 0.00 1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" condim="3" contype="2" conaffinity="5" margin="0" gap="0" group="0" priority="1" />
+    </body>
+    <body name="hand_base_link" pos="0.00000000 0.00000000 0.00000000" quat="1 0 0 0" childclass="robot">
+      <freejoint name="floating_base" />
+      <geom name="hand_base_link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="hand_base_link.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+      <body name="thumb_metacarpals_base1" pos="-0.0116 0.018174 0.061651" quat="1.0 0.0 0.0 0.0">
+        <joint name="thumb_cmc_roll" type="hinge" ref="0.0" class="motor" range="0.0 1.1339" axis="1 0 0" limited="true" damping="0.18" armature="0.002" frictionloss="0.025" />
+        <site name="thumb_cmc_roll_site" pos="0 0 0" quat="1 0 0 0" />
+        <inertial pos="0.0243580400165841 -0.00531338959293788 -0.00133528896045803" quat="1.0 0.0 0.0 0.0" mass="0.0140456690808547" diaginertia="4.03793977591736e-06 1.52575111360524e-06 2.85304047365918e-06" />
+        <geom name="thumb_metacarpals_base1_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="thumb_metacarpals_base1.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+        <body name="thumb_metacarpals_base2" pos="0.0358 -0.00065771 0.0001518" quat="0.9935754099238239 -0.11317201418506882 0.0 0.0">
+          <joint name="thumb_cmc_yaw" type="hinge" ref="0.0" class="motor" range="0.0 1.9189" axis="0 0 -1" limited="true" damping="0.18" armature="0.002" frictionloss="0.025" />
+          <site name="thumb_cmc_yaw_site" pos="0 0 0" quat="1 0 0 0" />
+          <inertial pos="0.00213681318180131 0.00710763177501164 -0.000263312556487913" quat="1.0 0.0 0.0 0.0" mass="0.00582710539297639" diaginertia="3.15922714505223e-07 2.74612320744176e-07 1.76908032965576e-07" />
+          <geom name="thumb_metacarpals_base2_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="thumb_metacarpals_base2.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+          <body name="thumb_metacarpals" pos="0.00456 0.015168 -0.0019302" quat="0.5351736632933759 -0.35491803847471504 -0.2639191569816051 -0.7197006423927437">
+            <joint name="thumb_cmc_pitch" type="hinge" ref="0.0" class="motor" range="0.0 0.5146" axis="0 1 0" limited="true" damping="0.18" armature="0.002" frictionloss="0.025" />
+            <site name="thumb_cmc_pitch_site" pos="0 0 0" quat="1 0 0 0" />
+            <inertial pos="0.00183660291644091 -2.80954450064368E-06 0.0269905349664822" quat="1.0 0.0 0.0 0.0" mass="0.0152012310446388" diaginertia="2.95371796729834e-06 3.84772219086697e-06 1.32007529685639e-06" />
+            <geom name="thumb_metacarpals_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="thumb_metacarpals.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+            <body name="thumb_proximal" pos="0.0061722 0 0.047968" quat="1.0 0.0 0.0 0.0">
+              <joint name="thumb_mcp" type="hinge" ref="0.0" class="motor" range="0.0 0.7152" axis="0 1 0" limited="true" damping="0.12" armature="0.0015" frictionloss="0.018" />
+              <site name="thumb_mcp_site" pos="0 0 0" quat="1 0 0 0" />
+              <inertial pos="0.00159270655316215 -4.43144050971817E-06 0.015157347405203" quat="1.0 0.0 0.0 0.0" mass="0.00662229628279784" diaginertia="1.01526863749369e-06 9.10432361984289e-07 4.47462819849415e-07" />
+              <geom name="thumb_proximal_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="thumb_proximal.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+              <body name="thumb_distal" pos="-0.00017064 0 0.038665" quat="1.0 0.0 0.0 0.0">
+                <joint name="thumb_ip" type="hinge" ref="0.0" class="motor" range="0.0 0.7763" axis="0 1 0" limited="true" damping="0.12" armature="0.0015" frictionloss="0.018" />
+                <site name="thumb_ip_site" pos="0 0 0" quat="1 0 0 0" />
+                <inertial pos="-0.00138915766541476 1.66356642710211E-06 0.0115789718721026" quat="1.0 0.0 0.0 0.0" mass="0.00512930046605133" diaginertia="3.3096790319488e-07 3.23805443196431e-07 2.48902658161616e-07" />
+                <geom name="thumb_distal_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="thumb_distal.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+                <geom name="thumb_distal_seg_welded_proxy_00" type="ellipsoid" pos="0.0014177565 -9.3132257e-10 0.0049575599" size="0.010267449 0.0089373486 0.0084179119" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+                <geom name="thumb_distal_seg_welded_proxy_01" type="ellipsoid" pos="-0.0020558592 -9.3132257e-10 0.017714364" size="0.00993998 0.0088071543 0.0084329088" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+              </body>
+              <geom name="thumb_proximal_seg_welded_proxy_00" type="ellipsoid" pos="0.0011908459 9.3132257e-10 0.0015342138" size="0.0095763208 0.011418478 0.0092492684" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+              <geom name="thumb_proximal_seg_welded_proxy_01" type="ellipsoid" pos="0.0011115079 9.3132257e-10 0.016729946" size="0.010268411 0.010781533 0.010455523" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+              <geom name="thumb_proximal_seg_welded_proxy_02" type="ellipsoid" pos="0.0016500601 -9.3132257e-10 0.031946566" size="0.0092987767 0.0089632181 0.0092213012" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+            </body>
+            <geom name="thumb_metacarpals_seg_welded_proxy_00" type="ellipsoid" pos="0.0031110882 -1.5739352e-07 0.0037766628" size="0.015472268 0.012285867 0.0092004892" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+            <geom name="thumb_metacarpals_seg_welded_proxy_01" type="ellipsoid" pos="0.0029999395 -1.5739352e-07 0.018947497" size="0.015646179 0.012411042 0.010418733" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+            <geom name="thumb_metacarpals_seg_welded_proxy_02" type="ellipsoid" pos="0.0031080949 -1.5925616e-07 0.035250448" size="0.015540187 0.012227055 0.010331286" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+            <geom name="thumb_metacarpals_seg_welded_proxy_03" type="ellipsoid" pos="0.0037281332 -1.5832484e-07 0.050500816" size="0.014570531 0.011062616 0.0092166811" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+          </body>
+          <geom name="thumb_metacarpals_base2_v84_small_base_pad" type="ellipsoid" pos="0.0024231584 0.0079890126 0" size="0.0065 0.0105 0.0105" rgba="1 0.05 0.02 0.40" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        </body>
+        <geom name="thumb_metacarpals_base1_v84_small_base_pad" type="ellipsoid" pos="0.0198 -0.013184668 -0.0031044767" size="0.0038 0.018 0.012" rgba="1 0.05 0.02 0.40" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      </body>
+      <body name="index_proximal" pos="0.0022097 0.027177 0.12685" quat="1.0 0.0 0.0 0.0">
+        <joint name="index_mcp_pitch" type="hinge" ref="0.0" class="motor" range="0.0 1.3607" axis="0 1 0" limited="true" damping="0.18" armature="0.002" frictionloss="0.025" />
+        <site name="index_mcp_pitch_site" pos="0 0 0" quat="1 0 0 0" />
+        <inertial pos="-0.000134757090763184 1.17149846208878E-06 0.0104816315652075" quat="1.0 0.0 0.0 0.0" mass="0.00654982590538705" diaginertia="4.4387863322219e-07 4.58697796485196e-07 1.74228691388322e-07" />
+        <geom name="index_proximal_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="index_proximal.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+        <body name="index_middle" pos="-0.0010861 0 0.035634" quat="1.0 0.0 0.0 0.0">
+          <joint name="index_pip" type="hinge" ref="0.0" class="motor" range="0.0 1.8317" axis="0 1 0" limited="true" damping="0.12" armature="0.0015" frictionloss="0.018" />
+          <site name="index_pip_site" pos="0 0 0" quat="1 0 0 0" />
+          <inertial pos="-0.00252078721834403 -2.09523372295822E-06 0.0110357108291392" quat="1.0 0.0 0.0 0.0" mass="0.00283043635989883" diaginertia="2.60908300266926e-07 2.33077671334714e-07 1.26672570359698e-07" />
+          <geom name="index_middle_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="index_middle.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+          <body name="index_distal" pos="-0.0052857 0 0.025703" quat="1.0 0.0 0.0 0.0">
+            <joint name="index_dip" type="hinge" ref="0.0" class="motor" range="0.0 0.638" axis="0 1 0" limited="true" damping="0.12" armature="0.0015" frictionloss="0.018" />
+            <site name="index_dip_site" pos="0 0 0" quat="1 0 0 0" />
+            <inertial pos="-0.000622482641131194 5.23441917530537E-06 0.0121505004635115" quat="1.0 0.0 0.0 0.0" mass="0.00314458616089874" diaginertia="1.63947556753414e-07 1.48366028231131e-07 9.79320068649637e-08" />
+            <geom name="index_distal_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="index_distal.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+            <geom name="index_distal_seg_welded_proxy_00" type="ellipsoid" pos="0.001137034 -2.1886081e-08 0.0052276572" size="0.0081041647 0.007708547 0.0083140802" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+            <geom name="index_distal_seg_welded_proxy_01" type="ellipsoid" pos="2.8565526e-05 -2.1886081e-08 0.01777624" size="0.0086915504 0.007708547 0.0083161275" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+          </body>
+          <geom name="index_middle_seg_welded_proxy_00" type="ellipsoid" pos="-0.00064192247 -2.3283064e-10 0.0038584536" size="0.0088760547 0.0075067018 0.010364001" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+          <geom name="index_middle_seg_welded_proxy_01" type="ellipsoid" pos="-0.0029703421 9.3132257e-10 0.019603878" size="0.0080686075 0.0075067463 0.010354474" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        </body>
+        <geom name="index_proximal_seg_welded_proxy_00" type="ellipsoid" pos="-0.0017548939 0 0.0040915068" size="0.0088396317 0.0082289239 0.0088160321" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        <geom name="index_proximal_seg_welded_proxy_01" type="ellipsoid" pos="-0.0014997621 -1.3969839e-09 0.018641943" size="0.0090896609 0.0078354565 0.009889245" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        <geom name="index_proximal_seg_welded_proxy_02" type="ellipsoid" pos="-0.001469712 0 0.033053069" size="0.0087734382 0.0078302455 0.0088120345" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      </body>
+      <body name="middle_proximal" pos="0.0022097 0.0081771 0.13185" quat="1.0 0.0 0.0 0.0">
+        <joint name="middle_mcp_pitch" type="hinge" ref="0.0" class="motor" range="0.0 1.3607" axis="0 1 0" limited="true" damping="0.18" armature="0.002" frictionloss="0.025" />
+        <site name="middle_mcp_pitch_site" pos="0 0 0" quat="1 0 0 0" />
+        <inertial pos="-0.000134759525542065 1.17052495086315E-06 0.0104816256254227" quat="1.0 0.0 0.0 0.0" mass="0.00654982976492332" diaginertia="4.43878677686474e-07 4.58697936345066e-07 1.74228809222635e-07" />
+        <geom name="middle_proximal_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="middle_proximal.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+        <body name="middle_middle" pos="-0.0010861 0 0.035634" quat="1.0 0.0 0.0 0.0">
+          <joint name="middle_pip" type="hinge" ref="0.0" class="motor" range="0.0 1.8317" axis="0 1 0" limited="true" damping="0.12" armature="0.0015" frictionloss="0.018" />
+          <site name="middle_pip_site" pos="0 0 0" quat="1 0 0 0" />
+          <inertial pos="-0.00252078721834716 -2.09523371817646E-06 0.011035710829132" quat="1.0 0.0 0.0 0.0" mass="0.00283043635989613" diaginertia="2.60908300266734e-07 2.33077671334844e-07 1.26672570359912e-07" />
+          <geom name="middle_middle_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="middle_middle.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+          <body name="middle_distal" pos="-0.0052857 0 0.025703" quat="1.0 0.0 0.0 0.0">
+            <joint name="middle_dip" type="hinge" ref="0.0" class="motor" range="0.0 0.628" axis="0 1 0" limited="true" damping="0.12" armature="0.0015" frictionloss="0.018" />
+            <site name="middle_dip_site" pos="0 0 0" quat="1 0 0 0" />
+            <inertial pos="-0.000622482698909851 5.23446393570041E-06 0.0121505005518132" quat="1.0 0.0 0.0 0.0" mass="0.00314458619941957" diaginertia="1.63947561150062e-07 1.48366032281885e-07 9.79320086242323e-08" />
+            <geom name="middle_distal_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="middle_distal.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+            <geom name="middle_distal_seg_welded_proxy_00" type="ellipsoid" pos="0.001137034 -2.1886081e-08 0.0052276572" size="0.0081041647 0.007708547 0.0083140802" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+            <geom name="middle_distal_seg_welded_proxy_01" type="ellipsoid" pos="2.8565526e-05 -2.1886081e-08 0.01777624" size="0.0086915504 0.007708547 0.0083161275" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+          </body>
+          <geom name="middle_middle_seg_welded_proxy_00" type="ellipsoid" pos="-0.00064192247 -2.3283064e-10 0.0038584536" size="0.0088760547 0.0075067018 0.010364001" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+          <geom name="middle_middle_seg_welded_proxy_01" type="ellipsoid" pos="-0.0029703421 9.3132257e-10 0.019603878" size="0.0080686075 0.0075067463 0.010354474" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        </body>
+        <geom name="middle_proximal_seg_welded_proxy_00" type="ellipsoid" pos="-0.0017548939 0 0.0040915068" size="0.0088396317 0.0082289239 0.0088160321" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        <geom name="middle_proximal_seg_welded_proxy_01" type="ellipsoid" pos="-0.0014997621 -1.3969839e-09 0.018641943" size="0.0090896609 0.0078354565 0.009889245" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        <geom name="middle_proximal_seg_welded_proxy_02" type="ellipsoid" pos="-0.001469712 0 0.033053069" size="0.0087734382 0.0078302455 0.0088120345" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      </body>
+      <body name="ring_proximal" pos="0.0022097 -0.010823 0.12685" quat="1.0 0.0 0.0 0.0">
+        <joint name="ring_mcp_pitch" type="hinge" ref="0.0" class="motor" range="0.0 1.3607" axis="0 1 0" limited="true" damping="0.18" armature="0.002" frictionloss="0.025" />
+        <site name="ring_mcp_pitch_site" pos="0 0 0" quat="1 0 0 0" />
+        <inertial pos="-0.000134757090654265 1.17149840283062E-06 0.0104816315647394" quat="1.0 0.0 0.0 0.0" mass="0.00654982590560025" diaginertia="4.43878633229728e-07 4.58697796493645e-07 1.74228691390674e-07" />
+        <geom name="ring_proximal_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="ring_proximal.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+        <body name="ring_middle" pos="-0.0010861 0 0.035634" quat="1.0 0.0 0.0 0.0">
+          <joint name="ring_pip" type="hinge" ref="0.0" class="motor" range="0.0 1.8317" axis="0 1 0" limited="true" damping="0.12" armature="0.0015" frictionloss="0.018" />
+          <site name="ring_pip_site" pos="0 0 0" quat="1 0 0 0" />
+          <inertial pos="-0.00252078721834402 -2.09523372298771E-06 0.0110357108291391" quat="1.0 0.0 0.0 0.0" mass="0.00283043635989883" diaginertia="2.60908300267002e-07 2.3307767133472e-07 1.26672570359684e-07" />
+          <geom name="ring_middle_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="ring_middle.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+          <body name="ring_distal" pos="-0.0052857 0 0.025703" quat="1.0 0.0 0.0 0.0">
+            <joint name="ring_dip" type="hinge" ref="0.0" class="motor" range="0.0 0.628" axis="0 1 0" limited="true" damping="0.12" armature="0.0015" frictionloss="0.018" />
+            <site name="ring_dip_site" pos="0 0 0" quat="1 0 0 0" />
+            <inertial pos="-0.000622482751969862 5.23452612019235E-06 0.0121505007069385" quat="1.0 0.0 0.0 0.0" mass="0.00314458625244518" diaginertia="1.63947569170933e-07 1.48366039100571e-07 9.79320099040398e-08" />
+            <geom name="ring_distal_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="ring_distal.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+            <geom name="ring_distal_seg_welded_proxy_00" type="ellipsoid" pos="0.001137034 -2.1886081e-08 0.0052276572" size="0.0081041647 0.007708547 0.0083140802" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+            <geom name="ring_distal_seg_welded_proxy_01" type="ellipsoid" pos="2.8565526e-05 -2.1886081e-08 0.01777624" size="0.0086915504 0.007708547 0.0083161275" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+          </body>
+          <geom name="ring_middle_seg_welded_proxy_00" type="ellipsoid" pos="-0.00064192247 -2.3283064e-10 0.0038584536" size="0.0088760547 0.0075067018 0.010364001" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+          <geom name="ring_middle_seg_welded_proxy_01" type="ellipsoid" pos="-0.0029703421 9.3132257e-10 0.019603878" size="0.0080686075 0.0075067463 0.010354474" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        </body>
+        <geom name="ring_proximal_seg_welded_proxy_00" type="ellipsoid" pos="-0.0017548939 0 0.0040915068" size="0.0088396317 0.0082289239 0.0088160321" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        <geom name="ring_proximal_seg_welded_proxy_01" type="ellipsoid" pos="-0.0014997621 -1.3969839e-09 0.018641943" size="0.0090896609 0.0078354565 0.009889245" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        <geom name="ring_proximal_seg_welded_proxy_02" type="ellipsoid" pos="-0.001469712 0 0.033053069" size="0.0087734382 0.0078302455 0.0088120345" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      </body>
+      <body name="pinky_proximal" pos="0.0022097 -0.029823 0.12185" quat="1.0 0.0 0.0 0.0">
+        <joint name="pinky_mcp_pitch" type="hinge" ref="0.0" class="motor" range="0.0 1.3607" axis="0 1 0" limited="true" damping="0.18" armature="0.002" frictionloss="0.025" />
+        <site name="pinky_mcp_pitch_site" pos="0 0 0" quat="1 0 0 0" />
+        <inertial pos="-0.000134757090711979 1.17149839997527E-06 0.0104816315647464" quat="1.0 0.0 0.0 0.0" mass="0.00654982590561137" diaginertia="4.43878633231969e-07 4.58697796494382e-07 1.7422869138941e-07" />
+        <geom name="pinky_proximal_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="pinky_proximal.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+        <body name="pinky_middle" pos="-0.0010861 0 0.035634" quat="1.0 0.0 0.0 0.0">
+          <joint name="pinky_pip" type="hinge" ref="0.0" class="motor" range="0.0 1.8317" axis="0 1 0" limited="true" damping="0.12" armature="0.0015" frictionloss="0.018" />
+          <site name="pinky_pip_site" pos="0 0 0" quat="1 0 0 0" />
+          <inertial pos="-0.00252078721834405 -2.09523372298598E-06 0.0110357108291391" quat="1.0 0.0 0.0 0.0" mass="0.00283043635989883" diaginertia="2.60908300266976e-07 2.33077671334709e-07 1.26672570359743e-07" />
+          <geom name="pinky_middle_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="pinky_middle.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+          <body name="pinky_distal" pos="-0.0052857 0 0.025703" quat="1.0 0.0 0.0 0.0">
+            <joint name="pinky_dip" type="hinge" ref="0.0" class="motor" range="0.0 0.628" axis="0 1 0" limited="true" damping="0.12" armature="0.0015" frictionloss="0.018" />
+            <site name="pinky_dip_site" pos="0 0 0" quat="1 0 0 0" />
+            <inertial pos="-0.000622482885686896 5.23444063671441E-06 0.0121505009269268" quat="1.0 0.0 0.0 0.0" mass="0.00314458634356863" diaginertia="1.63947580158185e-07 1.4836604901918e-07 9.79320135710845e-08" />
+            <geom name="pinky_distal_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="pinky_distal.STL" class="visual" contype="0" conaffinity="0" group="2" rgba="0.70 0.90 1.00 1" />
+            <geom name="pinky_distal_seg_welded_proxy_00" type="ellipsoid" pos="0.001137034 -2.1886081e-08 0.0052276572" size="0.0081041647 0.007708547 0.0083140802" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+            <geom name="pinky_distal_seg_welded_proxy_01" type="ellipsoid" pos="2.8565526e-05 -2.1886081e-08 0.01777624" size="0.0086915504 0.007708547 0.0083161275" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+          </body>
+          <geom name="pinky_middle_seg_welded_proxy_00" type="ellipsoid" pos="-0.00064192247 -2.3283064e-10 0.0038584536" size="0.0088760547 0.0075067018 0.010364001" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+          <geom name="pinky_middle_seg_welded_proxy_01" type="ellipsoid" pos="-0.0029703421 9.3132257e-10 0.019603878" size="0.0080686075 0.0075067463 0.010354474" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        </body>
+        <geom name="pinky_proximal_seg_welded_proxy_00" type="ellipsoid" pos="-0.0017548939 0 0.0040915068" size="0.0088396317 0.0082289239 0.0088160321" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        <geom name="pinky_proximal_seg_welded_proxy_01" type="ellipsoid" pos="-0.0014997621 -1.3969839e-09 0.018641943" size="0.0090896609 0.0078354565 0.009889245" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+        <geom name="pinky_proximal_seg_welded_proxy_02" type="ellipsoid" pos="-0.001469712 0 0.033053069" size="0.0087734382 0.0078302455 0.0088120345" rgba="1.00 0.00 0.00 0.30" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      </body>
+      <site name="hand_base_link_site" pos="0 0 0" quat="1 0 0 0" />
+      <camera name="front_camera" mode="track" fovy="90.0" quat="4.329780281177467e-17 4.329780281177466e-17 0.7071067811865475 0.7071067811865476" pos="0.0 2.0 0.5" />
+      <camera name="side_camera" mode="track" fovy="90.0" quat="-0.5 -0.4999999999999999 0.5 0.5000000000000001" pos="-2.0 0.0 0.5" />
+      <geom name="hand_base_link_v84_index_proximal_root_pad" type="ellipsoid" pos="0.0022097 0.027177 0.10685" size="0.0085 0.0052 0.0062" rgba="1 0.05 0.02 0.42" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      <geom name="hand_base_link_v84_middle_proximal_root_pad" type="ellipsoid" pos="0.0022097 0.0081771 0.11185" size="0.0085 0.0052 0.0062" rgba="1 0.05 0.02 0.42" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      <geom name="hand_base_link_v84_ring_proximal_root_pad" type="ellipsoid" pos="0.0022097 -0.010823 0.10685" size="0.0085 0.0052 0.0062" rgba="1 0.05 0.02 0.42" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      <geom name="hand_base_link_v84_pinky_proximal_root_pad" type="ellipsoid" pos="0.0022097 -0.029823 0.10485" size="0.0085 0.0052 0.0062" rgba="1 0.05 0.02 0.42" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      <geom name="hand_base_link_v87_palm_strip_0" type="ellipsoid" pos="0.019289125 -0.001323 0.082" size="0.0038 0.0385 0.0048" rgba="1 0.03 0.02 0.24" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      <geom name="hand_base_link_v87_palm_strip_1" type="ellipsoid" pos="0.016054267 -0.001323 0.1" size="0.0042 0.0385 0.0052" rgba="1 0.03 0.02 0.24" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+      <geom name="hand_base_link_v87_palm_strip_2" type="ellipsoid" pos="0.010162828 -0.001323 0.116" size="0.0038 0.03542 0.0048" rgba="1 0.03 0.02 0.24" group="3" contype="1" conaffinity="1" condim="3" priority="1" friction="1.2 0.005 0.0001" solref="0.006 1" solimp="0.9 0.95 0.001 0.5 2" margin="0" gap="0" />
+    </body>
+  </worldbody>
+  <equality>
+    <weld name="o7_mocap_to_hand_base" body1="o7_mocap" body2="hand_base_link" relpose="0 0 0 1 0 0 0" solref="0.03 1" solimp="0.8 0.95 0.001" />
+    <joint name="thumb_mcp_mimic" joint1="thumb_mcp" joint2="thumb_cmc_pitch" polycoef="0 1.3898 0 0 0" solref="0.006 1" solimp="0.90 0.995 0.0005" />
+    <joint name="thumb_ip_mimic" joint1="thumb_ip" joint2="thumb_cmc_pitch" polycoef="0 1.5085 0 0 0" solref="0.006 1" solimp="0.90 0.995 0.0005" />
+    <joint name="index_pip_mimic" joint1="index_pip" joint2="index_mcp_pitch" polycoef="0 1.3462 0 0 0" solref="0.006 1" solimp="0.90 0.995 0.0005" />
+    <joint name="index_dip_mimic" joint1="index_dip" joint2="index_mcp_pitch" polycoef="0 0.4615 0 0 0" solref="0.006 1" solimp="0.90 0.995 0.0005" />
+    <joint name="middle_pip_mimic" joint1="middle_pip" joint2="middle_mcp_pitch" polycoef="0 1.3462 0 0 0" solref="0.006 1" solimp="0.90 0.995 0.0005" />
+    <joint name="middle_dip_mimic" joint1="middle_dip" joint2="middle_mcp_pitch" polycoef="0 0.4615 0 0 0" solref="0.006 1" solimp="0.90 0.995 0.0005" />
+    <joint name="ring_pip_mimic" joint1="ring_pip" joint2="ring_mcp_pitch" polycoef="0 1.3462 0 0 0" solref="0.006 1" solimp="0.90 0.995 0.0005" />
+    <joint name="ring_dip_mimic" joint1="ring_dip" joint2="ring_mcp_pitch" polycoef="0 0.4615 0 0 0" solref="0.006 1" solimp="0.90 0.995 0.0005" />
+    <joint name="pinky_pip_mimic" joint1="pinky_pip" joint2="pinky_mcp_pitch" polycoef="0 1.3462 0 0 0" solref="0.006 1" solimp="0.90 0.995 0.0005" />
+    <joint name="pinky_dip_mimic" joint1="pinky_dip" joint2="pinky_mcp_pitch" polycoef="0 0.4615 0 0 0" solref="0.006 1" solimp="0.90 0.995 0.0005" />
+  </equality>
+  <contact>
+    <exclude body1="hand_base_link" body2="thumb_metacarpals_base1" />
+    <exclude body1="thumb_metacarpals_base1" body2="thumb_metacarpals_base2" />
+    <exclude body1="thumb_metacarpals_base2" body2="thumb_metacarpals" />
+    <exclude body1="thumb_metacarpals" body2="thumb_proximal" />
+    <exclude body1="thumb_proximal" body2="thumb_distal" />
+    <exclude body1="hand_base_link" body2="index_proximal" />
+    <exclude body1="index_proximal" body2="index_middle" />
+    <exclude body1="index_middle" body2="index_distal" />
+    <exclude body1="hand_base_link" body2="middle_proximal" />
+    <exclude body1="middle_proximal" body2="middle_middle" />
+    <exclude body1="middle_middle" body2="middle_distal" />
+    <exclude body1="hand_base_link" body2="ring_proximal" />
+    <exclude body1="ring_proximal" body2="ring_middle" />
+    <exclude body1="ring_middle" body2="ring_distal" />
+    <exclude body1="hand_base_link" body2="pinky_proximal" />
+    <exclude body1="pinky_proximal" body2="pinky_middle" />
+    <exclude body1="pinky_middle" body2="pinky_distal" />
+  </contact>
+  <sensor>
+    <framepos name="thumb_cmc_roll_site_pos" objtype="site" objname="thumb_cmc_roll_site" />
+    <framequat name="thumb_cmc_roll_site_quat" objtype="site" objname="thumb_cmc_roll_site" />
+    <framelinvel name="thumb_cmc_roll_site_linvel" objtype="site" objname="thumb_cmc_roll_site" />
+    <frameangvel name="thumb_cmc_roll_site_angvel" objtype="site" objname="thumb_cmc_roll_site" />
+    <velocimeter name="thumb_cmc_roll_site_vel" site="thumb_cmc_roll_site" />
+  </sensor>
+  <actuator>
+    <position name="thumb_cmc_roll_pos" joint="thumb_cmc_roll" kp="3.0" forcerange="-1.2 1.2" ctrlrange="0.0 1.1339" ctrllimited="true" forcelimited="true" />
+    <position name="thumb_cmc_yaw_pos" joint="thumb_cmc_yaw" kp="3.0" forcerange="-1.2 1.2" ctrlrange="0.0 1.9189" ctrllimited="true" forcelimited="true" />
+    <position name="thumb_cmc_pitch_pos" joint="thumb_cmc_pitch" kp="3.0" forcerange="-1.2 1.2" ctrlrange="0.0 0.5146" ctrllimited="true" forcelimited="true" />
+    <position name="index_mcp_pitch_pos" joint="index_mcp_pitch" kp="3.5" forcerange="-1.5 1.5" ctrlrange="0.0 1.3607" ctrllimited="true" forcelimited="true" />
+    <position name="middle_mcp_pitch_pos" joint="middle_mcp_pitch" kp="3.5" forcerange="-1.5 1.5" ctrlrange="0.0 1.3607" ctrllimited="true" forcelimited="true" />
+    <position name="ring_mcp_pitch_pos" joint="ring_mcp_pitch" kp="3.5" forcerange="-1.5 1.5" ctrlrange="0.0 1.3607" ctrllimited="true" forcelimited="true" />
+    <position name="pinky_mcp_pitch_pos" joint="pinky_mcp_pitch" kp="3.5" forcerange="-1.5 1.5" ctrlrange="0.0 1.3607" ctrllimited="true" forcelimited="true" />
+  </actuator>
+</mujoco>

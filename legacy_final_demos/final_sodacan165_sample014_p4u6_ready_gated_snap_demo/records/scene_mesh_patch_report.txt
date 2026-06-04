@@ -1,0 +1,2 @@
+num_patched: 1
+('can_piece_v47_0', '/home/zyh/Projects/o7_mujoco_sim/dataset/meshdata/sem-SodaCan-16526d147e837c386829bf9ee210f5e7/coacd/decomposed.obj', '/home/zyh/Projects/o7_mujoco_sim/legacy_final_demos/final_sodacan165_sample014_p4u6_ready_gated_snap_demo/inputs/object_mesh/decomposed.obj')

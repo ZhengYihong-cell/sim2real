@@ -1,0 +1,76 @@
+{
+  "format": "v4_12p3_pinocchio_mujoco_precheck_plan_debug",
+  "meaning": "Precomputed q_pre/q_grasp/q_lift selected by Pinocchio IK plus MuJoCo collision precheck.",
+  "model": "/home/zyh/Projects/o7_mujoco_sim/models/fr3_o7/fr3_o7_can52_upright_tabletop_v47b_xminus008_debug.xml",
+  "candidate": "/home/zyh/Projects/o7_mujoco_sim/records/smoke_test_candidates/can52_v47b_can_core-can-52e295024593705fb00c487926b62c9_s030_tabletop_side_body_debug.json",
+  "object_body": "grasp_can",
+  "target_frame": "fr3_link7",
+  "precheck_status": "FAIL_PRECHECK",
+  "score": 1000511.1972210375,
+  "selected_seeds": {
+    "pre": "runner_q_pre",
+    "grasp": "runner_q_grasp",
+    "lift": "runner_q_lift"
+  },
+  "q_pre": {
+    "fr3_joint1": 1.3126270299095202,
+    "fr3_joint2": 1.4552416738307326,
+    "fr3_joint3": -1.5017761490096657,
+    "fr3_joint4": -1.5196566276629748,
+    "fr3_joint5": -0.15375660492518292,
+    "fr3_joint6": 0.924883404582361,
+    "fr3_joint7": 3.0158989999999997
+  },
+  "q_grasp": {
+    "fr3_joint1": 1.309272828091706,
+    "fr3_joint2": 1.7004178462316806,
+    "fr3_joint3": -1.536682979802422,
+    "fr3_joint4": -1.498632115341855,
+    "fr3_joint5": 0.07770632628745577,
+    "fr3_joint6": 0.9207195990941296,
+    "fr3_joint7": 2.992950084860967
+  },
+  "q_lift": {
+    "fr3_joint1": 1.3129480774885085,
+    "fr3_joint2": 1.5393288324153251,
+    "fr3_joint3": -1.6258330277976596,
+    "fr3_joint4": -1.5177722363600603,
+    "fr3_joint5": -0.15113395387703035,
+    "fr3_joint6": 0.9414462200541265,
+    "fr3_joint7": 2.87031555217913
+  },
+  "metrics": {
+    "combo_min_joint_margin": 1.000000000139778e-06,
+    "min_path_hand_support_clearance": 0.0,
+    "min_path_fr3_object_clearance": 0.045250452830347634,
+    "static_grasp_closed_hand_object_distance": 0.0,
+    "static_grasp_closed_hand_support_clearance": 0.0,
+    "smooth_cost": 4.947199102141265,
+    "hard_reasons": [
+      "q_current_to_q_pre_open_hand: hand-support clearance 0.00000 < 0.00500",
+      "q_pre_to_q_grasp_open_hand: hand-support clearance 0.00000 < 0.00500",
+      "q_grasp_to_q_lift_closed_hand: hand-support clearance 0.00000 < 0.00500",
+      "q_grasp_closed: hand-support clearance 0.00000 < 0.00500",
+      "combo joint margin 0.00000 < 0.00100"
+    ]
+  },
+  "args": {
+    "p2_json": "diagnostics/current_v412/v4_12p2_pinocchio_multiseed_ik_can52_xminus008_debug.json",
+    "model": "models/fr3_o7/fr3_o7_can52_upright_tabletop_v47b_xminus008_debug.xml",
+    "candidate": "records/smoke_test_candidates/can52_v47b_can_core-can-52e295024593705fb00c487926b62c9_s030_tabletop_side_body_debug.json",
+    "object_body": "grasp_can",
+    "out": "diagnostics/current_v412/v4_12p3_can52_xminus008_ik_collision_combo_debug.json",
+    "best_plan_out": "records/precheck/v4_12p3_can52_xminus008_best_plan_debug.json",
+    "top_per_target": 8,
+    "max_combos": 512,
+    "path_samples": 40,
+    "min_hand_support_clearance": 0.005,
+    "min_fr3_object_clearance": 0.005,
+    "max_grasp_hand_object_distance": 0.03,
+    "min_joint_margin": 0.001,
+    "smooth_weight": 0.15,
+    "clearance_reward_weight": 10.0,
+    "require_ik_success": true
+  },
+  "note": "This plan is not yet executed. A later runner must accept these precomputed q states explicitly."
+}

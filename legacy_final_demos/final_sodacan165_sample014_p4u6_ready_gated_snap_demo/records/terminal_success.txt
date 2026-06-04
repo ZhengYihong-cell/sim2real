@@ -1,0 +1,245 @@
+========== SODACAN165 SAMPLE014 BEST SWEEP VIEWER ==========
+finger_close_scale     : 1.12
+micro_squeeze_fraction : 0.00
+max_grip_disp          : 0.018
+model                  : diagnostics/current_v412/sodacan165_topk_p2p3_batch_debug/sample014/initial_debug/scene/sodacan165_sample014_from_can52_scene_debug.xml
+candidate              : diagnostics/current_v412/sodacan165_topk_p2p3_batch_debug/sample014/initial_debug/candidates/sample014_candidate.json
+p3_json                : diagnostics/current_v412/sodacan165_sample014_p4u6_viewer_debug/sample014_p3_contactfree_goal.json
+best_config            : diagnostics/current_v412/sodacan165_sample014_p4u6_viewer_debug/sodacan_sample014_best_config_from_candidate_debug.json
+outdir                 : diagnostics/current_v412/sodacan165_sample014_best_sweep_viewer_debug
+
+
+========== V4.12P4U6 IK-PATH PLANNING ==========
+model                 : /home/zyh/Projects/o7_mujoco_sim/diagnostics/current_v412/sodacan165_topk_p2p3_batch_debug/sample014/initial_debug/scene/sodacan165_sample014_from_can52_scene_debug.xml
+object_body           : grasp_can
+target_body           : fr3_link7
+q_start               : {'fr3_joint1': 0.0, 'fr3_joint2': 0.0, 'fr3_joint3': 0.0, 'fr3_joint4': -0.1518, 'fr3_joint5': 0.0, 'fr3_joint6': 0.5445, 'fr3_joint7': 0.0}
+q_home                : {'fr3_joint1': 0.0, 'fr3_joint2': -0.7, 'fr3_joint3': 0.0, 'fr3_joint4': -2.2, 'fr3_joint5': 0.0, 'fr3_joint6': 1.8, 'fr3_joint7': 0.8}
+q_pre                 : {'fr3_joint1': -0.2037773840304669, 'fr3_joint2': -0.06586491632489716, 'fr3_joint3': 0.0511772068332176, 'fr3_joint4': -1.8562287367755, 'fr3_joint5': -0.013887325666606479, 'fr3_joint6': 1.3151012175724381, 'fr3_joint7': 2.3338871767570093}
+q_grasp               : {'fr3_joint1': -0.31762548572894905, 'fr3_joint2': -0.036495403406386934, 'fr3_joint3': 0.16417522273149832, 'fr3_joint4': -2.0392318024580383, 'fr3_joint5': -0.012281581423920197, 'fr3_joint6': 1.5287182710239213, 'fr3_joint7': 2.334790643649461}
+arm_source            : {'q_grasp': 'p3.best_pass.q_grasp', 'q_pre': 'p3.best_pass.q_pre'}
+hand_source           : best.best_record.hand_config.ctrl
+approach_min_clearance: 0.003
+grasp_path_clearance  : 0.001
+hard_servo_approach   : True
+================================================
+
+
+========== PLAN SEGMENT: start_to_home ==========
+start valid: True {'reason': 'ok', 'min_distance': 0.25, 'pair': ('fr3_link0_collision', 'grasp_can_geom_0')}
+goal  valid: True {'reason': 'ok', 'min_distance': 0.15833872667720644, 'pair': ('p4t2_middle_distal_seg_welded_proxy_01', 'grasp_can_geom_0')}
+direct edge: True {'reason': 'ok', 'alpha': 1.0, 'min_distance': 0.15833872667720644, 'pair': ('p4t2_middle_distal_seg_welded_proxy_01', 'grasp_can_geom_0')}
+
+========== PLAN SEGMENT: home_to_pre ==========
+start valid: True {'reason': 'ok', 'min_distance': 0.15833872667720644, 'pair': ('p4t2_middle_distal_seg_welded_proxy_01', 'grasp_can_geom_0')}
+goal  valid: True {'reason': 'ok', 'min_distance': 0.05466494234043818, 'pair': ('p4t2_thumb_distal_seg_welded_proxy_01', 'grasp_can_geom_0')}
+direct edge: True {'reason': 'ok', 'alpha': 1.0, 'min_distance': 0.05466494234043818, 'pair': ('p4t2_thumb_distal_seg_welded_proxy_01', 'grasp_can_geom_0')}
+
+========== PLAN SEGMENT: pre_to_grasp ==========
+start valid: True {'reason': 'ok', 'min_distance': 0.05466494234043818, 'pair': ('p4t2_thumb_distal_seg_welded_proxy_01', 'grasp_can_geom_0')}
+goal  valid: True {'reason': 'ok', 'min_distance': 0.004601618376193081, 'pair': ('p4t2_thumb_distal_seg_welded_proxy_00', 'grasp_can_geom_0')}
+direct edge: True {'reason': 'ok', 'alpha': 1.0, 'min_distance': 0.004601618376193081, 'pair': ('p4t2_thumb_distal_seg_welded_proxy_00', 'grasp_can_geom_0')}
+
+[PHASE] record_hold_at_start_side_open, steps=1200
+[record_hold_at_start_side_open]     0 alpha=0.000 disp=0.00000 rise=0.00000 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]   100 alpha=0.083 disp=0.00780 rise=-0.00752 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]   200 alpha=0.167 disp=0.01003 rise=-0.00740 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]   300 alpha=0.250 disp=0.01344 rise=-0.00742 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]   400 alpha=0.333 disp=0.01471 rise=-0.00733 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]   500 alpha=0.417 disp=0.01387 rise=-0.00738 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]   600 alpha=0.500 disp=0.01056 rise=-0.00738 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]   700 alpha=0.583 disp=0.00853 rise=-0.00746 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]   800 alpha=0.667 disp=0.00734 rise=-0.00733 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]   900 alpha=0.750 disp=0.00794 rise=-0.00753 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]  1000 alpha=0.833 disp=0.00977 rise=-0.00740 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]  1100 alpha=0.917 disp=0.01217 rise=-0.00754 groups={} opp=None ready=False stable=0/5
+[record_hold_at_start_side_open]  1200 alpha=1.000 disp=0.01381 rise=-0.00734 groups={} opp=None ready=False stable=0/5
+
+[PATH EXEC] record_path_start_to_home seg=1/1 len=2.6271 duration=3.50s steps=3502
+[record_path_start_to_home_seg00]     0 alpha=0.000 disp=0.01380 rise=-0.00734 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]   100 alpha=0.029 disp=0.01381 rise=-0.00742 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]   200 alpha=0.057 disp=0.01377 rise=-0.00743 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]   300 alpha=0.086 disp=0.01373 rise=-0.00743 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]   400 alpha=0.114 disp=0.01369 rise=-0.00744 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]   500 alpha=0.143 disp=0.01364 rise=-0.00744 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]   600 alpha=0.171 disp=0.01360 rise=-0.00745 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]   700 alpha=0.200 disp=0.01356 rise=-0.00745 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]   800 alpha=0.228 disp=0.01351 rise=-0.00745 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]   900 alpha=0.257 disp=0.01346 rise=-0.00746 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  1000 alpha=0.286 disp=0.01342 rise=-0.00746 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  1100 alpha=0.314 disp=0.01337 rise=-0.00747 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  1200 alpha=0.343 disp=0.01332 rise=-0.00747 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  1300 alpha=0.371 disp=0.01327 rise=-0.00748 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  1400 alpha=0.400 disp=0.01321 rise=-0.00749 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  1500 alpha=0.428 disp=0.01316 rise=-0.00749 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  1600 alpha=0.457 disp=0.01311 rise=-0.00750 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  1700 alpha=0.485 disp=0.01305 rise=-0.00751 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  1800 alpha=0.514 disp=0.01299 rise=-0.00751 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  1900 alpha=0.543 disp=0.01294 rise=-0.00752 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  2000 alpha=0.571 disp=0.01288 rise=-0.00753 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  2100 alpha=0.600 disp=0.01282 rise=-0.00754 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  2200 alpha=0.628 disp=0.01276 rise=-0.00755 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  2300 alpha=0.657 disp=0.01269 rise=-0.00756 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  2400 alpha=0.685 disp=0.01263 rise=-0.00757 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  2500 alpha=0.714 disp=0.01256 rise=-0.00758 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  2600 alpha=0.742 disp=0.01250 rise=-0.00759 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  2700 alpha=0.771 disp=0.01243 rise=-0.00760 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  2800 alpha=0.800 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  2900 alpha=0.828 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  3000 alpha=0.857 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  3100 alpha=0.885 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  3200 alpha=0.914 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  3300 alpha=0.942 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  3400 alpha=0.971 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_start_to_home_seg00]  3500 alpha=0.999 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+
+[PHASE] record_hold_at_v12_safe_home, steps=600
+[record_hold_at_v12_safe_home]     0 alpha=0.000 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_hold_at_v12_safe_home]   100 alpha=0.167 disp=0.01239 rise=-0.00757 groups={} opp=None ready=False stable=0/5
+[record_hold_at_v12_safe_home]   200 alpha=0.333 disp=0.01239 rise=-0.00757 groups={} opp=None ready=False stable=0/5
+[record_hold_at_v12_safe_home]   300 alpha=0.500 disp=0.01237 rise=-0.00753 groups={} opp=None ready=False stable=0/5
+[record_hold_at_v12_safe_home]   400 alpha=0.667 disp=0.01237 rise=-0.00753 groups={} opp=None ready=False stable=0/5
+[record_hold_at_v12_safe_home]   500 alpha=0.833 disp=0.01237 rise=-0.00752 groups={} opp=None ready=False stable=0/5
+[record_hold_at_v12_safe_home]   600 alpha=1.000 disp=0.01237 rise=-0.00752 groups={} opp=None ready=False stable=0/5
+
+[PATH EXEC] record_path_home_to_pre seg=1/1 len=1.7756 duration=2.37s steps=2367
+[record_path_home_to_pre_seg00]     0 alpha=0.000 disp=0.01236 rise=-0.00753 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]   100 alpha=0.042 disp=0.01241 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]   200 alpha=0.084 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]   300 alpha=0.127 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]   400 alpha=0.169 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]   500 alpha=0.211 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]   600 alpha=0.253 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]   700 alpha=0.296 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]   800 alpha=0.338 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]   900 alpha=0.380 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  1000 alpha=0.422 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  1100 alpha=0.465 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  1200 alpha=0.507 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  1300 alpha=0.549 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  1400 alpha=0.591 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  1500 alpha=0.634 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  1600 alpha=0.676 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  1700 alpha=0.718 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  1800 alpha=0.760 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  1900 alpha=0.803 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  2000 alpha=0.845 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  2100 alpha=0.887 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  2200 alpha=0.929 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_home_to_pre_seg00]  2300 alpha=0.972 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+
+[PHASE] record_hold_at_p3_pre_side_open, steps=800
+[record_hold_at_p3_pre_side_open]     0 alpha=0.000 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_hold_at_p3_pre_side_open]   100 alpha=0.125 disp=0.01239 rise=-0.00757 groups={} opp=None ready=False stable=0/5
+[record_hold_at_p3_pre_side_open]   200 alpha=0.250 disp=0.01239 rise=-0.00757 groups={} opp=None ready=False stable=0/5
+[record_hold_at_p3_pre_side_open]   300 alpha=0.375 disp=0.01240 rise=-0.00756 groups={} opp=None ready=False stable=0/5
+[record_hold_at_p3_pre_side_open]   400 alpha=0.500 disp=0.01238 rise=-0.00752 groups={} opp=None ready=False stable=0/5
+[record_hold_at_p3_pre_side_open]   500 alpha=0.625 disp=0.01238 rise=-0.00752 groups={} opp=None ready=False stable=0/5
+[record_hold_at_p3_pre_side_open]   600 alpha=0.750 disp=0.01236 rise=-0.00752 groups={} opp=None ready=False stable=0/5
+[record_hold_at_p3_pre_side_open]   700 alpha=0.875 disp=0.01237 rise=-0.00753 groups={} opp=None ready=False stable=0/5
+[record_hold_at_p3_pre_side_open]   800 alpha=1.000 disp=0.01237 rise=-0.00753 groups={} opp=None ready=False stable=0/5
+
+[PATH EXEC] record_path_pre_to_grasp seg=1/1 len=0.3251 duration=0.43s steps=433
+[record_path_pre_to_grasp_seg00]     0 alpha=0.000 disp=0.01237 rise=-0.00753 groups={} opp=None ready=False stable=0/5
+[record_path_pre_to_grasp_seg00]   100 alpha=0.231 disp=0.01241 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_pre_to_grasp_seg00]   200 alpha=0.462 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_pre_to_grasp_seg00]   300 alpha=0.693 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[record_path_pre_to_grasp_seg00]   400 alpha=0.924 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+
+[PHASE] settle_side_open_at_grasp, steps=349
+[settle_side_open_at_grasp]     0 alpha=0.000 disp=0.01242 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[settle_side_open_at_grasp]   100 alpha=0.287 disp=0.01261 rise=-0.00626 groups={} opp=None ready=False stable=0/5
+[settle_side_open_at_grasp]   200 alpha=0.573 disp=0.01465 rise=-0.00758 groups={} opp=None ready=False stable=0/5
+[settle_side_open_at_grasp]   300 alpha=0.860 disp=0.01466 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+
+[PHASE] snap_close_to_target, steps=450
+[snap_close_to_target]     0 alpha=0.000 disp=0.01469 rise=-0.00761 groups={} opp=None ready=False stable=0/5
+[snap_close_to_target]   100 alpha=0.222 disp=0.01473 rise=-0.00762 groups={} opp=None ready=False stable=0/5
+[snap_close_to_target]   200 alpha=0.444 disp=0.01466 rise=-0.00758 groups={} opp=None ready=False stable=0/5
+[snap_close_to_target]   300 alpha=0.667 disp=0.01461 rise=-0.00757 groups={} opp=None ready=False stable=0/5
+[snap_close_to_target]   400 alpha=0.889 disp=0.01470 rise=-0.00758 groups={} opp=None ready=False stable=0/5
+
+[PHASE] grip_settle_at_close_target, steps=250
+[grip_settle_at_close_target]     0 alpha=0.000 disp=0.01491 rise=-0.00750 groups={} opp=None ready=False stable=0/5
+[grip_settle_at_close_target]   100 alpha=0.400 disp=0.01481 rise=-0.00698 groups={'thumb': 1, 'pinky': 1} opp=-0.800006387500257 ready=True stable=82/5
+[grip_settle_at_close_target]   200 alpha=0.800 disp=0.01475 rise=-0.00658 groups={'thumb': 2, 'pinky': 1} opp=-0.9160510786160166 ready=True stable=182/5
+
+[GRIP_READY] lift is allowed. Hand ctrl will stay constant during lift.
+
+[PHASE] lift_world_z_with_fixed_grip_ctrl, steps=3000
+[lift_world_z_with_fixed_grip_ctrl]     0 alpha=0.000 disp=0.01477 rise=-0.00644 groups={'thumb': 2, 'pinky': 1} opp=-0.9160506402175216 ready=True stable=233/5
+[lift_world_z_with_fixed_grip_ctrl]   100 alpha=0.033 disp=0.01476 rise=-0.00620 groups={'thumb': 2, 'pinky': 1} opp=-0.9160504272972763 ready=True stable=333/5
+[lift_world_z_with_fixed_grip_ctrl]   200 alpha=0.067 disp=0.01475 rise=-0.00597 groups={'thumb': 2, 'pinky': 1} opp=-0.9160512507535069 ready=True stable=433/5
+[lift_world_z_with_fixed_grip_ctrl]   300 alpha=0.100 disp=0.01466 rise=-0.00573 groups={'thumb': 1, 'pinky': 1} opp=-0.9160504245507646 ready=True stable=533/5
+[lift_world_z_with_fixed_grip_ctrl]   400 alpha=0.133 disp=0.01455 rise=-0.00547 groups={'thumb': 1, 'pinky': 1} opp=-0.9160506266297068 ready=True stable=633/5
+[lift_world_z_with_fixed_grip_ctrl]   500 alpha=0.167 disp=0.01444 rise=-0.00522 groups={'thumb': 1, 'pinky': 1} opp=-0.916049832202133 ready=True stable=733/5
+[lift_world_z_with_fixed_grip_ctrl]   600 alpha=0.200 disp=0.01430 rise=-0.00499 groups={'thumb': 1, 'pinky': 1} opp=-0.9160477743102553 ready=True stable=833/5
+[lift_world_z_with_fixed_grip_ctrl]   700 alpha=0.233 disp=0.01416 rise=-0.00476 groups={'thumb': 1, 'pinky': 1} opp=-0.9160514939515636 ready=True stable=933/5
+[lift_world_z_with_fixed_grip_ctrl]   800 alpha=0.267 disp=0.01401 rise=-0.00453 groups={'thumb': 1, 'pinky': 1} opp=-0.9160512107759231 ready=True stable=1033/5
+[lift_world_z_with_fixed_grip_ctrl]   900 alpha=0.300 disp=0.01386 rise=-0.00431 groups={'thumb': 1, 'pinky': 1} opp=-0.9160508901731753 ready=True stable=1133/5
+[lift_world_z_with_fixed_grip_ctrl]  1000 alpha=0.333 disp=0.01370 rise=-0.00407 groups={'thumb': 1, 'pinky': 1} opp=-0.9160505341140659 ready=True stable=1233/5
+[lift_world_z_with_fixed_grip_ctrl]  1100 alpha=0.367 disp=0.01353 rise=-0.00384 groups={'thumb': 1, 'pinky': 1} opp=-0.9160501469088127 ready=True stable=1333/5
+[lift_world_z_with_fixed_grip_ctrl]  1200 alpha=0.400 disp=0.01337 rise=-0.00360 groups={'thumb': 1, 'pinky': 1} opp=-0.916047778254784 ready=True stable=1433/5
+[lift_world_z_with_fixed_grip_ctrl]  1300 alpha=0.433 disp=0.01321 rise=-0.00336 groups={'thumb': 1, 'pinky': 1} opp=-0.9160521304495205 ready=True stable=1533/5
+[lift_world_z_with_fixed_grip_ctrl]  1400 alpha=0.467 disp=0.01305 rise=-0.00312 groups={'thumb': 1, 'pinky': 1} opp=-0.9160414138724019 ready=True stable=1633/5
+[lift_world_z_with_fixed_grip_ctrl]  1500 alpha=0.500 disp=0.01291 rise=-0.00285 groups={'thumb': 1, 'pinky': 1} opp=-0.916041104144623 ready=True stable=1733/5
+[lift_world_z_with_fixed_grip_ctrl]  1600 alpha=0.533 disp=0.01281 rise=-0.00256 groups={'thumb': 1, 'pinky': 1} opp=-0.9160408508199277 ready=True stable=1833/5
+[lift_world_z_with_fixed_grip_ctrl]  1700 alpha=0.567 disp=0.01269 rise=-0.00235 groups={'thumb': 1, 'pinky': 1} opp=-0.9160443012756061 ready=True stable=1933/5
+[lift_world_z_with_fixed_grip_ctrl]  1800 alpha=0.600 disp=0.01266 rise=-0.00208 groups={'thumb': 1, 'pinky': 1} opp=-0.9122138974417858 ready=True stable=2033/5
+[lift_world_z_with_fixed_grip_ctrl]  1900 alpha=0.633 disp=0.01271 rise=-0.00187 groups={'thumb': 1, 'pinky': 1} opp=-0.9122134846189567 ready=True stable=2133/5
+[lift_world_z_with_fixed_grip_ctrl]  2000 alpha=0.667 disp=0.01289 rise=-0.00169 groups={'thumb': 2, 'pinky': 1} opp=-0.9122160661883553 ready=True stable=2233/5
+[lift_world_z_with_fixed_grip_ctrl]  2100 alpha=0.700 disp=0.01304 rise=-0.00154 groups={'thumb': 2, 'pinky': 1} opp=-0.9122190812993392 ready=True stable=2333/5
+[lift_world_z_with_fixed_grip_ctrl]  2200 alpha=0.733 disp=0.01338 rise=-0.00139 groups={'thumb': 2, 'pinky': 1} opp=-0.9122164972845088 ready=True stable=2433/5
+[lift_world_z_with_fixed_grip_ctrl]  2300 alpha=0.767 disp=0.01378 rise=-0.00121 groups={'thumb': 2, 'pinky': 1} opp=-0.912197038492985 ready=True stable=2533/5
+[lift_world_z_with_fixed_grip_ctrl]  2400 alpha=0.800 disp=0.01403 rise=-0.00082 groups={'thumb': 2, 'pinky': 1} opp=-0.9121967157413475 ready=True stable=2633/5
+[lift_world_z_with_fixed_grip_ctrl]  2500 alpha=0.833 disp=0.01422 rise=-0.00021 groups={'thumb': 2, 'pinky': 1} opp=-0.9121964307178027 ready=True stable=2733/5
+[lift_world_z_with_fixed_grip_ctrl]  2600 alpha=0.867 disp=0.01357 rise=0.00287 groups={'thumb': 2, 'pinky': 1} opp=-0.9063148459128664 ready=True stable=2833/5
+[lift_world_z_with_fixed_grip_ctrl]  2700 alpha=0.900 disp=0.01459 rise=0.01141 groups={'thumb': 2, 'middle': 1, 'pinky': 1} opp=-0.8964830905418604 ready=True stable=7/5
+[lift_world_z_with_fixed_grip_ctrl]  2800 alpha=0.933 disp=0.04406 rise=0.03729 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.8938960991295343 ready=True stable=107/5
+[lift_world_z_with_fixed_grip_ctrl]  2900 alpha=0.967 disp=0.06258 rise=0.05291 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.8747536487343469 ready=True stable=207/5
+[lift_world_z_with_fixed_grip_ctrl]  3000 alpha=1.000 disp=0.07028 rise=0.05925 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.8624242033288587 ready=True stable=307/5
+
+[PHASE] final_air_hold_after_lift, steps=1200
+[final_air_hold_after_lift]     0 alpha=0.000 disp=0.07034 rise=0.05929 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.8624267146562264 ready=True stable=308/5
+[final_air_hold_after_lift]   100 alpha=0.083 disp=0.07374 rise=0.06205 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.845409962955426 ready=True stable=408/5
+[final_air_hold_after_lift]   200 alpha=0.167 disp=0.07489 rise=0.06298 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.817846696744849 ready=True stable=508/5
+[final_air_hold_after_lift]   300 alpha=0.250 disp=0.07531 rise=0.06337 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.7999909290722524 ready=True stable=608/5
+[final_air_hold_after_lift]   400 alpha=0.333 disp=0.07556 rise=0.06365 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.8000492679120085 ready=True stable=708/5
+[final_air_hold_after_lift]   500 alpha=0.417 disp=0.07575 rise=0.06391 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.8000261187943947 ready=True stable=808/5
+[final_air_hold_after_lift]   600 alpha=0.500 disp=0.07595 rise=0.06418 groups={'thumb': 1, 'middle': 2, 'pinky': 1} opp=-0.8000259231039571 ready=True stable=908/5
+[final_air_hold_after_lift]   700 alpha=0.583 disp=0.07619 rise=0.06445 groups={'thumb': 1, 'middle': 2, 'pinky': 1} opp=-0.8000336356721276 ready=True stable=1008/5
+[final_air_hold_after_lift]   800 alpha=0.667 disp=0.07641 rise=0.06471 groups={'thumb': 1, 'middle': 2, 'pinky': 1} opp=-0.7999993245231334 ready=True stable=1108/5
+[final_air_hold_after_lift]   900 alpha=0.750 disp=0.07661 rise=0.06495 groups={'thumb': 1, 'middle': 2, 'pinky': 1} opp=-0.8000003594165053 ready=True stable=1208/5
+[final_air_hold_after_lift]  1000 alpha=0.833 disp=0.07681 rise=0.06518 groups={'thumb': 1, 'middle': 2, 'pinky': 1} opp=-0.8000017131809383 ready=True stable=1308/5
+[final_air_hold_after_lift]  1100 alpha=0.917 disp=0.07699 rise=0.06541 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.7714882960805894 ready=True stable=1408/5
+[final_air_hold_after_lift]  1200 alpha=1.000 disp=0.07716 rise=0.06563 groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.7554765942683901 ready=True stable=1508/5
+
+========== P4U6 IK-PATH RECORD RESULT ==========
+out                 : /home/zyh/Projects/o7_mujoco_sim/diagnostics/current_v412/sodacan165_sample014_best_sweep_viewer_debug/result.json
+grip_ready          : True
+stop_reason         : ready_after_close_target_hold
+max_stable_count    : 2917
+final_object_disp   : 0.07716096999764172
+final_object_rise   : 0.06563263412783882
+final_groups        : {'thumb': 1, 'middle': 1, 'pinky': 1}
+final_opposition_cos: -0.7554765942683901
+plan start_to_home : success=True method=direct len=2.6270522434850814 waypoints=2
+plan home_to_pre   : success=True method=direct len=1.7755505829295992 waypoints=2
+plan pre_to_grasp  : success=True method=direct len=0.3251434643167021 waypoints=2
+================================================
+
+[VIEWER] keep open. Close viewer window or Ctrl+C in terminal to exit.
+
+========== DONE ==========
+terminal : diagnostics/current_v412/sodacan165_sample014_best_sweep_viewer_debug/terminal.txt
+result   : diagnostics/current_v412/sodacan165_sample014_best_sweep_viewer_debug/result.json
+path_plan: diagnostics/current_v412/sodacan165_sample014_best_sweep_viewer_debug/path_plan.json
+
+========== RESULT QUICK VIEW ==========
+stop_reason: ready_after_close_target_hold
+grip_ready: True
+final_object_disp: 0.07716096999764172
+final_object_rise: 0.06563263412783882
+final_groups: {'thumb': 1, 'middle': 1, 'pinky': 1}
+final_opposition_cos: -0.7554765942683901
+max_stable_count: 2917

@@ -1,0 +1,235 @@
+========== FILTER P3 CONTACT-FREE GOAL REPORT ==========
+input p3     : /home/zyh/Projects/o7_mujoco_sim/diagnostics/current_v412/sodacan165_topk_p2p3_batch_debug/sample014/sample014_p3.json
+output p3    : /home/zyh/Projects/o7_mujoco_sim/diagnostics/current_v412/sodacan165_sample014_p4u6_viewer_debug/sample014_p3_contactfree_goal.json
+num records  : 872
+num pass     : 200
+num selected : 60
+criteria     : min_go=0.002, max_go=0.01, min_hsc=0.0
+
+---- selected ----
+{
+  "_debug_path": "root.ranked[58]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.2809074972803944,
+  "pre_seed": "random_nominal_00",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_01",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6394801376082881,
+  "smooth_cost": 4.93309527428456
+}
+
+---- top selected preview ----
+{
+  "_debug_path": "root.ranked[58]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.2809074972803944,
+  "pre_seed": "random_nominal_00",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_01",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6394801376082881,
+  "smooth_cost": 4.93309527428456
+}
+{
+  "_debug_path": "root.ranked[61]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.2831549687760484,
+  "pre_seed": "random_nominal_00",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_10",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6497601157185655,
+  "smooth_cost": 4.7271062614660435
+}
+{
+  "_debug_path": "root.ranked[63]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.2922402853272557,
+  "pre_seed": "random_nominal_01",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_01",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.634998639807081,
+  "smooth_cost": 6.091052236494378
+}
+{
+  "_debug_path": "root.ranked[65]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.2944877568229096,
+  "pre_seed": "random_nominal_01",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_10",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.634998639807081,
+  "smooth_cost": 5.8850632236758615
+}
+{
+  "_debug_path": "root.ranked[67]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.296787902984317,
+  "pre_seed": "random_nominal_00",
+  "grasp_seed": "random_nominal_08",
+  "lift_seed": "random_nominal_05",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.003876301614959352,
+  "static_grasp_closed_hand_support_clearance": 0.0014429186635502354,
+  "combo_min_joint_margin": 0.6807189726678657,
+  "smooth_cost": 4.650821761235447
+}
+{
+  "_debug_path": "root.ranked[69]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.2971331054315964,
+  "pre_seed": "fr3_nominal",
+  "grasp_seed": "random_nominal_08",
+  "lift_seed": "random_nominal_05",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.003876301614959352,
+  "static_grasp_closed_hand_support_clearance": 0.0014429186635502354,
+  "combo_min_joint_margin": 0.6807189726678657,
+  "smooth_cost": 4.504788776238256
+}
+{
+  "_debug_path": "root.ranked[70]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.2980615454382458,
+  "pre_seed": "fr3_nominal",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_01",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6394801376082881,
+  "smooth_cost": 4.899121260691183
+}
+{
+  "_debug_path": "root.ranked[71]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.3003090169338998,
+  "pre_seed": "fr3_nominal",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_10",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6497601157185655,
+  "smooth_cost": 4.693132247872667
+}
+{
+  "_debug_path": "root.ranked[72]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.3027572076811402,
+  "pre_seed": "random_nominal_04",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_01",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6394801376082881,
+  "smooth_cost": 5.553464312744632
+}
+{
+  "_debug_path": "root.ranked[74]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.3050046791767942,
+  "pre_seed": "random_nominal_04",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_10",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6497601157185655,
+  "smooth_cost": 5.347475299926115
+}
+{
+  "_debug_path": "root.ranked[75]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.3083864872307047,
+  "pre_seed": "random_nominal_00",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_04",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6590961303869212,
+  "smooth_cost": 4.506450989319958
+}
+{
+  "_debug_path": "root.ranked[76]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.3146913218695986,
+  "pre_seed": "random_nominal_10",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_01",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6394801376082881,
+  "smooth_cost": 5.8623629176184595
+}
+{
+  "_debug_path": "root.ranked[80]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.3169387933652525,
+  "pre_seed": "random_nominal_10",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_10",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6447678412377571,
+  "smooth_cost": 5.656373904799943
+}
+{
+  "_debug_path": "root.ranked[81]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.3197192752775657,
+  "pre_seed": "random_nominal_01",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_04",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.634998639807081,
+  "smooth_cost": 5.664407951529776
+}
+{
+  "_debug_path": "root.ranked[84]",
+  "precheck_status": "PASS_PRECHECK",
+  "score": 1.3234310644635263,
+  "pre_seed": "random_nominal_00",
+  "grasp_seed": "fr3_nominal",
+  "lift_seed": "random_nominal_05",
+  "min_path_hand_support_clearance": 0.0,
+  "min_path_fr3_object_clearance": 0.0,
+  "static_grasp_closed_hand_object_distance": 0.004017890600916554,
+  "static_grasp_closed_hand_support_clearance": 0.0,
+  "combo_min_joint_margin": 0.6807189726678657,
+  "smooth_cost": 4.658779864039314
+}

@@ -1,0 +1,2946 @@
+{
+  "format": "v4_12p4u1_ready_gated_snap_close",
+  "model": "/home/zyh/Projects/o7_mujoco_sim/legacy_final_demos/final_can52_p4u1_ready_gated_snap_demo/diagnostics/current_v412/v4_12p4t2_scene_can52_contact_stable_old_ellipsoid_proxy.xml",
+  "args": {
+    "model": "diagnostics/current_v412/v4_12p4t2_scene_can52_contact_stable_old_ellipsoid_proxy.xml",
+    "candidate": "diagnostics/current_v412/v4_12p4h2_can52_contact_sequence_proxy_debug/best_candidate.json",
+    "p3_json": "diagnostics/current_v412/v4_12p4h2_can52_contact_sequence_proxy_debug/best_p3.json",
+    "best_config": "diagnostics/current_v412/v4_12p4h2_can52_contact_sequence_proxy_debug/best_contact_sequence_config_ctrlsplit_debug.json",
+    "which": "best_available",
+    "object_body": "grasp_can",
+    "target_body": "fr3_link7",
+    "out": "outputs/can52_p4u1_ready_gated_snap_micro_squeeze_lift_viewer.json",
+    "viewer": true,
+    "keep_viewer_open": true,
+    "frame_sleep": 0.001,
+    "move_steps": 80,
+    "thumb_preshape_steps": 80,
+    "close_duration": 0.45,
+    "post_close_target_hold_duration": 0.25,
+    "micro_squeeze_duration": 0.35,
+    "micro_squeeze_fraction": 0.08,
+    "enable_lift": true,
+    "lift_mode": "world_z",
+    "lift_z": 0.06,
+    "lift_duration": 2.0,
+    "lift_ik_iters": 140,
+    "lift_ik_damping": 0.0001,
+    "finger_close_scale": 0.92,
+    "thumb_pitch_from_finger_gain": 0.24,
+    "thumb_open_pitch": 0.22,
+    "min_live_non_thumb": 1,
+    "opposition_cos_threshold": -0.3,
+    "live_ready_stable_steps": 999,
+    "grip_ready_stable_steps": 8,
+    "max_grip_disp": 0.006,
+    "max_extra_disp_during_squeeze": 0.003,
+    "print_every_steps": 30,
+    "log_every_steps": 30
+  },
+  "arm_source": {
+    "q_grasp": "p3.best_pass.q_grasp",
+    "q_pre": "p3.best_pass.q_pre"
+  },
+  "hand_source": "best.best_record.hand_config.ctrl",
+  "side_open_ctrl": {
+    "thumb_cmc_roll": 0.4932203769683838,
+    "thumb_cmc_yaw": 0.8166652500629424,
+    "thumb_cmc_pitch": 0.22,
+    "index_mcp_pitch": 0.0,
+    "middle_mcp_pitch": 0.0,
+    "ring_mcp_pitch": 0.0,
+    "pinky_mcp_pitch": 0.0
+  },
+  "close_target": {
+    "thumb_cmc_roll": 0.4932203769683838,
+    "thumb_cmc_yaw": 0.8166652500629424,
+    "index_mcp_pitch": 0.4225559062957764,
+    "middle_mcp_pitch": 0.4582318838834763,
+    "ring_mcp_pitch": 0.4565560380220413,
+    "pinky_mcp_pitch": 0.4326809443235397,
+    "thumb_cmc_pitch": 0.32620148635149004
+  },
+  "grip_ready": true,
+  "stop_reason": "ready_during_gated_micro_squeeze",
+  "max_stable_count": 1854,
+  "final_object_disp": 0.029876636885086322,
+  "final_object_rise": 0.029397643411355923,
+  "final_groups": {
+    "thumb": 1,
+    "index": 1,
+    "middle": 1
+  },
+  "final_opposition_cos": -0.9920640510912057,
+  "pre_lift_groups": {
+    "thumb": 1,
+    "index": 1
+  },
+  "pre_lift_opposition_cos": -0.9960230499737148,
+  "grip_hold_ctrl": {
+    "thumb_cmc_roll": 0.4932203769683838,
+    "thumb_cmc_yaw": 0.8166652500629424,
+    "thumb_cmc_pitch": 0.326347551433005,
+    "index_mcp_pitch": 0.4231370720121717,
+    "middle_mcp_pitch": 0.45886211684698364,
+    "ring_mcp_pitch": 0.45718396609725787,
+    "pinky_mcp_pitch": 0.4332760355936695
+  },
+  "lift_ik_info": {
+    "success": true,
+    "target_body": "fr3_link7",
+    "requested_lift_z": 0.06,
+    "actual_target_body_rise": 0.059683843932538894,
+    "final_err": 0.0003175547328598161,
+    "start_pos": [
+      0.6245345273142078,
+      0.20740646627297485,
+      0.2706210449196697
+    ],
+    "target_pos": [
+      0.6245345273142078,
+      0.20740646627297485,
+      0.3306210449196697
+    ],
+    "final_pos": [
+      0.6245125559972706,
+      0.20738637621072392,
+      0.3303048888522086
+    ]
+  },
+  "rows": [
+    {
+      "phase": "settle_side_open_at_grasp",
+      "step": 0,
+      "time": 0.001,
+      "alpha": 0.0,
+      "object_pos": [
+        0.455,
+        0.0,
+        0.267692639
+      ],
+      "object_disp": 0.0,
+      "object_rise": 0.0,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "thumb_cmc_pitch": 0.22,
+        "index_mcp_pitch": 0.0,
+        "middle_mcp_pitch": 0.0,
+        "ring_mcp_pitch": 0.0,
+        "pinky_mcp_pitch": 0.0
+      }
+    },
+    {
+      "phase": "settle_side_open_at_grasp",
+      "step": 30,
+      "time": 0.03100000000000002,
+      "alpha": 0.1875,
+      "object_pos": [
+        0.45481478641121365,
+        4.2570040939955264e-05,
+        0.26673330153588276
+      ],
+      "object_disp": 0.0009779798831855747,
+      "object_rise": -0.0009593374641172492,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "thumb_cmc_pitch": 0.22,
+        "index_mcp_pitch": 0.0,
+        "middle_mcp_pitch": 0.0,
+        "ring_mcp_pitch": 0.0,
+        "pinky_mcp_pitch": 0.0
+      }
+    },
+    {
+      "phase": "settle_side_open_at_grasp",
+      "step": 60,
+      "time": 0.06100000000000005,
+      "alpha": 0.375,
+      "object_pos": [
+        0.4549549301746787,
+        1.4467296623230065e-05,
+        0.26669075624601374
+      ],
+      "object_disp": 0.0010030003213165961,
+      "object_rise": -0.0010018827539862718,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "thumb_cmc_pitch": 0.22,
+        "index_mcp_pitch": 0.0,
+        "middle_mcp_pitch": 0.0,
+        "ring_mcp_pitch": 0.0,
+        "pinky_mcp_pitch": 0.0
+      }
+    },
+    {
+      "phase": "settle_side_open_at_grasp",
+      "step": 90,
+      "time": 0.09100000000000007,
+      "alpha": 0.5625,
+      "object_pos": [
+        0.45496856592926194,
+        -2.987607344318736e-05,
+        0.2666992479308389
+      ],
+      "object_disp": 0.0009943372148605548,
+      "object_rise": -0.0009933910691611314,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "thumb_cmc_pitch": 0.22,
+        "index_mcp_pitch": 0.0,
+        "middle_mcp_pitch": 0.0,
+        "ring_mcp_pitch": 0.0,
+        "pinky_mcp_pitch": 0.0
+      }
+    },
+    {
+      "phase": "settle_side_open_at_grasp",
+      "step": 120,
+      "time": 0.1210000000000001,
+      "alpha": 0.75,
+      "object_pos": [
+        0.45496218888879186,
+        -2.4023767555068556e-05,
+        0.2666995172640691
+      ],
+      "object_disp": 0.0009941315827981553,
+      "object_rise": -0.000993121735930913,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "thumb_cmc_pitch": 0.22,
+        "index_mcp_pitch": 0.0,
+        "middle_mcp_pitch": 0.0,
+        "ring_mcp_pitch": 0.0,
+        "pinky_mcp_pitch": 0.0
+      }
+    },
+    {
+      "phase": "settle_side_open_at_grasp",
+      "step": 150,
+      "time": 0.1510000000000001,
+      "alpha": 0.9375,
+      "object_pos": [
+        0.4550211703704536,
+        -1.1386992987152691e-05,
+        0.2666922831248455
+      ],
+      "object_disp": 0.0010006446547853947,
+      "object_rise": -0.0010003558751545127,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "thumb_cmc_pitch": 0.22,
+        "index_mcp_pitch": 0.0,
+        "middle_mcp_pitch": 0.0,
+        "ring_mcp_pitch": 0.0,
+        "pinky_mcp_pitch": 0.0
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 0,
+      "time": 0.16200000000000012,
+      "alpha": 0.0,
+      "object_pos": [
+        0.45499135553149805,
+        1.185603200103625e-05,
+        0.266690090048352
+      ],
+      "object_disp": 0.001002656318376868,
+      "object_rise": -0.0010025489516480302,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.0,
+        "middle_mcp_pitch": 0.0,
+        "ring_mcp_pitch": 0.0,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.0,
+        "thumb_cmc_pitch": 0.22,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 30,
+      "time": 0.19200000000000014,
+      "alpha": 0.06666666666666667,
+      "object_pos": [
+        0.4550060212705653,
+        -4.658244771424775e-06,
+        0.26668649955082735
+      ],
+      "object_disp": 0.0010061682494121127,
+      "object_rise": -0.0010061394491726605,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.02884539628823598,
+        "middle_mcp_pitch": 0.03054879225889842,
+        "ring_mcp_pitch": 0.03043706920146942,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.02817039375305176,
+        "thumb_cmc_pitch": 0.22708009909009935,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 60,
+      "time": 0.22200000000000017,
+      "alpha": 0.13333333333333333,
+      "object_pos": [
+        0.4550012212091071,
+        4.728944059511874e-06,
+        0.2666844263398246
+      ],
+      "object_disp": 0.0010082244900822452,
+      "object_rise": -0.0010082126601754227,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.05769079257647196,
+        "middle_mcp_pitch": 0.06109758451779684,
+        "ring_mcp_pitch": 0.06087413840293884,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.05634078750610352,
+        "thumb_cmc_pitch": 0.23416019818019868,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 90,
+      "time": 0.25200000000000017,
+      "alpha": 0.2,
+      "object_pos": [
+        0.4550017836809341,
+        1.8897648336067186e-06,
+        0.2666828226575413
+      ],
+      "object_disp": 0.0010098196859962263,
+      "object_rise": -0.0010098163424587248,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.08653618886470794,
+        "middle_mcp_pitch": 0.09164637677669527,
+        "ring_mcp_pitch": 0.09131120760440826,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.08451118125915529,
+        "thumb_cmc_pitch": 0.24124029727029803,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 120,
+      "time": 0.2820000000000002,
+      "alpha": 0.26666666666666666,
+      "object_pos": [
+        0.4550013429229553,
+        1.9880154680494003e-06,
+        0.2666808882888752
+      ],
+      "object_disp": 0.0010117535555208643,
+      "object_rise": -0.0010117507111248036,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.11538158515294392,
+        "middle_mcp_pitch": 0.12219516903559367,
+        "ring_mcp_pitch": 0.12174827680587769,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.11268157501220703,
+        "thumb_cmc_pitch": 0.24832039636039738,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 150,
+      "time": 0.3120000000000002,
+      "alpha": 0.3333333333333333,
+      "object_pos": [
+        0.4550020456810845,
+        9.369519416479585e-07,
+        0.26668018952951544
+      ],
+      "object_disp": 0.0010124519707001018,
+      "object_rise": -0.0010124494704845666,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.1442269814411799,
+        "middle_mcp_pitch": 0.15274396129449208,
+        "ring_mcp_pitch": 0.1521853460073471,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.1408519687652588,
+        "thumb_cmc_pitch": 0.2554004954504967,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 180,
+      "time": 0.34200000000000025,
+      "alpha": 0.4,
+      "object_pos": [
+        0.4550052508145196,
+        1.8846058301767043e-06,
+        0.2666809063465041
+      ],
+      "object_disp": 0.001011748034315922,
+      "object_rise": -0.0010117326534959115,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.1730723777294159,
+        "middle_mcp_pitch": 0.18329275355339053,
+        "ring_mcp_pitch": 0.18262241520881653,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.16902236251831057,
+        "thumb_cmc_pitch": 0.262480594540596,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 210,
+      "time": 0.3720000000000003,
+      "alpha": 0.4666666666666667,
+      "object_pos": [
+        0.4550024953885108,
+        1.4432286271751876e-06,
+        0.2666819074411804
+      ],
+      "object_disp": 0.0010107356696320584,
+      "object_rise": -0.0010107315588195886,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.20191777401765187,
+        "middle_mcp_pitch": 0.21384154581228895,
+        "ring_mcp_pitch": 0.21305948441028594,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.19719275627136232,
+        "thumb_cmc_pitch": 0.26956069363069535,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 240,
+      "time": 0.4020000000000003,
+      "alpha": 0.5333333333333333,
+      "object_pos": [
+        0.455001351794173,
+        -1.95371948764113e-06,
+        0.26668036806343276
+      ],
+      "object_disp": 0.0010122737245360368,
+      "object_rise": -0.00101227093656725,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.23076317030588783,
+        "middle_mcp_pitch": 0.24439033807118735,
+        "ring_mcp_pitch": 0.24349655361175537,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.22536315002441407,
+        "thumb_cmc_pitch": 0.27664079272079467,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 270,
+      "time": 0.43200000000000033,
+      "alpha": 0.6,
+      "object_pos": [
+        0.4550012233672383,
+        3.2217703495564885e-06,
+        0.2666828210421413
+      ],
+      "object_disp": 0.0010098238383230566,
+      "object_rise": -0.0010098179578587052,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.2596085665941238,
+        "middle_mcp_pitch": 0.27493913033008577,
+        "ring_mcp_pitch": 0.27393362281322475,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.25353354377746584,
+        "thumb_cmc_pitch": 0.28372089181089405,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 300,
+      "time": 0.46200000000000035,
+      "alpha": 0.6666666666666666,
+      "object_pos": [
+        0.45500362964119984,
+        -3.4409354921761527e-06,
+        0.26668325708309004
+      ],
+      "object_disp": 0.001009394307749525,
+      "object_rise": -0.0010093819169099683,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.2884539628823598,
+        "middle_mcp_pitch": 0.30548792258898416,
+        "ring_mcp_pitch": 0.3043706920146942,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.2817039375305176,
+        "thumb_cmc_pitch": 0.2908009909009934,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 330,
+      "time": 0.4920000000000004,
+      "alpha": 0.7333333333333333,
+      "object_pos": [
+        0.4550060014094941,
+        -3.6251152349387143e-06,
+        0.2666820133038439
+      ],
+      "object_disp": 0.0010106500166266383,
+      "object_rise": -0.00101062569615612,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.31729935917059576,
+        "middle_mcp_pitch": 0.3360367148478826,
+        "ring_mcp_pitch": 0.3348077612161636,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.30987433128356934,
+        "thumb_cmc_pitch": 0.2978810899910927,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 360,
+      "time": 0.5220000000000004,
+      "alpha": 0.8,
+      "object_pos": [
+        0.4550015480756526,
+        -7.497561419398439e-07,
+        0.2666821152013459
+      ],
+      "object_disp": 0.001010525262583211,
+      "object_rise": -0.0010105237986541282,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.3461447554588318,
+        "middle_mcp_pitch": 0.36658550710678106,
+        "ring_mcp_pitch": 0.36524483041763306,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.33804472503662114,
+        "thumb_cmc_pitch": 0.304961189081192,
+        "thumb_cmc_roll": 0.4932203769683837
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 390,
+      "time": 0.5520000000000004,
+      "alpha": 0.8666666666666667,
+      "object_pos": [
+        0.45500354634691326,
+        2.3155280897542218e-07,
+        0.2666804850489053
+      ],
+      "object_disp": 0.0010121601903403347,
+      "object_rise": -0.0010121539510947186,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.37499015174706773,
+        "middle_mcp_pitch": 0.39713429936567946,
+        "ring_mcp_pitch": 0.3956818996191025,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.3662151187896729,
+        "thumb_cmc_pitch": 0.3120412881712914,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 420,
+      "time": 0.5820000000000004,
+      "alpha": 0.9333333333333333,
+      "object_pos": [
+        0.4555657634931767,
+        -0.00016229852359564745,
+        0.26686202096805584
+      ],
+      "object_disp": 0.0010180154497666531,
+      "object_rise": -0.0008306180319441747,
+      "groups": {},
+      "opposition_cos": null,
+      "ready": false,
+      "stable_count": 0,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.40383554803530375,
+        "middle_mcp_pitch": 0.4276830916245779,
+        "ring_mcp_pitch": 0.4261189688205719,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.39438551254272464,
+        "thumb_cmc_pitch": 0.3191213872613907,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "snap_close_to_target",
+      "step": 450,
+      "time": 0.6120000000000004,
+      "alpha": 1.0,
+      "object_pos": [
+        0.45623253070717323,
+        -0.0003875113087477923,
+        0.2670537491774799
+      ],
+      "object_disp": 0.0014413456087462452,
+      "object_rise": -0.0006388898225200834,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.7976430764367192,
+      "ready": true,
+      "stable_count": 5,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4326809443235397,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4225559062957764,
+        "thumb_cmc_pitch": 0.32620148635149004,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "grip_settle_at_close_target",
+      "step": 0,
+      "time": 0.6130000000000004,
+      "alpha": 0.0,
+      "object_pos": [
+        0.4562437318119895,
+        -0.00039347030322184134,
+        0.2670556294366225
+      ],
+      "object_disp": 0.0014517123969666344,
+      "object_rise": -0.000637009563377533,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.7975746865879119,
+      "ready": true,
+      "stable_count": 6,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4225559062957764,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "pinky_mcp_pitch": 0.4326809443235397,
+        "thumb_cmc_pitch": 0.32620148635149004
+      }
+    },
+    {
+      "phase": "grip_settle_at_close_target",
+      "step": 30,
+      "time": 0.6430000000000005,
+      "alpha": 0.12,
+      "object_pos": [
+        0.4566505200214608,
+        -0.0005816410627253256,
+        0.2671539605585154
+      ],
+      "object_disp": 0.0018310371734105663,
+      "object_rise": -0.0005386784414845858,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.79852276150554,
+      "ready": true,
+      "stable_count": 1,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4225559062957764,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "pinky_mcp_pitch": 0.4326809443235397,
+        "thumb_cmc_pitch": 0.32620148635149004
+      }
+    },
+    {
+      "phase": "grip_settle_at_close_target",
+      "step": 60,
+      "time": 0.6730000000000005,
+      "alpha": 0.24,
+      "object_pos": [
+        0.4569517287050046,
+        -0.0006932247771208468,
+        0.26720421141100054
+      ],
+      "object_disp": 0.002127996014857407,
+      "object_rise": -0.0004884275889994738,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.7991574418692509,
+      "ready": true,
+      "stable_count": 9,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4225559062957764,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "pinky_mcp_pitch": 0.4326809443235397,
+        "thumb_cmc_pitch": 0.32620148635149004
+      }
+    },
+    {
+      "phase": "grip_settle_at_close_target",
+      "step": 90,
+      "time": 0.7030000000000005,
+      "alpha": 0.36,
+      "object_pos": [
+        0.45715159427977814,
+        -0.0007940006383400875,
+        0.2672452283946915
+      ],
+      "object_disp": 0.0023366581282252084,
+      "object_rise": -0.00044741060530850696,
+      "groups": {
+        "thumb": 2,
+        "index": 1
+      },
+      "opposition_cos": -0.9982213790263234,
+      "ready": true,
+      "stable_count": 39,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4225559062957764,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "pinky_mcp_pitch": 0.4326809443235397,
+        "thumb_cmc_pitch": 0.32620148635149004
+      }
+    },
+    {
+      "phase": "grip_settle_at_close_target",
+      "step": 120,
+      "time": 0.7330000000000005,
+      "alpha": 0.48,
+      "object_pos": [
+        0.45725286024491374,
+        -0.0008467470918078045,
+        0.2672721920043916
+      ],
+      "object_disp": 0.0024431814498137097,
+      "object_rise": -0.00042044699560839227,
+      "groups": {
+        "thumb": 2,
+        "index": 1
+      },
+      "opposition_cos": -0.9968499177489405,
+      "ready": true,
+      "stable_count": 69,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4225559062957764,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "pinky_mcp_pitch": 0.4326809443235397,
+        "thumb_cmc_pitch": 0.32620148635149004
+      }
+    },
+    {
+      "phase": "grip_settle_at_close_target",
+      "step": 150,
+      "time": 0.7630000000000006,
+      "alpha": 0.6,
+      "object_pos": [
+        0.45734782004232777,
+        -0.0009000230885810663,
+        0.26730257910201494
+      ],
+      "object_disp": 0.0025444935124992987,
+      "object_rise": -0.00039005989798507334,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9968296124265916,
+      "ready": true,
+      "stable_count": 99,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4225559062957764,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "pinky_mcp_pitch": 0.4326809443235397,
+        "thumb_cmc_pitch": 0.32620148635149004
+      }
+    },
+    {
+      "phase": "grip_settle_at_close_target",
+      "step": 180,
+      "time": 0.7930000000000006,
+      "alpha": 0.72,
+      "object_pos": [
+        0.4574178245075042,
+        -0.0009470174375125536,
+        0.26732862279804914
+      ],
+      "object_disp": 0.0026220650585603946,
+      "object_rise": -0.0003640162019508675,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9968159752135427,
+      "ready": true,
+      "stable_count": 129,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4225559062957764,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "pinky_mcp_pitch": 0.4326809443235397,
+        "thumb_cmc_pitch": 0.32620148635149004
+      }
+    },
+    {
+      "phase": "grip_settle_at_close_target",
+      "step": 210,
+      "time": 0.8230000000000006,
+      "alpha": 0.84,
+      "object_pos": [
+        0.4574756950042068,
+        -0.0009898322856761413,
+        0.26735354732416255
+      ],
+      "object_disp": 0.002687715921045902,
+      "object_rise": -0.00033909167583745514,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9968100614732723,
+      "ready": true,
+      "stable_count": 159,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4225559062957764,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "pinky_mcp_pitch": 0.4326809443235397,
+        "thumb_cmc_pitch": 0.32620148635149004
+      }
+    },
+    {
+      "phase": "grip_settle_at_close_target",
+      "step": 240,
+      "time": 0.8530000000000006,
+      "alpha": 0.96,
+      "object_pos": [
+        0.4575280922246938,
+        -0.001029196905996721,
+        0.2673778112645799
+      ],
+      "object_disp": 0.0027476559229387223,
+      "object_rise": -0.0003148277354201312,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9966822011319937,
+      "ready": true,
+      "stable_count": 189,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4225559062957764,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "pinky_mcp_pitch": 0.4326809443235397,
+        "thumb_cmc_pitch": 0.32620148635149004
+      }
+    },
+    {
+      "phase": "gated_micro_squeeze",
+      "step": 0,
+      "time": 0.8640000000000007,
+      "alpha": 0.0,
+      "object_pos": [
+        0.45752510237629174,
+        -0.0010271079175002786,
+        0.26738733667482545
+      ],
+      "object_disp": 0.0027430461524923073,
+      "object_rise": -0.00030530232517456124,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9960339517828517,
+      "ready": true,
+      "stable_count": 2,
+      "hand_ctrl": {
+        "thumb_cmc_roll": 0.4932203769683838,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "thumb_cmc_pitch": 0.32620148635149004,
+        "index_mcp_pitch": 0.4225559062957764,
+        "middle_mcp_pitch": 0.4582318838834763,
+        "ring_mcp_pitch": 0.4565560380220413,
+        "pinky_mcp_pitch": 0.4326809443235397
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 0,
+      "time": 0.8710000000000007,
+      "alpha": 0.0,
+      "object_pos": [
+        0.4575421333604961,
+        -0.0010342041746511069,
+        0.26738966009170967
+      ],
+      "object_disp": 0.002761125950818194,
+      "object_rise": -0.00030297890829034113,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9960217065894548,
+      "ready": true,
+      "stable_count": 9,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 30,
+      "time": 0.9010000000000007,
+      "alpha": 0.015,
+      "object_pos": [
+        0.4575821221636866,
+        -0.0010624778630058211,
+        0.267416849543728
+      ],
+      "object_disp": 0.0028057572777718505,
+      "object_rise": -0.0002757894562719909,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9959998547526036,
+      "ready": true,
+      "stable_count": 2,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 60,
+      "time": 0.9310000000000007,
+      "alpha": 0.03,
+      "object_pos": [
+        0.4576389677572788,
+        -0.0011153543262376068,
+        0.2674426995160476
+      ],
+      "object_disp": 0.002875871318861881,
+      "object_rise": -0.0002499394839524105,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9959658167891502,
+      "ready": true,
+      "stable_count": 32,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 90,
+      "time": 0.9610000000000007,
+      "alpha": 0.045,
+      "object_pos": [
+        0.4576640129333359,
+        -0.001151623635130507,
+        0.2674695469424626
+      ],
+      "object_disp": 0.002910836988240398,
+      "object_rise": -0.00022309205753739958,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9939817492812316,
+      "ready": true,
+      "stable_count": 29,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.4588621168469836,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 120,
+      "time": 0.9910000000000008,
+      "alpha": 0.06,
+      "object_pos": [
+        0.4576684175922832,
+        -0.001181545230146992,
+        0.26750067222727764
+      ],
+      "object_disp": 0.0029246115672887274,
+      "object_rise": -0.00019196677272237395,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9939535102511141,
+      "ready": true,
+      "stable_count": 1,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.4571839660972578,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.3263475514330049,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 150,
+      "time": 1.0209999999999984,
+      "alpha": 0.075,
+      "object_pos": [
+        0.4576669644072078,
+        -0.0012068174735053738,
+        0.2675251593719231
+      ],
+      "object_disp": 0.002932090890387219,
+      "object_rise": -0.0001674796280768942,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9939206159931856,
+      "ready": true,
+      "stable_count": 4,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.4588621168469837,
+        "ring_mcp_pitch": 0.4571839660972579,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217177,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 180,
+      "time": 1.050999999999995,
+      "alpha": 0.09,
+      "object_pos": [
+        0.4576914571287978,
+        -0.0012762105994853525,
+        0.2675541988331603
+      ],
+      "object_disp": 0.002981915600782431,
+      "object_rise": -0.00013844016683972615,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9938903185640741,
+      "ready": true,
+      "stable_count": 34,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 210,
+      "time": 1.0809999999999917,
+      "alpha": 0.105,
+      "object_pos": [
+        0.4576732256327695,
+        -0.0013227489348921488,
+        0.26758505988239245
+      ],
+      "object_disp": 0.0029845222892448723,
+      "object_rise": -0.00010757911760755912,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9938605903696571,
+      "ready": true,
+      "stable_count": 64,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 240,
+      "time": 1.1109999999999884,
+      "alpha": 0.12,
+      "object_pos": [
+        0.4576332295200866,
+        -0.0013183272099767025,
+        0.26763782161321664
+      ],
+      "object_disp": 0.0029453164997864352,
+      "object_rise": -5.4817386783367894e-05,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9951416405539468,
+      "ready": true,
+      "stable_count": 94,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 270,
+      "time": 1.1409999999999851,
+      "alpha": 0.135,
+      "object_pos": [
+        0.45758398565267816,
+        -0.0013139904490422404,
+        0.2676976887022579
+      ],
+      "object_disp": 0.00289889259078594,
+      "object_rise": 5.0497022578976924e-06,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920751750951616,
+      "ready": true,
+      "stable_count": 124,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 300,
+      "time": 1.1709999999999818,
+      "alpha": 0.15,
+      "object_pos": [
+        0.45752113648975007,
+        -0.0012750270849583968,
+        0.267756147462124
+      ],
+      "object_disp": 0.002825925793804233,
+      "object_rise": 6.350846212399563e-05,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920747052508632,
+      "ready": true,
+      "stable_count": 154,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 330,
+      "time": 1.2009999999999785,
+      "alpha": 0.165,
+      "object_pos": [
+        0.4574530733580968,
+        -0.001237732766271707,
+        0.26787066520971614
+      ],
+      "object_disp": 0.002753406005705084,
+      "object_rise": 0.00017802620971613115,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920743335014344,
+      "ready": true,
+      "stable_count": 184,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.4588621168469836,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.3263475514330049,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 360,
+      "time": 1.2309999999999752,
+      "alpha": 0.18,
+      "object_pos": [
+        0.4573711396657324,
+        -0.0011977741594926732,
+        0.26801176714195
+      ],
+      "object_disp": 0.002675595078210137,
+      "object_rise": 0.00031912814195000916,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920742018272071,
+      "ready": true,
+      "stable_count": 214,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.4588621168469837,
+        "ring_mcp_pitch": 0.4571839660972579,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217177,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 390,
+      "time": 1.260999999999972,
+      "alpha": 0.195,
+      "object_pos": [
+        0.4572746316698371,
+        -0.0011480950801644563,
+        0.26821186070217196
+      ],
+      "object_disp": 0.0026003197346730427,
+      "object_rise": 0.0005192217021719459,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920740384148043,
+      "ready": true,
+      "stable_count": 244,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.4571839660972578,
+        "thumb_cmc_yaw": 0.8166652500629423,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683837
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 420,
+      "time": 1.2909999999999686,
+      "alpha": 0.21,
+      "object_pos": [
+        0.4571905912009699,
+        -0.0010993443797060712,
+        0.2684409455176798
+      ],
+      "object_disp": 0.0025626569258018063,
+      "object_rise": 0.0007483065176797643,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920734146181445,
+      "ready": true,
+      "stable_count": 274,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217177,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 450,
+      "time": 1.3209999999999653,
+      "alpha": 0.225,
+      "object_pos": [
+        0.4571166667098337,
+        -0.0010468844618846487,
+        0.2687005012110586
+      ],
+      "object_disp": 0.002567495136029191,
+      "object_rise": 0.0010078622110585855,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920733025103126,
+      "ready": true,
+      "stable_count": 304,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 480,
+      "time": 1.350999999999962,
+      "alpha": 0.24,
+      "object_pos": [
+        0.4570491150401654,
+        -0.0009832804452983635,
+        0.26899447471016874
+      ],
+      "object_disp": 0.002619253538359462,
+      "object_rise": 0.0013018357101687306,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920731643142258,
+      "ready": true,
+      "stable_count": 334,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 510,
+      "time": 1.3809999999999587,
+      "alpha": 0.255,
+      "object_pos": [
+        0.45700374011589645,
+        -0.0009141591684084471,
+        0.26930401663924086
+      ],
+      "object_disp": 0.002728955722155144,
+      "object_rise": 0.0016113776392408519,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920730610565431,
+      "ready": true,
+      "stable_count": 364,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217177,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 540,
+      "time": 1.4109999999999554,
+      "alpha": 0.27,
+      "object_pos": [
+        0.4569781868307561,
+        -0.0008311437314180966,
+        0.2696333756969108
+      ],
+      "object_disp": 0.002893178523076064,
+      "object_rise": 0.0019407366969108053,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920729514655298,
+      "ready": true,
+      "stable_count": 394,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 570,
+      "time": 1.440999999999952,
+      "alpha": 0.285,
+      "object_pos": [
+        0.4569719564325517,
+        -0.0007301332742078624,
+        0.26997835521307656
+      ],
+      "object_disp": 0.0031058340871186856,
+      "object_rise": 0.0022857162130765496,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920728416265117,
+      "ready": true,
+      "stable_count": 424,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 600,
+      "time": 1.4709999999999488,
+      "alpha": 0.3,
+      "object_pos": [
+        0.45698055242015,
+        -0.0006059947893177151,
+        0.2703421360956697
+      ],
+      "object_disp": 0.003362982669239372,
+      "object_rise": 0.002649497095669695,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920727203406776,
+      "ready": true,
+      "stable_count": 454,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.4571839660972578,
+        "thumb_cmc_yaw": 0.8166652500629423,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683837
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 630,
+      "time": 1.5009999999999455,
+      "alpha": 0.315,
+      "object_pos": [
+        0.4570225885299484,
+        -0.0004546849291647964,
+        0.27070778130335266
+      ],
+      "object_disp": 0.0036590553228606935,
+      "object_rise": 0.003015142303352647,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920726238358039,
+      "ready": true,
+      "stable_count": 484,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.4588621168469837,
+        "ring_mcp_pitch": 0.4571839660972579,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.42313707201217177,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 660,
+      "time": 1.5309999999999422,
+      "alpha": 0.33,
+      "object_pos": [
+        0.45708492338683593,
+        -0.0002598152872464006,
+        0.27108902459771417
+      ],
+      "object_disp": 0.003993725659183717,
+      "object_rise": 0.0033963855977141577,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920725030293717,
+      "ready": true,
+      "stable_count": 514,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629423,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683837
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 690,
+      "time": 1.5609999999999389,
+      "alpha": 0.345,
+      "object_pos": [
+        0.45717978348139365,
+        -1.207516371657404e-05,
+        0.2714651442110556
+      ],
+      "object_disp": 0.004356994078809036,
+      "object_rise": 0.003772505211055599,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920724000612927,
+      "ready": true,
+      "stable_count": 544,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 720,
+      "time": 1.5909999999999356,
+      "alpha": 0.36,
+      "object_pos": [
+        0.4573029294964165,
+        0.0003106210270055417,
+        0.27183949965254206
+      ],
+      "object_disp": 0.004753569496650331,
+      "object_rise": 0.00414686065254205,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.992072291310856,
+      "ready": true,
+      "stable_count": 574,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 750,
+      "time": 1.6209999999999323,
+      "alpha": 0.375,
+      "object_pos": [
+        0.4574373077873405,
+        0.0007039877241762183,
+        0.2722251407488421
+      ],
+      "object_disp": 0.005194192917988096,
+      "object_rise": 0.004532501748842066,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920721816219957,
+      "ready": true,
+      "stable_count": 604,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 780,
+      "time": 1.650999999999929,
+      "alpha": 0.39,
+      "object_pos": [
+        0.4575526315209149,
+        0.0011133360087945568,
+        0.27265724079446185
+      ],
+      "object_disp": 0.005692338335659663,
+      "object_rise": 0.004964601794461843,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.992075692328019,
+      "ready": true,
+      "stable_count": 634,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 810,
+      "time": 1.6809999999999257,
+      "alpha": 0.405,
+      "object_pos": [
+        0.45764162619563736,
+        0.0014893745262841527,
+        0.2731346165929771
+      ],
+      "object_disp": 0.006229891295960661,
+      "object_rise": 0.005441977592977099,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920756619682719,
+      "ready": true,
+      "stable_count": 664,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 840,
+      "time": 1.7109999999999224,
+      "alpha": 0.42,
+      "object_pos": [
+        0.4577045237391104,
+        0.0018116153412655184,
+        0.2736473839454635
+      ],
+      "object_disp": 0.006786411877099955,
+      "object_rise": 0.005954744945463497,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920756324882349,
+      "ready": true,
+      "stable_count": 694,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.4588621168469837,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.42313707201217177,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 870,
+      "time": 1.740999999999919,
+      "alpha": 0.435,
+      "object_pos": [
+        0.4577465562963939,
+        0.0020770786203342553,
+        0.2741865932348219
+      ],
+      "object_disp": 0.0073504604405623345,
+      "object_rise": 0.006493954234821908,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920756038121539,
+      "ready": true,
+      "stable_count": 724,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.4571839660972578,
+        "thumb_cmc_yaw": 0.8166652500629423,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 900,
+      "time": 1.7709999999999158,
+      "alpha": 0.45,
+      "object_pos": [
+        0.4577722197268868,
+        0.0022932464533506483,
+        0.27474621131638655
+      ],
+      "object_disp": 0.007918147758942121,
+      "object_rise": 0.007053572316386536,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920755760903808,
+      "ready": true,
+      "stable_count": 754,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.4571839660972579,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 930,
+      "time": 1.8009999999999124,
+      "alpha": 0.465,
+      "object_pos": [
+        0.45778143547606037,
+        0.0024690531524840646,
+        0.2753209068895133
+      ],
+      "object_disp": 0.008486641136012394,
+      "object_rise": 0.007628267889513263,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.992075454017068,
+      "ready": true,
+      "stable_count": 784,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629423,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 960,
+      "time": 1.8309999999999091,
+      "alpha": 0.48,
+      "object_pos": [
+        0.4577776449440609,
+        0.0026139950161660035,
+        0.2759062367838951
+      ],
+      "object_disp": 0.009056018437228027,
+      "object_rise": 0.008213597783895077,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.992075266315314,
+      "ready": true,
+      "stable_count": 814,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 990,
+      "time": 1.8609999999999058,
+      "alpha": 0.495,
+      "object_pos": [
+        0.45776415484823185,
+        0.002736778096740271,
+        0.27649900815602213
+      ],
+      "object_disp": 0.009627182562304437,
+      "object_rise": 0.00880636915602212,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920750736312184,
+      "ready": true,
+      "stable_count": 844,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1020,
+      "time": 1.8909999999999025,
+      "alpha": 0.51,
+      "object_pos": [
+        0.4577436561991702,
+        0.0028445762272227885,
+        0.27709698654795223
+      ],
+      "object_disp": 0.010201030146725418,
+      "object_rise": 0.009404347547952219,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920748760616018,
+      "ready": true,
+      "stable_count": 874,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1050,
+      "time": 1.9209999999998992,
+      "alpha": 0.525,
+      "object_pos": [
+        0.45771819791969226,
+        0.002942857649819124,
+        0.2776986351138475
+      ],
+      "object_disp": 0.01077817096301824,
+      "object_rise": 0.010005996113847504,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920746736932053,
+      "ready": true,
+      "stable_count": 904,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1080,
+      "time": 1.950999999999896,
+      "alpha": 0.54,
+      "object_pos": [
+        0.45768928331764785,
+        0.0030355053751276563,
+        0.27830289081839815
+      ],
+      "object_disp": 0.011358872360178582,
+      "object_rise": 0.010610251818398142,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.992074466610527,
+      "ready": true,
+      "stable_count": 934,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1110,
+      "time": 1.9809999999998926,
+      "alpha": 0.555,
+      "object_pos": [
+        0.4576579633755261,
+        0.0031250857580959884,
+        0.2789090142514123
+      ],
+      "object_disp": 0.011943115342388113,
+      "object_rise": 0.01121637525141228,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920742549006855,
+      "ready": true,
+      "stable_count": 964,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1140,
+      "time": 2.0109999999998895,
+      "alpha": 0.57,
+      "object_pos": [
+        0.45762494324254055,
+        0.0032131610438031356,
+        0.27951648216803665
+      ],
+      "object_disp": 0.012530682271221309,
+      "object_rise": 0.01182384316803664,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920740386534774,
+      "ready": true,
+      "stable_count": 994,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1170,
+      "time": 2.0409999999998862,
+      "alpha": 0.585,
+      "object_pos": [
+        0.457590680425368,
+        0.003300579687773585,
+        0.28012491399889317
+      ],
+      "object_disp": 0.013121239003609078,
+      "object_rise": 0.012432274998893156,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920738179651143,
+      "ready": true,
+      "stable_count": 1024,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1200,
+      "time": 2.070999999999883,
+      "alpha": 0.6,
+      "object_pos": [
+        0.457555458985537,
+        0.0033877176977783682,
+        0.2807340273269369
+      ],
+      "object_disp": 0.013714401602715622,
+      "object_rise": 0.013041388326936909,
+      "groups": {
+        "thumb": 1,
+        "index": 1
+      },
+      "opposition_cos": -0.9920735929380438,
+      "ready": true,
+      "stable_count": 1054,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1230,
+      "time": 2.1009999999998796,
+      "alpha": 0.615,
+      "object_pos": [
+        0.4575346453042267,
+        0.0034630490267054405,
+        0.28134604738939134
+      ],
+      "object_disp": 0.014311977362583604,
+      "object_rise": 0.01365340838939133,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920734475623608,
+      "ready": true,
+      "stable_count": 1084,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.42313707201217177,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1260,
+      "time": 2.1309999999998763,
+      "alpha": 0.63,
+      "object_pos": [
+        0.45752608841161746,
+        0.0035259329238548492,
+        0.28196041981538833
+      ],
+      "object_disp": 0.014912508006462042,
+      "object_rise": 0.01426778081538832,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920733868092219,
+      "ready": true,
+      "stable_count": 1114,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366956,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1290,
+      "time": 2.160999999999873,
+      "alpha": 0.645,
+      "object_pos": [
+        0.4575163823602771,
+        0.0035885074058179065,
+        0.2825747598000396
+      ],
+      "object_disp": 0.015514093112125328,
+      "object_rise": 0.014882120800039589,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920733284203077,
+      "ready": true,
+      "stable_count": 1144,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1320,
+      "time": 2.1909999999998697,
+      "alpha": 0.66,
+      "object_pos": [
+        0.45750608729336867,
+        0.003650850507932581,
+        0.2831890983187684
+      ],
+      "object_disp": 0.016116743913442887,
+      "object_rise": 0.015496459318768363,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920732706986005,
+      "ready": true,
+      "stable_count": 1174,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217177,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1350,
+      "time": 2.2209999999998664,
+      "alpha": 0.675,
+      "object_pos": [
+        0.4574952107235297,
+        0.0037128599793781808,
+        0.2838033973026421
+      ],
+      "object_disp": 0.01672028525077956,
+      "object_rise": 0.01611075830264208,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920732136716288,
+      "ready": true,
+      "stable_count": 1204,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1380,
+      "time": 2.250999999999863,
+      "alpha": 0.69,
+      "object_pos": [
+        0.45748372849054225,
+        0.0037744272442679933,
+        0.284417625055195
+      ],
+      "object_disp": 0.017324559641834228,
+      "object_rise": 0.016724986055195012,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920731572734373,
+      "ready": true,
+      "stable_count": 1234,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629423,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1410,
+      "time": 2.28099999999986,
+      "alpha": 0.705,
+      "object_pos": [
+        0.4574716242832759,
+        0.0038354677799773288,
+        0.2850317598780946
+      ],
+      "object_disp": 0.017929440942597703,
+      "object_rise": 0.017339120878094583,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920731014525268,
+      "ready": true,
+      "stable_count": 1264,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629423,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1440,
+      "time": 2.3109999999998565,
+      "alpha": 0.72,
+      "object_pos": [
+        0.45745888147209757,
+        0.0038959214479668595,
+        0.28564579175641974
+      ],
+      "object_disp": 0.018534831963573188,
+      "object_rise": 0.017953152756419732,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.992073046168169,
+      "ready": true,
+      "stable_count": 1294,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1470,
+      "time": 2.340999999999853,
+      "alpha": 0.735,
+      "object_pos": [
+        0.45744548179330224,
+        0.003955749667533849,
+        0.28625972150102996
+      ],
+      "object_disp": 0.019140660626885884,
+      "object_rise": 0.018567082501029952,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920729913483897,
+      "ready": true,
+      "stable_count": 1324,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1500,
+      "time": 2.37099999999985,
+      "alpha": 0.75,
+      "object_pos": [
+        0.4574313984413186,
+        0.004014921660806724,
+        0.2868735483531103
+      ],
+      "object_disp": 0.019746862483318587,
+      "object_rise": 0.019180909353110287,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920729369670216,
+      "ready": true,
+      "stable_count": 1354,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1530,
+      "time": 2.4009999999998466,
+      "alpha": 0.765,
+      "object_pos": [
+        0.45741661322901733,
+        0.004073422836310412,
+        0.28748727255010675
+      ],
+      "object_disp": 0.0203533857253541,
+      "object_rise": 0.019794633550106744,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920667288924276,
+      "ready": true,
+      "stable_count": 1384,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1560,
+      "time": 2.4309999999998433,
+      "alpha": 0.78,
+      "object_pos": [
+        0.457401111630311,
+        0.004131275052314309,
+        0.2881009013963207
+      ],
+      "object_disp": 0.020960199060509114,
+      "object_rise": 0.02040826239632071,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920666485454188,
+      "ready": true,
+      "stable_count": 1414,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1590,
+      "time": 2.46099999999984,
+      "alpha": 0.795,
+      "object_pos": [
+        0.45738490049117714,
+        0.004188440484434199,
+        0.28871442736848196
+      ],
+      "object_disp": 0.021567252264804326,
+      "object_rise": 0.021021788368481953,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920665689737762,
+      "ready": true,
+      "stable_count": 1444,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683837
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1620,
+      "time": 2.4909999999998367,
+      "alpha": 0.81,
+      "object_pos": [
+        0.4573679681859769,
+        0.004244922088613183,
+        0.28932785354237817
+      ],
+      "object_disp": 0.022174515669184887,
+      "object_rise": 0.021635214542378156,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.992066490225717,
+      "ready": true,
+      "stable_count": 1474,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.43327603559366945,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683837
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1650,
+      "time": 2.5209999999998334,
+      "alpha": 0.825,
+      "object_pos": [
+        0.45735030753689987,
+        0.004300722489318289,
+        0.2899411827227195
+      ],
+      "object_disp": 0.022781963419115085,
+      "object_rise": 0.022248543722719505,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920664122716347,
+      "ready": true,
+      "stable_count": 1504,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629423,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683837
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1680,
+      "time": 2.55099999999983,
+      "alpha": 0.84,
+      "object_pos": [
+        0.457331911901514,
+        0.0043558445184966104,
+        0.2905544176380636
+      ],
+      "object_disp": 0.02338957282811212,
+      "object_rise": 0.0228617786380636,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920663350780061,
+      "ready": true,
+      "stable_count": 1534,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629425,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1710,
+      "time": 2.5809999999998268,
+      "alpha": 0.855,
+      "object_pos": [
+        0.45731277488748867,
+        0.004410290925084155,
+        0.2911675609232506
+      ],
+      "object_disp": 0.023997323872190165,
+      "object_rise": 0.02347492192325057,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920662586134326,
+      "ready": true,
+      "stable_count": 1564,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1740,
+      "time": 2.6109999999998235,
+      "alpha": 0.87,
+      "object_pos": [
+        0.45729289034888826,
+        0.004464064128019978,
+        0.2917806150516098
+      ],
+      "object_disp": 0.024605198738356617,
+      "object_rise": 0.024087976051609783,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920661828471304,
+      "ready": true,
+      "stable_count": 1594,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.49322037696838383
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1770,
+      "time": 2.64099999999982,
+      "alpha": 0.885,
+      "object_pos": [
+        0.4572722524110465,
+        0.004517166114071057,
+        0.29239358229036755
+      ],
+      "object_disp": 0.0252131814762749,
+      "object_rise": 0.02470094329036754,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920661077501657,
+      "ready": true,
+      "stable_count": 1624,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1800,
+      "time": 2.670999999999817,
+      "alpha": 0.9,
+      "object_pos": [
+        0.45725085549714584,
+        0.004569598433872674,
+        0.2930064646793721
+      ],
+      "object_disp": 0.025821257731596266,
+      "object_rise": 0.02531382567937207,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920660332951573,
+      "ready": true,
+      "stable_count": 1654,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.42313707201217166,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1830,
+      "time": 2.7009999999998136,
+      "alpha": 0.915,
+      "object_pos": [
+        0.4572286943500633,
+        0.004621362249789144,
+        0.2936192640251709
+      ],
+      "object_disp": 0.026429414536565093,
+      "object_rise": 0.025926625025170902,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920659594558728,
+      "ready": true,
+      "stable_count": 1684,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1860,
+      "time": 2.7309999999998102,
+      "alpha": 0.93,
+      "object_pos": [
+        0.45720576404694896,
+        0.004672458404139803,
+        0.2942319819041939
+      ],
+      "object_disp": 0.027037640140286225,
+      "object_rise": 0.026539342904193908,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920658862079533,
+      "ready": true,
+      "stable_count": 1714,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1890,
+      "time": 2.760999999999807,
+      "alpha": 0.945,
+      "object_pos": [
+        0.4571820600059179,
+        0.0047228874891156805,
+        0.29484461967094266
+      ],
+      "object_disp": 0.027645923866991953,
+      "object_rise": 0.027151980670942655,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920658135267674,
+      "ready": true,
+      "stable_count": 1744,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1920,
+      "time": 2.7909999999998036,
+      "alpha": 0.96,
+      "object_pos": [
+        0.4571575918760058,
+        0.004772642252140521,
+        0.29545717609606154
+      ],
+      "object_disp": 0.028254253430747372,
+      "object_rise": 0.027764537096061526,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920642382730812,
+      "ready": true,
+      "stable_count": 1774,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1950,
+      "time": 2.8209999999998003,
+      "alpha": 0.975,
+      "object_pos": [
+        0.45713233250785074,
+        0.00482173126491962,
+        0.2960696555900558
+      ],
+      "object_disp": 0.02886262297275567,
+      "object_rise": 0.028377016590055815,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920641674032779,
+      "ready": true,
+      "stable_count": 1804,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    },
+    {
+      "phase": "lift_world_z_with_fixed_grip_ctrl",
+      "step": 1980,
+      "time": 2.850999999999797,
+      "alpha": 0.99,
+      "object_pos": [
+        0.4571062846608652,
+        0.0048701534810919305,
+        0.29668205728250074
+      ],
+      "object_disp": 0.029471023096590585,
+      "object_rise": 0.028989418282500734,
+      "groups": {
+        "thumb": 1,
+        "index": 1,
+        "middle": 1
+      },
+      "opposition_cos": -0.9920640973596249,
+      "ready": true,
+      "stable_count": 1834,
+      "hand_ctrl": {
+        "pinky_mcp_pitch": 0.4332760355936695,
+        "middle_mcp_pitch": 0.45886211684698364,
+        "ring_mcp_pitch": 0.45718396609725787,
+        "thumb_cmc_yaw": 0.8166652500629424,
+        "index_mcp_pitch": 0.4231370720121717,
+        "thumb_cmc_pitch": 0.326347551433005,
+        "thumb_cmc_roll": 0.4932203769683838
+      }
+    }
+  ]
+}

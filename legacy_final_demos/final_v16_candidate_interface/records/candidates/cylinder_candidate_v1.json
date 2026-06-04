@@ -1,0 +1,118 @@
+{
+  "format": "fr3_o7_grasp_candidate_v1",
+  "candidate_name": "cylinder_candidate_v1",
+  "source": {
+    "type": "converted_from_template",
+    "template_path": "/home/zyh/Projects/o7_mujoco_sim/records/fr3_o7_grasp_template_cylinder_v1.json",
+    "model_hint": "models/fr3_o7/fr3_o7_actuated_scene_v13_cylinder.xml"
+  },
+  "object": {
+    "body": "grasp_cylinder",
+    "token": "grasp_cylinder",
+    "support_tokens": "pedestal table",
+    "spawn_source": "template",
+    "T_world_object": [
+      [
+        -0.7070222176482315,
+        0.7015420422831801,
+        0.08920956597204509,
+        0.5638822814848682
+      ],
+      [
+        -0.6943144619998795,
+        -0.6646403771220605,
+        -0.27600832769476774,
+        -0.003568805608232555
+      ],
+      [
+        -0.13433916632759726,
+        -0.25708351173925786,
+        0.9570062990295394,
+        0.2255823574184933
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "target": {
+    "body": "fr3_link7",
+    "T_object_target": [
+      [
+        -0.25129440869752373,
+        0.07763240799455048,
+        -0.9647923763102226,
+        0.22476936286241714
+      ],
+      [
+        0.9573141521574011,
+        0.1670257310786717,
+        -0.23590680201466915,
+        0.10620878759232627
+      ],
+      [
+        0.1428311388896517,
+        -0.9828914560553468,
+        -0.11629123516792712,
+        0.04506014807125219
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "hand": {
+    "type": "o7_active_ctrl",
+    "approach_policy": "thumb_roll_yaw_to_template_pitch_and_fingers_open",
+    "close_policy": "thumb_pitch_and_four_fingers_close_together",
+    "o7_active_ctrl": {
+      "thumb_cmc_roll": 0.27,
+      "thumb_cmc_yaw": 1.42,
+      "thumb_cmc_pitch": 0.16,
+      "index_mcp_pitch": 0.4200000000000001,
+      "middle_mcp_pitch": 0.4400000000000001,
+      "ring_mcp_pitch": 0.4200000000000001,
+      "pinky_mcp_pitch": 0.4000000000000001
+    }
+  },
+  "arm_seed": {
+    "franka_ctrl": {
+      "fr3_joint1": 1.4320000000000004,
+      "fr3_joint2": -1.6640000000000001,
+      "fr3_joint3": -1.7120000000000004,
+      "fr3_joint4": -2.212,
+      "fr3_joint5": 0.052000000000000046,
+      "fr3_joint6": 2.5999999999999996,
+      "fr3_joint7": -0.18799999999999994
+    }
+  },
+  "execution": {
+    "pregrasp": {
+      "mode": "world_z_offset",
+      "z_offset": 0.08,
+      "move_duration": 4.0,
+      "descend_duration": 3.0
+    },
+    "close_duration": 3.0,
+    "lift": {
+      "mode": "joint_delta",
+      "joint": "fr3_joint3",
+      "delta": 0.18,
+      "duration": 5.0
+    },
+    "hold_duration": 4.0
+  },
+  "validation": {
+    "min_final_hand_object": 3,
+    "min_final_rise": 0.005
+  },
+  "metadata": {
+    "note": "This candidate is executable by run_fr3_o7_candidate_grasp_v16.py"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "format": "fr3_o7_grasp_candidate_v1",
+  "candidate_name": "bottle_dataset_site_sample7_debug",
+  "source": {
+    "type": "dataset_bottle_to_candidate_site_debug",
+    "npy": "/home/zyh/Projects/o7_mujoco_sim/dataset/O7_Full_V8BestBaseline_165objs_20260422_084834/validate_results/seed1/core-bottle-3b0e35ff08f09a85f0d11ae402ef940e.npy",
+    "sample_index": 7,
+    "scale": 0.03999999910593033,
+    "meaning": "hand_pose is T_object_hand_base_link; target is dataset_hand_base_debug site directly",
+    "rot6d": "robust_compute_rotation_matrix_from_ortho6d_numpy"
+  },
+  "object": {
+    "body": "grasp_bottle",
+    "token": "grasp_bottle bottle",
+    "support_tokens": "pedestal table",
+    "spawn_source": "model",
+    "T_world_object": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "target": {
+    "site": "dataset_hand_base_debug",
+    "body": "",
+    "T_object_target": [
+      [
+        -0.5608657902460987,
+        -0.13526301947619548,
+        0.8167823950684794,
+        -0.07932192087173462
+      ],
+      [
+        0.521943278501493,
+        -0.8235795578680644,
+        0.22201785038360367,
+        -0.07486715912818909
+      ],
+      [
+        0.6426544789844165,
+        0.5508362982084839,
+        0.5325172233996214,
+        -0.1186530739068985
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "meaning": "T_object_dataset_hand_base_debug"
+  },
+  "hand": {
+    "type": "o7_active_ctrl",
+    "approach_policy": "thumb_roll_yaw_to_template_pitch_and_fingers_open",
+    "close_policy": "thumb_pitch_and_four_fingers_close_together",
+    "o7_active_ctrl": {
+      "thumb_cmc_roll": 0.5465741753578186,
+      "thumb_cmc_yaw": 0.8521448373794556,
+      "thumb_cmc_pitch": 0.1142485961318016,
+      "index_mcp_pitch": 0.6187503933906555,
+      "middle_mcp_pitch": 0.63311767578125,
+      "ring_mcp_pitch": 0.5894498825073242,
+      "pinky_mcp_pitch": 0.6348507404327393
+    }
+  },
+  "execution": {
+    "pregrasp": {
+      "mode": "world_z_offset",
+      "z_offset": 0.08,
+      "move_duration": 4.0,
+      "descend_duration": 2.0
+    },
+    "close_duration": 3.0,
+    "lift": {
+      "mode": "joint_delta",
+      "joint": "fr3_joint3",
+      "delta": 0.1,
+      "duration": 4.0
+    },
+    "hold_duration": 3.0
+  },
+  "validation": {
+    "min_final_hand_object": 3,
+    "min_final_rise": 0.005
+  }
+}

@@ -1,0 +1,14 @@
+========== SODACAN165 SAMPLE014 CLOSE SWEEP SUMMARY ==========
+run_01_fs0.96_mf0.00_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.9083714491353341 disp=0.0173696224402171 rise=-0.003497861390721224 stable=2502
+run_02_fs0.96_mf0.04_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.9083714491353341 disp=0.0173696224402171 rise=-0.003497861390721224 stable=2502
+run_03_fs0.96_mf0.08_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 1, 'middle': 1, 'pinky': 1} opp=-0.9083714491353341 disp=0.0173696224402171 rise=-0.003497861390721224 stable=2502
+run_10_fs1.12_mf0.00_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 2, 'pinky': 1} opp=-0.9121966557766762 disp=0.01475883447693675 rise=-0.0011331600033664957 stable=2633
+run_11_fs1.12_mf0.04_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 2, 'pinky': 1} opp=-0.9121966557766762 disp=0.01475883447693675 rise=-0.0011331600033664957 stable=2633
+run_12_fs1.12_mf0.08_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 2, 'pinky': 1} opp=-0.9121966557766762 disp=0.01475883447693675 rise=-0.0011331600033664957 stable=2633
+run_07_fs1.06_mf0.00_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 1, 'pinky': 1} opp=-0.7282158573062729 disp=0.015606292139221366 rise=-0.00250251638733634 stable=2605
+run_08_fs1.06_mf0.04_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 1, 'pinky': 1} opp=-0.7282158573062729 disp=0.015606292139221366 rise=-0.00250251638733634 stable=2605
+run_09_fs1.06_mf0.08_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 1, 'pinky': 1} opp=-0.7282158573062729 disp=0.015606292139221366 rise=-0.00250251638733634 stable=2605
+run_04_fs1.00_mf0.00_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 1, 'pinky': 1} opp=-0.7093942990652509 disp=0.01682332979308665 rise=-0.002704946177964296 stable=2559
+run_05_fs1.00_mf0.04_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 1, 'pinky': 1} opp=-0.7093942990652509 disp=0.01682332979308665 rise=-0.002704946177964296 stable=2559
+run_06_fs1.00_mf0.08_md0.018 ready=True success=None stop=ready_after_close_target_hold groups={'thumb': 1, 'pinky': 1} opp=-0.7093942990652509 disp=0.01682332979308665 rise=-0.002704946177964296 stable=2559
+==============================================================

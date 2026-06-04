@@ -1,0 +1,205 @@
+{
+  "format": "fr3_o7_grasp_candidate_v1",
+  "candidate_name": "v47b_can_core-can-52e295024593705fb00c487926b62c9_s030_tabletop_side_body_debug",
+  "source": {
+    "type": "v4_7b_can_tabletop_safe_dataset_valid_sample",
+    "object_code": "core-can-52e295024593705fb00c487926b62c9",
+    "npy": "/home/zyh/Projects/o7_mujoco_sim/dataset/O7_Full_V8BestBaseline_165objs_20260422_084834/validate_results/seed1/core-can-52e295024593705fb00c487926b62c9.npy",
+    "sample_index": 30,
+    "scale": 0.05999999865889549,
+    "meaning": "candidate passed tabletop-safe side-body static filter"
+  },
+  "object": {
+    "body": "grasp_can",
+    "token": "grasp_can can",
+    "support_tokens": "object_pedestal pedestal table",
+    "spawn_source": "model",
+    "T_world_object": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "target": {
+    "body": "fr3_link7",
+    "T_object_target": [
+      [
+        -0.6498772693653343,
+        -0.14958990386468488,
+        -0.74517272858312,
+        0.1450243138623708
+      ],
+      [
+        0.1522435449774503,
+        -0.9861901447735886,
+        0.06519893683296227,
+        -0.005695441209699448
+      ],
+      [
+        -0.7446351037756391,
+        -0.07107643078548513,
+        0.6636766556176587,
+        -0.1930195043590354
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "hand": {
+    "type": "o7_active_ctrl",
+    "approach_policy": "thumb_roll_yaw_to_template_pitch_and_fingers_open",
+    "close_policy": "thumb_pitch_and_four_fingers_close_together",
+    "o7_active_ctrl": {
+      "thumb_cmc_roll": 0.5191793441772461,
+      "thumb_cmc_yaw": 0.8596476316452026,
+      "thumb_cmc_pitch": 0.03734106943011284,
+      "index_mcp_pitch": 0.5403528213500977,
+      "middle_mcp_pitch": 0.5859742760658264,
+      "ring_mcp_pitch": 0.583831250667572,
+      "pinky_mcp_pitch": 0.5533004403114319
+    }
+  },
+  "execution": {
+    "pregrasp": {
+      "mode": "world_z_offset",
+      "z_offset": 0.085,
+      "move_duration": 1.5,
+      "descend_duration": 0.9
+    },
+    "close_duration": 1.05,
+    "lift": {
+      "mode": "q_interp",
+      "z_offset": 0.12,
+      "duration": 2.0
+    },
+    "hold_duration": 0.75
+  },
+  "v4_7b_tabletop_filter": {
+    "accepted": true,
+    "score": 67.97043817590864,
+    "features": {
+      "accepted": true,
+      "reasons": [],
+      "target_pos": [
+        0.690742977466686,
+        0.22160685585924622,
+        0.26199719796967813
+      ],
+      "handbase_pos": [
+        0.6110095150768757,
+        0.15059342980354967,
+        0.2689734645318019
+      ],
+      "target_height_ratio": 0.4223898670491498,
+      "handbase_height_ratio": 0.5174534372646701,
+      "target_radial_xy": 0.26252273095869955,
+      "handbase_radial_xy": 0.16248243606591922,
+      "object_min": [
+        0.5356420003209263,
+        -0.014357999679116749,
+        0.231
+      ],
+      "object_max": [
+        0.5643579996790737,
+        0.014357999679094425,
+        0.3043852783596043
+      ],
+      "object_center": [
+        0.55,
+        -1.1162078206172765e-14,
+        0.2676926391798022
+      ],
+      "pedestal_top_z": 0.23
+    }
+  },
+  "validation": {
+    "min_final_hand_object": 2,
+    "min_final_rise": 0.006
+  },
+  "debug_patch_meta": {
+    "v4_12p4d_opposition_corridor_patch": {
+      "delta_world": [
+        0.0042813363956847985,
+        -0.028587351500665527,
+        0.0
+      ],
+      "T_object_target_old": [
+        [
+          -0.6498772693653341,
+          -0.14958990386468482,
+          -0.7451727285831198,
+          0.14074297746668596
+        ],
+        [
+          0.15224354497745024,
+          -0.9861901447735881,
+          0.06519893683296224,
+          -0.005695441209699431
+        ],
+        [
+          -0.7446351037756389,
+          -0.0710764307854851,
+          0.6636766556176584,
+          -0.2216068558597008
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_object_target_new": [
+        [
+          -0.6498772693653343,
+          -0.14958990386468488,
+          -0.74517272858312,
+          0.1450243138623708
+        ],
+        [
+          0.1522435449774503,
+          -0.9861901447735886,
+          0.06519893683296227,
+          -0.005695441209699448
+        ],
+        [
+          -0.7446351037756391,
+          -0.07107643078548513,
+          0.6636766556176587,
+          -0.1930195043590354
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

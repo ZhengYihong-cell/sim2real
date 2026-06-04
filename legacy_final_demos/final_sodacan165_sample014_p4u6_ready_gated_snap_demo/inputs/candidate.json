@@ -1,0 +1,102 @@
+{
+  "format": "fr3_o7_grasp_candidate_v1",
+  "candidate_name": "sem-SodaCan-16526d147e837c386829bf9ee210f5e7_sample014_initial_debug",
+  "source": {
+    "type": "build_sodacan165_initial_candidate_scene_debug",
+    "target": "sem-SodaCan-16526d147e837c386829bf9ee210f5e7",
+    "npy": "dataset/O7_Full_V8BestBaseline_165objs_20260422_084834/validate_results/seed1/sem-SodaCan-16526d147e837c386829bf9ee210f5e7.npy",
+    "sample_index": 14,
+    "scale": 0.05999999865889549,
+    "rot6d": "robust_compute_rotation_matrix_from_ortho6d_numpy",
+    "meaning": "hand_pose is T_object_hand_base_link, converted to T_object_fr3_link7",
+    "mount_source": "manual_default",
+    "fr3_to_handbase_pos": "0 0 0.107",
+    "fr3_to_handbase_euler": "0 0 3.141592653589793"
+  },
+  "object": {
+    "body": "grasp_can",
+    "token": "grasp_can",
+    "support_tokens": "pedestal table support object_pedestal",
+    "spawn_source": "model",
+    "T_world_object": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "target": {
+    "body": "fr3_link7",
+    "T_object_target": [
+      [
+        -0.7152480169698578,
+        -0.5310277534683254,
+        -0.4543454624699905,
+        0.07159741282375126
+      ],
+      [
+        0.3287735225184436,
+        0.3180143756014601,
+        -0.8892552096004993,
+        0.2577582007749936
+      ],
+      [
+        0.6167075847689085,
+        -0.7854147833834023,
+        -0.05287128645401487,
+        0.08041101129382529
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "hand": {
+    "type": "o7_active_ctrl",
+    "approach_policy": "side_open_then_ready_gated_snap_close",
+    "close_policy": "P4U1_ready_gated_snap_close",
+    "o7_active_ctrl": {
+      "thumb_cmc_roll": 0.4695322513580322,
+      "thumb_cmc_yaw": 0.9661350250244141,
+      "thumb_cmc_pitch": 0.11561174690723419,
+      "index_mcp_pitch": 0.46477824449539185,
+      "middle_mcp_pitch": 0.4006442129611969,
+      "ring_mcp_pitch": 0.3966612219810486,
+      "pinky_mcp_pitch": 0.4698737561702728
+    }
+  },
+  "execution": {
+    "pregrasp": {
+      "mode": "world_z_offset",
+      "z_offset": 0.08
+    },
+    "note": "This candidate only provides prior. Final execution should use P4E/P4H/P4H2 + P2/P3 + P4U6/P4U1."
+  },
+  "validation": {
+    "min_final_hand_object": 3,
+    "min_final_rise": 0.005
+  }
+}
